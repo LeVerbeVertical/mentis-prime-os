@@ -26,6 +26,25 @@ C'est tout. Rien à installer.
 
 ---
 
+## Le consulter sans rien lancer
+
+Pour simplement **regarder** le système — depuis un téléphone, ou pour le
+montrer à quelqu'un — il existe une copie en lecture seule, en un seul fichier :
+
+```bash
+python3 construire_page.py
+```
+
+Cela produit `mentis-prime-os.html` : l'interface **et** les données dans un
+fichier unique, qui s'ouvre d'un double-clic, sans Python et sans serveur.
+Rien n'y est enregistrable, et la page ne contacte personne — aucune requête
+ne sort, jamais.
+
+La version qui **s'édite** reste `python3 serveur.py`. La copie ne remplace pas
+le serveur : elle sert à voir, pas à travailler.
+
+---
+
 ## Ce qu'il y a dedans
 
 | | |

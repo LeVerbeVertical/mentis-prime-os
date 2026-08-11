@@ -445,3 +445,19 @@ code.mini { font-size: 0.66rem; color: var(--ink-faint); }
 .src-ecart-t .cliquable { cursor: pointer; font-weight: 600; }
 .src-ecart-t .cliquable:hover { color: var(--accent); }
 .src-ecart-q { margin: 0; font-size: 0.82rem; color: var(--ink-soft); line-height: 1.5; }
+
+/* ---------- L'avertissement qui empêche le contresens --------------------- */
+/* « Airtable » sur une carte se lit spontanément comme « Airtable est branché ».
+   Il ne l'est pas. Cet encart porte cette nuance là où elle risque d'être
+   perdue — et il est assez visible pour qu'on ne le saute pas. */
+.os-avert {
+  border-left: 3px solid var(--warn);
+  background: var(--warn-bg);
+  padding: 0.6rem 0.9rem;
+  margin: 0 0 1.1rem;
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: var(--ink);
+}
+.os-avert code { font-size: 0.76rem; }
+.os-avert em { color: var(--warn); font-style: normal; font-weight: 600; }

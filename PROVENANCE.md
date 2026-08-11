@@ -41,7 +41,7 @@ publie ni tes abonnés, ni tes textes payants.
 | `outil.json` | Mélange : conversation, observation directe de la base Airtable, et outils cités en cours de route. | ⚠ Les 4 lignes de `Outils & Modalités` ne sont **pas** reprises telles quelles |
 | `projet.json` | **Airtable**, tables `Projets` et `Plan d'action`, créées et lues le 11/08/2026. 14 chantiers, 43 étapes. Chaque ligne porte son `recId`. | **Vérifié** — photo datée, pas une synchronisation |
 | `handoff.json` | **Airtable**, table `Handoffs IA` (`tblIeLkEknzotSk1H`), 5 lignes, lues le 11/08/2026. | Vérifié — résumés ; le texte intégral reste dans Airtable |
-| `media.json` | Produit par `generer_medias.py` depuis `inventaire_archive.csv`, lui-même produit par le rapatriement réel des fichiers. 83 dossiers, 436 images distinctes, empreintes SHA-256. | **Mesuré** — c'est le seul fichier de `data/` issu d'une vérification physique |
+| `media.json` | Produit par `generer_medias.py` depuis `inventaire_archive.csv`, lui-même produit par le rapatriement réel des fichiers. 83 dossiers, 482 fichiers, 436 contenus distincts, empreintes SHA-256. | **Mesuré** — c'est le seul fichier de `data/` issu d'une vérification physique |
 | `_registre.json` | Écrit à la main d'après ce qui a réellement été lu dans Airtable. | Trace de provenance, pas une donnée |
 | `canal.json` | Déduit du PDF et de la conversation. | Non vérifié |
 | `institution.json` | Vide. | — |
@@ -223,4 +223,4 @@ pointe vers `archive_medias/<slug>/`, aurait menti.
 
 Une passe de complétion pose un **lien physique** vers le fichier déjà présent :
 même inode, aucun octet supplémentaire. 220 réutilisations reliées. C'est ce qui
-explique 702 fichiers rangés pour 482 fichiers réels sur le disque.
+explique 702 entrées rangées pour 482 fichiers réels sur le disque.

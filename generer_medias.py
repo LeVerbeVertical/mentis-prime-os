@@ -25,7 +25,8 @@ LES LIENS PHYSIQUES
 Une image citée par plusieurs articles n'est téléchargée qu'une fois ; les
 autres dossiers la reçoivent par lien physique. Le résumé distingue donc les
 fichiers propres à un article de ceux qu'il partage avec d'autres, pour que
-« 702 fichiers » et « 482 images distinctes » ne se contredisent pas.
+« 702 entrées », « 482 fichiers » et « 436 contenus distincts » ne se
+contredisent pas — ce sont trois unités de comptage différentes.
 """
 
 import csv

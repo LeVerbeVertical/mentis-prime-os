@@ -55,13 +55,41 @@
     }
   ],
   "non_repris": [
-    { "table": "Agents & Rôles", "lignes": 3, "pourquoi": "data/ia.json est écrit indépendamment. Airtable a la vraie source." },
-    { "table": "VENTE — Circuit France", "lignes": 28, "pourquoi": "Le plus gros gisement de relations réelles de l'écosystème, stocké en texte libre. Sera exploité par le projet P2." },
-    { "table": "Droits & Expansion canonique", "lignes": 4, "pourquoi": "Gouvernance des droits. Pas encore modélisé côté Dashboard." },
-    { "table": "Expériences éditoriales", "lignes": 1, "pourquoi": "Journal des restaurations. Pas encore modélisé." },
-    { "table": "Outils & Modalités", "lignes": 4, "pourquoi": "data/outil.json est un mélange de conversation et d'observation. Les 4 lignes ne sont pas reprises telles quelles." },
-    { "table": "LUCID — Sync Queue", "lignes": 2, "pourquoi": "File de projection vers Lucid. Sans objet côté Dashboard." },
-    { "table": "KDP — Performance", "lignes": 0, "pourquoi": "Schéma prêt, aucune donnée importée. Attention : 0 enregistrement ne veut pas dire 0 vente — cela veut dire qu'aucun rapport n'a été importé." }
+    {
+      "table": "Agents & Rôles",
+      "lignes": 3,
+      "pourquoi": "data/ia.json est écrit indépendamment. Airtable a la vraie source."
+    },
+    {
+      "table": "VENTE — Circuit France",
+      "lignes": 28,
+      "pourquoi": "Le plus gros gisement de relations réelles de l'écosystème, stocké en texte libre. Sera exploité par le projet P2."
+    },
+    {
+      "table": "Droits & Expansion canonique",
+      "lignes": 4,
+      "pourquoi": "Gouvernance des droits. Pas encore modélisé côté Dashboard."
+    },
+    {
+      "table": "Expériences éditoriales",
+      "lignes": 1,
+      "pourquoi": "Journal des restaurations. Pas encore modélisé."
+    },
+    {
+      "table": "Outils & Modalités",
+      "lignes": 18,
+      "pourquoi": "Registre officiel des outils depuis le 11/08/2026 : 14 outils y ont été ajoutés pour qu'il cesse d'être en retard sur les feuilles de synthèse. data/outil.json reste écrit indépendamment et n'est pas encore rapproché."
+    },
+    {
+      "table": "LUCID — Sync Queue",
+      "lignes": 2,
+      "pourquoi": "File de projection vers Lucid. Sans objet côté Dashboard."
+    },
+    {
+      "table": "KDP — Performance",
+      "lignes": 0,
+      "pourquoi": "Schéma prêt, aucune donnée importée. Attention : 0 enregistrement ne veut pas dire 0 vente — cela veut dire qu'aucun rapport n'a été importé."
+    }
   ],
   "couverture": "Le Dashboard n'est pas une vue d'Airtable : c'est une lecture partielle et datée, qui dit ce qu'elle ne lit pas."
 }

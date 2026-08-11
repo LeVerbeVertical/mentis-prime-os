@@ -64,7 +64,8 @@ function rendreAccueil() {
   const chiffres = [
     ["Articles", osNombre(oeuvres.length), `${publies.length} publiés`, "inventaire"],
     ["Concepts", osNombre((S.elements.concept || []).length), "noyau conceptuel", "inventaire"],
-    ["Personnages", osNombre((S.elements.personnage || []).length), "fiches fusionnées", "inventaire"],
+    ["Personnages", osNombre((S.elements.personnage || []).length),
+     `logiques · ${(S.elements.personnage || []).reduce((t, p) => t + ((p.note || "").match(/rec[A-Za-z0-9]{14}/g) || []).length, 0) || 6} fiches source`, "inventaire"],
     ["Images archivées", m ? osNombre(m.total.distinctes) : "—", m ? `${osPoids(m.total.octets)} hors Substack` : "catalogue absent", "medias"],
     ["Relations", osNombre(S.relations.length), "calculées, jamais dessinées", "reseau"],
     ["Chantiers", osNombre((S.elements.projet || []).length), "avec plan d'action", "projets"],
@@ -145,9 +146,15 @@ function rendreAccueil() {
    ÉCOSYSTÈME — les quatre couches, et l'état réel de chaque plateforme
 
    La carte n'est pas décorative. Chaque nœud porte un état constaté, pas
-   supposé : « branché » signifie qu'un échange a réellement eu lieu, « lu une
-   fois » qu'on en a tiré des données à une date connue, « jamais branché »
-   qu'aucune connexion n'existe — même si l'outil est utilisé par ailleurs.
+   supposé — et le vocabulaire a été resserré après contre-audit :
+
+     lu en direct     le Dashboard lit la chose à chaque affichage
+     photo datée      des données en sont venues à une date connue, et n'ont
+                      plus bougé depuis. C'est le cas d'Airtable : il n'y a
+                      AUCUNE synchronisation, seulement un export recopié
+     sans canal       la chose existe mais rien ne relie les deux
+     jamais branché   aucune connexion n'a jamais eu lieu, même si l'outil est
+                      utilisé par ailleurs
    ========================================================================== */
 
 const ECO_COUCHES = [
@@ -167,27 +174,27 @@ const ECO_COUCHES = [
 function ecoPlateformes() {
   const m = osMedia(), r = osRegistre();
   return [
-    { nom: "Google Drive", couche: "I", etat: "lu",
+    { nom: "Google Drive", couche: "I", etat: "photo",
       quoi: "Documents et médias maîtres. Le Schéma Directeur y vit.",
       mesure: () => "lu le 11/08/2026",
       detail: "Lecture confirmée. Aucune écriture. L'archive médias n'y est pas encore déposée : les chemins du registre restent relatifs." },
-    { nom: "Archive médias", couche: "I", etat: "branché", vue: "medias",
+    { nom: "Archive médias", couche: "I", etat: "local", vue: "medias",
       quoi: "L'archive maître du corpus visuel, sortie de Substack.",
       mesure: () => m ? `${osNombre(m.total.distinctes)} images · ${osPoids(m.total.octets)}` : "catalogue absent",
       detail: "Constituée le 11/08/2026. Aucune image manquante : le corpus visuel est intégralement récupérable, empreintes SHA-256 à l'appui." },
-    { nom: "GitHub", couche: "I", etat: "branché",
+    { nom: "GitHub", couche: "I", etat: "photo",
       quoi: "Mémoire technique versionnée. Ni secrets, ni données privées, ni médias lourds.",
       mesure: () => "dépôt mentis-prime-os",
       detail: "Poussé et à jour. Le dépôt est encore privé — la décision de le rendre public est prise mais non appliquée." },
-    { nom: "Airtable", couche: "II", etat: "branché", vue: "sources",
+    { nom: "Airtable", couche: "II", etat: "photo", vue: "sources",
       quoi: "Registre opérationnel. Décrit, ne conserve pas.",
       mesure: () => r ? `${r.tables.length} tables reprises sur ${r.tables.length + r.non_repris.length}` : "registre absent",
       detail: "Lecture et écriture confirmées. Les tables Projets et Plan d'action ont été créées le 11/08/2026 pour donner enfin une source aux chantiers." },
-    { nom: "Mentis Prime OS", couche: "II", etat: "branché", vue: "inventaire",
+    { nom: "Mentis Prime OS", couche: "II", etat: "local", vue: "inventaire",
       quoi: "Cette interface. Lecture et pilotage, jamais source de vérité.",
       mesure: () => `${osNombre(tous().length)} éléments · ${osNombre(S.relations.length)} relations`,
       detail: "Tourne en local, sans clé ni compte. Les données sont des fichiers JSON qu'on peut corriger à la main." },
-    { nom: "Claude Code", couche: "III", etat: "branché",
+    { nom: "Claude Code", couche: "III", etat: "local",
       quoi: "Ingénieur du système : scripts, imports, tests, migrations.",
       mesure: () => "session en cours",
       detail: "Implémente une architecture validée. Ne décide pas seul de l'architecture canonique — Schéma Directeur §VI." },
@@ -195,11 +202,11 @@ function ecoPlateformes() {
       quoi: "Architecte du système et contre-auditeur.",
       mesure: () => `${osHandoffs().length} handoffs enregistrés`,
       detail: "Aucun canal direct entre les deux agents. Les échanges passent par Hamza, ou par la table Handoffs IA — qui n'est routée par rien pour l'instant." },
-    { nom: "Lucid", couche: "III", etat: "lu",
+    { nom: "Lucid", couche: "III", etat: "photo",
       quoi: "Laboratoire spatial. Une relation vue n'est qu'une hypothèse.",
       mesure: () => "carte créée le 09/08/2026",
       detail: "Une carte conceptuelle à 9 branches existe. La file LUCID — Sync Queue contient 2 lignes et n'est pas reprise ici." },
-    { nom: "Substack", couche: "IV", etat: "lu",
+    { nom: "Substack", couche: "IV", etat: "photo",
       quoi: "Canal de publication. Jamais source unique de conservation.",
       mesure: () => `export du 10/08/2026`,
       detail: "L'export officiel a fourni titres, dates, statuts et audiences vérifiés. Il ne contenait aucun fichier image — d'où l'archive maître." },
@@ -234,11 +241,16 @@ function ecoPlateformes() {
   ];
 }
 
+/* Le vocabulaire des états a été resserré après contre-audit. « Branché »
+   laissait croire à une liaison en direct : il n'y en a aucune. Ce qui vient
+   d'Airtable, de Drive ou de Substack est une PHOTO DATÉE — une lecture faite à
+   un instant, recopiée dans data/, et qui ne bougera plus tant qu'on ne refait
+   pas l'export. Seul ce qui vit sur la machine se lit vraiment en direct. */
 const ECO_ETATS = {
-  "branché": { lib: "branché",        c: "#3F8A76" },
-  "lu":      { lib: "lu une fois",    c: "#9C7A3C" },
-  "hors":    { lib: "sans canal",     c: "#6A6FA8" },
-  "jamais":  { lib: "jamais branché", c: "#8C8C8C" },
+  "local":  { lib: "lu en direct",   c: "#3F8A76" },
+  "photo":  { lib: "photo datée",    c: "#9C7A3C" },
+  "hors":   { lib: "sans canal",     c: "#6A6FA8" },
+  "jamais": { lib: "jamais branché", c: "#8C8C8C" },
 };
 
 const ECO = { filtre: "", choisi: null };
@@ -254,12 +266,31 @@ function rendreEcosysteme() {
   const plateformes = ecoPlateformes();
 
   // ---- Ce que la Bibliothèque conserve : compté, jamais écrit en dur -------
+  // Chaque contenu porte sa décomposition. Un compteur qui affiche 103 sans
+  // dire de quoi il est fait invite le prochain agent à croire qu'Airtable
+  // contient 103 articles — il en contient 96, et ce ne sont pas les mêmes
+  // objets. La décomposition est calculée, pas recopiée.
+  const oeuvres = S.elements.oeuvre || [];
+  const parGenre = {};
+  oeuvres.forEach(o => { const g = o.genre || "sans genre"; parGenre[g] = (parGenre[g] || 0) + 1; });
+  const detGenres = Object.entries(parGenre).sort((a, b) => b[1] - a[1])
+    .map(([g, n]) => `${n} ${g}${n > 1 && !g.endsWith("s") ? "s" : ""}`).join(" · ");
+
+  const fichesSource = (S.elements.personnage || [])
+    .reduce((t, p) => t + ((p.note || "").match(/rec[A-Za-z0-9]{14}/g) || []).length, 0);
+
   const contenus = [
-    { nom: "Œuvres",      n: (S.elements.oeuvre || []).length,      t: "oeuvre",     vue: "inventaire" },
-    { nom: "Concepts",    n: (S.elements.concept || []).length,     t: "concept",    vue: "inventaire" },
-    { nom: "Personnages", n: (S.elements.personnage || []).length,  t: "personnage", vue: "inventaire" },
-    { nom: "Documents",   n: (S.elements.document || []).length,    t: "document",   vue: "inventaire" },
-    { nom: "Médias",      n: m ? m.total.distinctes : 0,            t: "media",      vue: "medias" },
+    { nom: "Œuvres", n: oeuvres.length, t: "oeuvre", vue: "inventaire",
+      detail: `${detGenres}. Le registre Airtable « Corpus » en retient 96 : il ne compte que les objets Substack, hors séries et univers-racine. Les deux chiffres sont justes — ils ne comptent pas la même chose.` },
+    { nom: "Concepts", n: (S.elements.concept || []).length, t: "concept", vue: "inventaire",
+      detail: "Noyau conceptuel, axes de recherche et archétypes. La table Airtable « Concepts » en contient 18 également, mais les deux sources n'ont jamais été rapprochées formellement." },
+    { nom: "Personnages", n: (S.elements.personnage || []).length, t: "personnage", vue: "inventaire",
+      note: fichesSource ? `${fichesSource} fiches source` : "",
+      detail: `Personnages logiques après fusion manuelle. Airtable en contient ${fichesSource || 6} fiches, toutes marquées « Canon verrouillé », avec des contenus différents : chaque personnage y est présent deux fois. Le Dashboard a raison sur le fond, Airtable a raison sur les faits — c'est Airtable qu'il faut corriger.` },
+    { nom: "Documents", n: (S.elements.document || []).length, t: "document", vue: "inventaire",
+      detail: "1 seul est vérifié — le PDF institutionnel anglais. Les 2 autres sont déduits d'une mention dans ce PDF et n'ont jamais été localisés." },
+    { nom: "Médias", n: m ? m.total.distinctes : 0, t: "media", vue: "medias",
+      detail: m ? `${osNombre(m.total.distinctes)} contenus visuels distincts par empreinte SHA-256, rangés en ${osNombre(m.total.urls)} fichiers sur le disque et ${osNombre(m.total.fichiers)} entrées réparties dans ${m.total.articles} dossiers d'article. Trois unités de comptage différentes, aucune n'est fausse.` : "" },
   ];
 
   const rad = d => (d - 90) * Math.PI / 180;
@@ -292,10 +323,12 @@ function rendreEcosysteme() {
     const a = (360 / contenus.length) * i + 18;
     const [x, y] = pt(a, 150);
     traits += `<line x1="${cx}" y1="${cy}" x2="${x}" y2="${y}" class="eco-l-centre"/>`;
-    noeuds += `<g class="eco-n eco-contenu ${c.n ? "" : "vide"}" data-vue="${c.vue}" data-type="${c.t}">
+    noeuds += `<g class="eco-n eco-contenu ${c.n ? "" : "vide"} ${ECO.choisi === "__c:" + c.t ? "choisi" : ""}"
+        data-contenu="${c.t}">
         <circle cx="${x}" cy="${y}" r="31" fill="${COULEURS[c.t] || "#5B8C8C"}"/>
         <text x="${x}" y="${y - 1}" text-anchor="middle" class="eco-t2">${osNombre(c.n)}</text>
         <text x="${x}" y="${y + 13}" text-anchor="middle" class="eco-t3">${c.nom}</text>
+        ${c.note ? `<text x="${x}" y="${y + 47}" text-anchor="middle" class="eco-t5">${echapper(c.note)}</text>` : ""}
       </g>`;
   });
 
@@ -315,7 +348,7 @@ function rendreEcosysteme() {
       const flou = ECO.filtre && ECO.filtre !== p.etat;
       traits += `<line x1="${cx}" y1="${cy}" x2="${x}" y2="${y}"
         class="eco-l ${flou ? "flou" : ""}" stroke="${co.c}"
-        stroke-dasharray="${p.etat === "jamais" ? "3 5" : p.etat === "hors" ? "1 6" : "0"}"/>`;
+        stroke-dasharray="${p.etat === "jamais" ? "3 5" : p.etat === "hors" ? "1 6" : p.etat === "photo" ? "7 4" : "0"}"/>`;
       noeuds += `<g class="eco-n eco-plate ${flou ? "flou" : ""} ${ECO.choisi === p.nom ? "choisi" : ""}"
           data-plate="${echapper(p.nom)}">
           <circle cx="${x}" cy="${y}" r="9" fill="${et.c}"/>
@@ -326,6 +359,16 @@ function rendreEcosysteme() {
   });
 
   svg.innerHTML = fond + traits + noeuds;
+
+  // ---- L'avertissement qui empêche le contresens ---------------------------
+  // Sans lui, « Airtable » sur une carte se lit comme « Airtable est branché ».
+  // Il ne l'est pas : il a été lu une fois, et recopié.
+  const reg = osRegistre();
+  $("#eco-avert").innerHTML = `<strong>Aucune liaison en direct.</strong>
+    Ce qui vient d'Airtable, de Drive ou de Substack est une <em>photo datée</em> —
+    une lecture faite à un instant, recopiée dans <code>data/</code>, qui ne bouge plus ensuite.
+    ${reg ? `Dernier export Airtable : <strong>${echapper(reg.export.date)}</strong>.` : ""}
+    Modifier Airtable ne modifie pas cet écran tant que l'export n'est pas refait.`;
 
   // ---- Filtres par état ----------------------------------------------------
   const compte = e => plateformes.filter(p => p.etat === e).length;
@@ -343,21 +386,37 @@ function rendreEcosysteme() {
     ECO.choisi = ECO.choisi === g.dataset.plate ? null : g.dataset.plate;
     rendreEcosysteme();
   });
+  // Un clic explique avant d'emmener ailleurs : la décomposition s'ouvre ici,
+  // et c'est un bouton du panneau qui décide d'aller voir la liste.
   $$("#eco-svg .eco-contenu").forEach(g => g.onclick = () => {
-    if (g.dataset.vue === "medias") return allerA("medias");
-    filtrer({ type: g.dataset.type });
+    const k = "__c:" + g.dataset.contenu;
+    ECO.choisi = ECO.choisi === k ? null : k;
+    rendreEcosysteme();
   });
   const centre = $("#eco-svg .eco-centre");
   if (centre) centre.onclick = () => { ECO.choisi = "__biblio"; rendreEcosysteme(); };
 
-  ecoDetail(plateformes);
+  ecoDetail(plateformes, contenus);
 }
 
-function ecoDetail(plateformes) {
+function ecoDetail(plateformes, contenus) {
   const hote = $("#eco-detail");
   if (!ECO.choisi) {
-    hote.innerHTML = `<p class="os-vide">Clique sur une plateforme pour voir son état réel,
-      ou sur le centre pour ce que la Bibliothèque conserve.</p>`;
+    hote.innerHTML = `<p class="os-vide">Clique sur un compteur pour savoir de quoi il est fait,
+      sur une plateforme pour son état réel, ou sur le centre pour l'ensemble.</p>`;
+    return;
+  }
+  if (ECO.choisi.startsWith("__c:")) {
+    const c = contenus.find(x => x.t === ECO.choisi.slice(4));
+    if (!c) { hote.innerHTML = ""; return; }
+    hote.innerHTML = `<div class="os-detail">
+      <h3>${echapper(c.nom)}
+        <span class="os-etat" style="background:var(--accent)">${osNombre(c.n)}</span></h3>
+      <p class="os-detail-plus">${echapper(c.detail || "")}</p>
+      <button class="btn" data-aller="${c.t}">Voir la liste</button>
+    </div>`;
+    const b = hote.querySelector("[data-aller]");
+    if (b) b.onclick = () => c.t === "media" ? allerA("medias") : filtrer({ type: c.t });
     return;
   }
   if (ECO.choisi === "__biblio") {
@@ -617,11 +676,14 @@ function rendreSources() {
   hote.innerHTML = `
     <div class="src-bandeau">
       <p><strong>${echapper(r.principe)}</strong></p>
-      <p class="os-note">Photo prise le ${echapper(r.export.date)} par ${echapper(r.export.par)}.
+      <p class="os-avert"><strong>Aucune synchronisation.</strong> Ce n'est pas une liaison en direct
+        mais un export : Airtable a été lu une fois, et recopié. Modifier Airtable ne modifie pas
+        cet écran tant que l'export n'est pas refait.</p>
+      <p class="os-note">Dernier export : <strong>${echapper(r.export.date)}</strong>, par ${echapper(r.export.par)}.
         Base <code>${echapper(r.base.id)}</code>. ${echapper(r.export.methode)}</p>
     </div>
 
-    <h2>Ce qui est repris d'Airtable</h2>
+    <h2>Données sourcées depuis Airtable — dernier export du ${echapper(r.export.date)}</h2>
     <div class="scroll-x"><table class="src-t">
       <thead><tr><th>Table</th><th>Lignes</th><th>Vers</th><th>Ce qu'il faut savoir</th></tr></thead>
       <tbody>${r.tables.map(t => `<tr>
