@@ -6,6 +6,7 @@
   <title>Inventaire — Mentis Prime</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232E6B5D'/%3E%3Cpath d='M16 5v22M9 12h14' stroke='%23EDEFEE' stroke-width='2.5'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="dossier.css">
 </head>
 <body>
 
@@ -16,6 +17,7 @@
     <button data-vue="inventaire">Inventaire</button>
     <button data-vue="projets">Projets</button>
     <button data-vue="carte">Carte</button>
+    <button data-vue="dossier">Dossier Axial</button>
   </nav>
   <span id="etat-sauvegarde">chargement…</span>
 </header>
@@ -92,12 +94,23 @@
     <div class="legende" id="legende"></div>
   </section>
 
+  <!-- ================= DOSSIER AXIAL ================= -->
+  <section class="vue" id="vue-dossier">
+    <div class="dossier-barre">
+      <label for="axe-centre">Centre du dossier</label>
+      <select id="axe-centre"></select>
+      <span class="dossier-note" id="dossier-source"></span>
+    </div>
+    <div id="planche"></div>
+  </section>
+
 </main>
 
 <!-- ================= PANNEAU FICHE / ÉDITEUR ================= -->
 <div id="voile"></div>
 <aside id="panneau" aria-label="Fiche de l'élément"></aside>
 
+<script src="dossier.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

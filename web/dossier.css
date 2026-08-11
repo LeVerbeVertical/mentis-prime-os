@@ -1,0 +1,400 @@
+/* =============================================================================
+   Dossier Axial — la face de présentation du Dashboard.
+   Thème unique et assumé : une planche gravée, sombre et dorée, quel que soit
+   le thème du reste de l'application. Tout est préfixé #vue-dossier pour ne
+   jamais déborder sur les autres écrans.
+   ========================================================================== */
+
+#vue-dossier {
+  --or:        #C9A227;
+  --or-clair:  #E8CE7A;
+  --or-sombre: #7A6220;
+  --trait:     #4E3F16;
+  --fond:      #0A0805;
+  --panneau:   #100D08;
+  --panneau-2: #16120A;
+  --encre:     #DCCFA8;
+  --encre-2:   #9C8D6A;
+  --bleu:      #6E9BC4;
+  --rouge:     #B4614C;
+
+  --plume: "Optima", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --capitale: "Optima", "Trajan Pro", "Palatino Linotype", Palatino, Georgia, serif;
+
+  max-width: 96rem;
+  color: var(--encre);
+  font-family: var(--plume);
+}
+
+/* ---------- Barre de commande (hors planche) ---------------------------- */
+
+.dossier-barre {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+.dossier-barre label {
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+.dossier-barre select {
+  font-family: var(--plume);
+  font-size: 0.9rem;
+  padding: 0.35rem 0.55rem;
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  max-width: 26rem;
+}
+.dossier-note {
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  color: var(--ink-faint);
+  letter-spacing: 0.05em;
+}
+
+/* ---------- La planche --------------------------------------------------- */
+
+#planche {
+  background:
+    radial-gradient(ellipse at 50% 0%, #16120B 0%, var(--fond) 62%),
+    var(--fond);
+  border: 1px solid var(--or-sombre);
+  box-shadow: inset 0 0 0 4px #0A0805, inset 0 0 0 5px var(--trait);
+  padding: 1.6rem;
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: 15.5rem minmax(0, 1fr) 16.5rem;
+  align-items: start;
+  overflow-x: auto;
+}
+
+/* Les colonnes latérales empilent leurs cartouches : chacun garde sa hauteur
+   propre au lieu d'être étiré par le plus grand de la rangée. */
+#vue-dossier .colonne {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  min-width: 0;
+}
+#vue-dossier .colonne-g { grid-column: 1; }
+#vue-dossier .centre    { grid-column: 2; min-width: 0; }
+#vue-dossier .colonne-d { grid-column: 3; }
+
+@media (max-width: 1180px) {
+  #planche { grid-template-columns: minmax(0, 1fr); }
+  #planche > * { grid-column: 1 !important; }
+}
+
+/* ---------- Cartouches --------------------------------------------------- */
+
+#vue-dossier .bloc {
+  background: linear-gradient(180deg, var(--panneau-2), var(--panneau));
+  border: 1px solid var(--trait);
+  padding: 0.8rem 0.9rem 0.95rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  min-width: 0;
+}
+
+#vue-dossier .bloc-titre {
+  font-family: var(--capitale);
+  font-size: 0.74rem;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+  color: var(--or);
+  border-bottom: 1px solid var(--trait);
+  padding-bottom: 0.4rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+#vue-dossier .bloc-titre .cpt {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  color: var(--encre-2);
+  letter-spacing: 0.06em;
+}
+
+/* ---------- Bandeau ------------------------------------------------------- */
+
+#vue-dossier .bandeau {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 8.5rem minmax(0, 1fr) 12rem;
+  gap: 1.1rem;
+  align-items: center;
+  border-bottom: 1px solid var(--trait);
+  padding-bottom: 1.1rem;
+}
+#vue-dossier .sceau {
+  width: 8rem; height: 8rem;
+  border-radius: 50%;
+  border: 2px solid var(--or-sombre);
+  background: radial-gradient(circle at 50% 35%, #1C1710, #0A0805 70%);
+  display: grid; place-items: center;
+  box-shadow: 0 0 0 5px #0A0805, 0 0 0 6px var(--trait);
+}
+#vue-dossier .bandeau-centre { text-align: center; min-width: 0; }
+#vue-dossier .bandeau h1 {
+  font-family: var(--capitale);
+  font-size: clamp(1.35rem, 2.7vw, 2.15rem);
+  font-weight: 400;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--or-clair);
+  margin: 0 0 0.3rem;
+  text-wrap: balance;
+}
+#vue-dossier .bandeau .sous-titre {
+  font-family: var(--capitale);
+  font-size: 0.82rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--or);
+  margin: 0;
+}
+#vue-dossier .cartouche {
+  border: 1px solid var(--trait);
+  padding: 0.55rem 0.7rem;
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  line-height: 1.85;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--encre-2);
+  text-align: right;
+}
+#vue-dossier .cartouche b { color: var(--or); font-weight: 600; }
+
+/* ---------- Profil dominant ----------------------------------------------- */
+
+#vue-dossier .profil { grid-column: 1 / -1; }
+#vue-dossier .profil .nom {
+  font-family: var(--capitale);
+  font-size: clamp(1.3rem, 2.4vw, 1.95rem);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--or-clair);
+  line-height: 1.15;
+  margin: 0;
+}
+#vue-dossier .profil .devise {
+  font-size: 0.9rem;
+  color: var(--encre-2);
+  font-style: italic;
+  margin: 0;
+}
+#vue-dossier .profil-stats {
+  display: flex; flex-wrap: wrap; gap: 0.35rem 1.6rem;
+  border-top: 1px solid #241D0C; padding-top: 0.55rem; margin-top: 0.15rem;
+}
+#vue-dossier .profil-stats div {
+  font-family: var(--mono); font-size: 0.58rem;
+  letter-spacing: 0.09em; text-transform: uppercase; color: var(--encre-2);
+}
+#vue-dossier .profil-stats b {
+  display: block; font-size: 1.15rem; color: var(--or-clair);
+  letter-spacing: 0; font-variant-numeric: tabular-nums; margin-top: 0.1rem;
+}
+#vue-dossier .etiquettes { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+#vue-dossier .etiquette {
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  border: 1px solid var(--trait);
+  color: var(--or);
+  padding: 0.2rem 0.5rem;
+}
+
+/* ---------- Listes de cartouches ------------------------------------------ */
+
+#vue-dossier .item {
+  display: grid;
+  grid-template-columns: 1.5rem minmax(0, 1fr);
+  gap: 0.15rem 0.55rem;
+  padding: 0.42rem 0;
+  border-bottom: 1px solid #241D0C;
+  cursor: pointer;
+  background: none; border-left: 0; border-right: 0; border-top: 0;
+  text-align: left; font-family: inherit; color: inherit; width: 100%;
+}
+#vue-dossier .item:last-child { border-bottom: 0; }
+#vue-dossier .item:hover { background: #17130B; }
+#vue-dossier .item:focus-visible { outline: 1px solid var(--or); outline-offset: -1px; }
+#vue-dossier .item .glyphe {
+  color: var(--or-sombre);
+  font-size: 0.95rem;
+  grid-row: span 2;
+  text-align: center;
+  padding-top: 0.1rem;
+}
+#vue-dossier .item .t {
+  font-size: 0.92rem;
+  color: var(--encre);
+  line-height: 1.3;
+}
+#vue-dossier .item .d {
+  font-size: 0.76rem;
+  color: var(--encre-2);
+  line-height: 1.45;
+}
+#vue-dossier .item.creux .t { color: var(--encre-2); font-style: italic; }
+
+/* ---------- Carte axiale --------------------------------------------------- */
+
+
+#vue-dossier .carte-axiale .bloc-titre { justify-content: center; }
+#vue-dossier .axe-legende {
+  display: flex; flex-wrap: wrap; gap: 0.5rem 1.1rem;
+  font-family: var(--mono); font-size: 0.58rem;
+  letter-spacing: 0.08em; color: var(--encre-2);
+  justify-content: center;
+}
+#vue-dossier .axe-legende span { display: flex; align-items: center; gap: 0.3rem; }
+#vue-dossier .axe-legende i { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+#vue-dossier .axe-legende u { width: 18px; height: 0; border-top: 1px solid var(--or-sombre); display: inline-block; }
+#vue-dossier .axe-legende u.moy { border-top-style: dashed; }
+#vue-dossier .axe-legende u.faible { border-top-style: dotted; }
+
+#vue-dossier svg.axiale { width: 100%; height: auto; display: block; }
+#vue-dossier svg.axiale text { user-select: none; }
+#vue-dossier svg.axiale .n-cliquable { cursor: pointer; }
+#vue-dossier svg.axiale .n-cliquable:hover .halo { opacity: 0.55; }
+
+/* ---------- Résonance ------------------------------------------------------ */
+
+#vue-dossier .resonances { grid-column: 1 / 3; }
+#vue-dossier .notes-labo { grid-column: 3; }
+#vue-dossier .grille-reso {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  gap: 0.75rem;
+}
+#vue-dossier .reso {
+  border: 1px solid var(--trait);
+  background: #0D0B06;
+  padding: 0.7rem 0.75rem;
+  display: flex; flex-direction: column; gap: 0.3rem;
+  cursor: pointer;
+  text-align: left; font-family: inherit; color: inherit;
+}
+#vue-dossier .reso:hover { border-color: var(--or-sombre); }
+#vue-dossier .reso:focus-visible { outline: 1px solid var(--or); outline-offset: -1px; }
+#vue-dossier .reso .rt { font-size: 0.86rem; line-height: 1.25; color: var(--encre); }
+#vue-dossier .reso .rp {
+  font-family: var(--mono);
+  font-size: 1.35rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--or-clair);
+  line-height: 1;
+}
+#vue-dossier .reso .rl {
+  font-family: var(--mono); font-size: 0.56rem;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--encre-2);
+}
+#vue-dossier .jauge { height: 3px; background: #241D0C; margin-top: 0.15rem; }
+#vue-dossier .jauge i { display: block; height: 100%; background: var(--or); }
+
+/* ---------- Notes de laboratoire -------------------------------------------- */
+
+#vue-dossier .notes-labo {
+  background: linear-gradient(180deg, #17140C, #100D07);
+  border: 1px solid var(--trait);
+}
+#vue-dossier .notes-labo ul {
+  margin: 0; padding: 0; list-style: none;
+  display: flex; flex-direction: column; gap: 0.45rem;
+}
+#vue-dossier .notes-labo li {
+  font-size: 0.85rem; color: var(--encre);
+  border-bottom: 1px dotted #2A2210;
+  padding-bottom: 0.4rem; line-height: 1.4;
+}
+#vue-dossier .notes-labo li:last-child { border-bottom: 0; }
+#vue-dossier .notes-labo li span {
+  display: block;
+  font-family: var(--mono); font-size: 0.56rem;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--or-sombre);
+  margin-bottom: 0.12rem;
+}
+
+/* ---------- Historique ------------------------------------------------------ */
+
+#vue-dossier .historique { grid-column: 1 / -1; }
+#vue-dossier .frise {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 1.1rem;
+  position: relative;
+  padding-top: 1.1rem;
+}
+#vue-dossier .frise::before {
+  content: ""; position: absolute;
+  left: 0; right: 0; top: 0.42rem;
+  border-top: 1px solid var(--trait);
+}
+#vue-dossier .jalon { position: relative; padding-top: 0.7rem; }
+#vue-dossier .jalon::before {
+  content: ""; position: absolute; left: 0; top: -0.72rem;
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--or); box-shadow: 0 0 0 3px var(--fond);
+}
+#vue-dossier .jalon .an {
+  font-family: var(--mono); font-size: 0.95rem;
+  color: var(--or-clair); letter-spacing: 0.08em;
+  font-variant-numeric: tabular-nums;
+}
+#vue-dossier .jalon .quoi { font-size: 0.8rem; color: var(--encre-2); line-height: 1.45; }
+
+/* ---------- Triptyque de pied ------------------------------------------------ */
+
+#vue-dossier .triptyque {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 0.9rem;
+  border-top: 1px solid var(--trait);
+  padding-top: 1rem;
+  text-align: center;
+}
+#vue-dossier .triptyque div {
+  font-family: var(--capitale);
+  font-size: 0.82rem;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+  color: var(--or);
+}
+#vue-dossier .triptyque small {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.06em;
+  text-transform: none;
+  color: var(--encre-2);
+  margin-top: 0.25rem;
+}
+
+/* ---------- Mention de provenance -------------------------------------------- */
+
+#vue-dossier .provenance {
+  grid-column: 1 / -1;
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  line-height: 1.9;
+  letter-spacing: 0.05em;
+  color: var(--encre-2);
+  border-top: 1px solid var(--trait);
+  padding-top: 0.8rem;
+}
+#vue-dossier .provenance b { color: var(--or-sombre); }
+#vue-dossier .vide-signal { color: var(--rouge); }
