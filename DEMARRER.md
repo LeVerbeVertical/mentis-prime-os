@@ -1,9 +1,10 @@
-# Inventaire Mentis Prime
+# Mentis Prime OS
 
-Le tableau de bord de ton écosystème. Il répond à une seule question :
-**qu'est-ce qui existe, où est-ce, dans quel état, et comment tout cela est-il relié ?**
+L'interface de ton écosystème. Tu l'ouvres, et tu vois le système :
+la Bibliothèque Axiale, le corpus, les concepts, les personnages, les médias
+archivés, les chantiers avec leur plan d'action, et une carte de l'écosystème.
 
-Tout tourne sur ta machine. Rien ne part sur internet, aucune clé, aucun compte, aucun dépôt.
+Tout tourne sur ta machine. Rien ne part sur internet, aucune clé, aucun compte.
 
 ---
 
@@ -25,32 +26,46 @@ C'est tout. Rien à installer.
 
 ---
 
-## Ce qu'il y a dedans au démarrage
+## Ce qu'il y a dedans
 
 | | |
 |---|---|
-| **60 éléments** | 18 œuvres, 18 concepts, 9 outils, 5 projets, 4 canaux, 3 documents, 3 IA |
-| **95 relations** | qui relie quoi à quoi |
-| **0 personnage, 0 institution** | ces deux-là, je ne les connais pas — c'est à toi |
+| **108 éléments** | 103 œuvres, 18 concepts, 14 chantiers, 12 outils, 4 canaux, 3 documents, 3 IA, 3 personnages |
+| **390 relations** | qui relie quoi à quoi |
+| **436 images archivées** | 83 dossiers d'article, hors de Substack, avec leurs empreintes |
 
-Tout est pré-rempli à partir du corpus des 17 articles, du document institutionnel
-et des outils que tu utilises. Ce qui manque est signalé dans l'écran **État des lieux**.
+Le corpus vient de l'export Substack officiel. Les chantiers viennent de la table
+**Projets** d'Airtable. L'archive médias a été rapatriée fichier par fichier.
+Ce qui manque est signalé sur l'**Accueil** et détaillé dans **Sources**.
 
 ---
 
-## Les quatre écrans
+## Les écrans
 
-**État des lieux** — les compteurs, et surtout ce qui manque : documents perdus,
-projets bloqués, articles sans lien, éléments reliés à rien. Clique sur un compteur
-pour ouvrir la liste correspondante.
+**Accueil** — le panorama, l'étape en cours, et les quatre capacités que le
+Schéma Directeur exige du système : retrouver, relier, vérifier, traverser.
+Chaque carte mène à l'écran qui la démontre.
 
-**Inventaire** — tout, cherchable et filtrable. Clique sur une ligne pour ouvrir sa fiche.
+**Écosystème** — la carte des quatre couches du Schéma Directeur, avec la
+Bibliothèque Axiale au centre et chaque plateforme à sa place. Chaque nœud
+porte son état **réel** : branché, lu une fois, ou jamais connecté. Filtre par
+état, clique un nœud pour le détail.
 
-**Projets** — la seule vue orientée action : statut, priorité, prochaine action, blocage.
+**Bibliothèque** — tout, cherchable et filtrable. Clique une ligne pour sa fiche.
 
-**Carte** — le graphe. Il est *calculé* depuis les données, jamais dessiné à la main.
-Si un nœud est là, l'élément existe. Glisse un nœud pour le déplacer, la molette zoome,
-un clic ouvre la fiche.
+**Médias** — le catalogue de l'archive maître. Par article : les fichiers, leur
+taille, leur empreinte SHA-256, et lesquels sont partagés avec un autre article.
+
+**Projets** — les chantiers dans l'ordre décidé, chacun avec son plan d'action
+étape par étape. Une seule étape est en cours à la fois. Chaque étape porte son
+livrable et son critère de fin — sans lui, une étape ne se ferme jamais.
+
+**Sources** — d'où vient chaque chiffre, et ce que le système ignore. Les tables
+reprises d'Airtable, celles qui ne le sont pas, et pourquoi.
+
+**Carte · Dossier Axial · Réseau Axial** — les trois représentations du graphe.
+Toutes *calculées* depuis les données, jamais dessinées à la main. Si un nœud est
+là, l'élément existe.
 
 ---
 

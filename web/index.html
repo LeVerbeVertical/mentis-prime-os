@@ -3,19 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Inventaire — Mentis Prime</title>
+  <title>Mentis Prime OS</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232E6B5D'/%3E%3Cpath d='M16 5v22M9 12h14' stroke='%23EDEFEE' stroke-width='2.5'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="dossier.css">
+  <link rel="stylesheet" href="os.css">
 </head>
 <body>
 
 <header class="top">
-  <span class="marque">Mentis Prime · Inventaire</span>
+  <span class="marque">Mentis Prime <em>OS</em></span>
   <nav class="onglets" id="onglets">
-    <button data-vue="etat" class="actif">État des lieux</button>
-    <button data-vue="inventaire">Inventaire</button>
+    <button data-vue="etat" class="actif">Accueil</button>
+    <button data-vue="ecosysteme">Écosystème</button>
+    <button data-vue="inventaire">Bibliothèque</button>
+    <button data-vue="medias">Médias</button>
     <button data-vue="projets">Projets</button>
+    <button data-vue="sources">Sources</button>
+    <span class="onglets-sep" aria-hidden="true"></span>
     <button data-vue="carte">Carte</button>
     <button data-vue="dossier">Dossier Axial</button>
     <button data-vue="reseau">Réseau Axial</button>
@@ -25,11 +30,16 @@
 
 <main>
 
-  <!-- ================= ÉTAT DES LIEUX ================= -->
+  <!-- ================= ACCUEIL ================= -->
   <section class="vue actif" id="vue-etat">
-    <h1>Qu'est-ce qui existe ?</h1>
-    <p class="sous">Le compte de ce que tu possèdes, et surtout de ce qui manque encore. Clique sur un compteur pour ouvrir la liste correspondante.</p>
+    <div id="accueil-hero"></div>
 
+    <h2>Les quatre capacités</h2>
+    <p class="sous">Ce que le Schéma Directeur §VIII demande à ce système de savoir faire. Chaque carte mène à l'écran qui le démontre.</p>
+    <div id="accueil-capacites"></div>
+
+    <h2>Ce qui existe</h2>
+    <p class="sous">Clique sur un compteur pour ouvrir la liste correspondante.</p>
     <div class="compteurs" id="compteurs"></div>
 
     <h2>Ce qui manque</h2>
@@ -43,6 +53,45 @@
       Une copie horodatée est faite avant chaque enregistrement, dans <code>data/_versions/</code>.<br>
       Rien ne quitte cette machine.
     </p>
+  </section>
+
+  <!-- ================= ÉCOSYSTÈME ================= -->
+  <section class="vue" id="vue-ecosysteme">
+    <h1>Écosystème</h1>
+    <p class="sous">La Bibliothèque Axiale au centre, ce qu'elle conserve autour d'elle, et les quatre couches
+      du Schéma Directeur en anneaux. Chaque plateforme porte son état réel : ce qui est branché, ce qui a été
+      lu une fois, ce qui n'a jamais été connecté. Clique sur un nœud pour l'ouvrir.</p>
+    <div class="carte-outils" id="eco-outils"></div>
+    <div id="eco-hote">
+      <svg id="eco-svg" role="img" aria-label="Carte des couches et des plateformes de l'écosystème Mentis Prime"></svg>
+    </div>
+    <div id="eco-detail"></div>
+  </section>
+
+  <!-- ================= MÉDIAS ================= -->
+  <section class="vue" id="vue-medias">
+    <h1>Médias archivés</h1>
+    <p class="sous">L'archive maître du corpus visuel, sortie de Substack. Les images elles-mêmes ne sont pas
+      dans le dépôt — ce catalogue en tient la liste, les tailles et les empreintes, pour qu'on puisse vérifier
+      qu'une image n'a pas changé.</p>
+    <div id="medias-resume"></div>
+    <div class="filtres">
+      <input type="search" id="medias-q" placeholder="Chercher un article ou un nom de fichier…" autocomplete="off">
+      <select id="medias-tri">
+        <option value="images">Trier par nombre d'images</option>
+        <option value="octets">Trier par volume</option>
+        <option value="titre">Trier par titre</option>
+      </select>
+    </div>
+    <div id="medias-liste"></div>
+  </section>
+
+  <!-- ================= SOURCES ================= -->
+  <section class="vue" id="vue-sources">
+    <h1>Sources et provenance</h1>
+    <p class="sous">D'où vient chaque chiffre affiché par cette interface, et ce qu'elle ne sait pas.
+      Le Schéma Directeur §VIII demande de toujours montrer la provenance : c'est cet écran.</p>
+    <div id="sources-corps"></div>
   </section>
 
   <!-- ================= INVENTAIRE ================= -->
@@ -68,19 +117,12 @@
 
   <!-- ================= PROJETS ================= -->
   <section class="vue" id="vue-projets">
-    <h1>Projets</h1>
-    <p class="sous">La seule vue orientée action : ce qui avance, ce qui bloque, et la prochaine chose à faire.</p>
-    <div class="scroll-x">
-      <table id="table-projets">
-        <thead>
-          <tr>
-            <th>Projet</th><th>Statut</th><th>Priorité</th>
-            <th>Prochaine action</th><th>Blocage</th><th>Dépend de</th><th>Responsable</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
+    <h1>Projets et plan d'action</h1>
+    <p class="sous">La seule vue orientée action. Les chantiers dans l'ordre décidé, et pour chacun son plan
+      étape par étape. Une seule étape est en cours à la fois : c'est la règle, pas un hasard.
+      Source : table <strong>Projets</strong> d'Airtable.</p>
+    <div class="carte-outils" id="projets-outils"></div>
+    <div id="projets-corps"></div>
   </section>
 
   <!-- ================= CARTE ================= -->
@@ -126,6 +168,7 @@
 
 <script src="reseau.js"></script>
 <script src="dossier.js"></script>
+<script src="os.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

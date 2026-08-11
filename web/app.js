@@ -89,6 +89,13 @@ async function charger() {
   S.schema = d.schema;
   S.elements = d.elements;
   S.relations = d.relations;
+  // Trois lectures qui ne sont pas des éléments : le catalogue de l'archive
+  // médias, le registre inter-agents, et la trace de provenance de l'export
+  // Airtable. /api/enregistrer ne les réécrit jamais — on les regarde, on ne
+  // les modifie pas depuis l'interface.
+  S.media    = d.media && d.media.total ? d.media : null;
+  S.handoffs = Array.isArray(d.handoffs) ? d.handoffs : [];
+  S.registre = d.registre && d.registre.base ? d.registre : null;
   S.carte.types = new Set(ORDRE_TYPES);
   S.carte.verbes = new Set(Object.keys(S.schema.verbes));
   marquer("enregistré");
@@ -133,8 +140,11 @@ function allerA(vue) {
   $$("#onglets button").forEach(b => b.classList.toggle("actif", b.dataset.vue === vue));
   $$(".vue").forEach(v => v.classList.toggle("actif", v.id === `vue-${vue}`));
   if (vue === "etat") rendreEtat();
+  if (vue === "ecosysteme") rendreEcosysteme();
   if (vue === "inventaire") rendreListe();
+  if (vue === "medias") rendreMedias();
   if (vue === "projets") rendreProjets();
+  if (vue === "sources") rendreSources();
   if (vue === "carte") rendreCarte();
   if (vue === "dossier") rendreDossier();
   if (vue === "reseau") rendreReseau();
@@ -145,6 +155,8 @@ function allerA(vue) {
    ========================================================================== */
 
 function rendreEtat() {
+  rendreAccueil();   // panorama, chiffres clés, étape en cours, les 4 capacités
+
   // Compteurs
   const c = $("#compteurs");
   c.innerHTML = ORDRE_TYPES.map(t => {
@@ -255,33 +267,12 @@ function rendreListe() {
 
 /* =============================================================================
    VUE 3 — PROJETS
+
+   `rendreProjets` vit désormais dans os.js : le tableau à sept colonnes ne
+   pouvait pas porter un plan d'action ordonné. La fonction y est définie sous
+   le même nom, et os.js est chargé avant ce fichier — d'où sa disparition ici
+   plutôt qu'une redéfinition qui l'aurait silencieusement écrasée.
    ========================================================================== */
-
-function rendreProjets() {
-  const ordre = { haute: 0, moyenne: 1, basse: 2 };
-  const projets = (S.elements.projet || []).slice().sort((a, b) =>
-    (ordre[a.priorite] ?? 3) - (ordre[b.priorite] ?? 3) || a.titre.localeCompare(b.titre, "fr"));
-
-  const corps = projets.map(p => {
-    const dep = relsSortantes(p.id).filter(r => r.verbe === "depend_de")
-      .map(r => parId(r.vers)?.titre).filter(Boolean);
-    const clS = p.statut === "bloqué" ? "mal" : p.statut === "actif" ? "bien" : "moyen";
-    const clP = p.priorite === "haute" ? "mal" : p.priorite === "moyenne" ? "moyen" : "";
-    return `<tr>
-      <td class="cliquable" data-id="${echapper(p.id)}"><strong>${echapper(p.titre)}</strong></td>
-      <td><span class="pastille ${clS}">${echapper(p.statut || "—")}</span></td>
-      <td><span class="pastille ${clP}">${echapper(p.priorite || "—")}</span></td>
-      <td>${echapper(p.prochaine_action || "—")}</td>
-      <td>${p.blocage ? `<span style="color:var(--flag)">${echapper(p.blocage)}</span>` : "—"}</td>
-      <td>${dep.length ? echapper(dep.join(", ")) : "—"}</td>
-      <td>${echapper(p.responsable || "—")}</td>
-    </tr>`;
-  }).join("");
-
-  $("#table-projets tbody").innerHTML = corps ||
-    `<tr><td colspan="7" class="rien">Aucun projet enregistré.</td></tr>`;
-  $$("#table-projets td.cliquable").forEach(td => td.onclick = () => ouvrir(td.dataset.id));
-}
 
 /* =============================================================================
    PANNEAU — fiche et édition réunies

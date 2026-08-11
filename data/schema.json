@@ -231,8 +231,9 @@
     "projet": {
       "libelle": "Projet",
       "pluriel": "Projets",
-      "quoi": "Ce qui est en cours, avec sa prochaine action.",
+      "quoi": "Ce qui est en cours, avec sa prochaine action et son plan d'action. Source : table Projets d'Airtable.",
       "statuts": [
+        "à lancer",
         "actif",
         "en attente",
         "bloqué",
@@ -240,24 +241,68 @@
         "abandonné"
       ],
       "champs": {
+        "code": {
+          "libelle": "Code",
+          "type": "texte"
+        },
         "priorite": {
           "libelle": "Priorité",
           "choix": [
+            "immédiate",
             "haute",
             "moyenne",
-            "basse"
+            "basse",
+            "ouverte"
           ]
+        },
+        "objectif": {
+          "libelle": "Objectif",
+          "type": "texte"
+        },
+        "etape_actuelle": {
+          "libelle": "Étape actuelle",
+          "type": "texte"
         },
         "prochaine_action": {
           "libelle": "Prochaine action",
+          "type": "texte"
+        },
+        "dependances": {
+          "libelle": "Dépendances",
           "type": "texte"
         },
         "blocage": {
           "libelle": "Blocage",
           "type": "texte"
         },
+        "resultat_attendu": {
+          "libelle": "Résultat attendu",
+          "type": "texte"
+        },
         "responsable": {
           "libelle": "Responsable",
+          "type": "texte"
+        },
+        "couche": {
+          "libelle": "Couche",
+          "choix": [
+            "I — Mémoire",
+            "II — Registre",
+            "III — Intelligence",
+            "IV — Circulation",
+            "Transversal"
+          ]
+        },
+        "validation": {
+          "libelle": "Validation humaine",
+          "choix": [
+            "non requise",
+            "en attente de Hamza",
+            "validé"
+          ]
+        },
+        "sources": {
+          "libelle": "Sources / Fichiers",
           "type": "texte"
         }
       }

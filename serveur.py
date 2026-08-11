@@ -92,10 +92,19 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         chemin = urlparse(self.path).path
 
         if chemin == "/api/tout":
+            # Les trois derniers ne sont pas des « éléments » : ils ne portent
+            # ni relation ni fiche éditable, et /api/enregistrer ne les réécrit
+            # jamais. Ce sont des lectures — le catalogue de l'archive, le
+            # registre inter-agents, et la trace de provenance de l'export
+            # Airtable. Ils voyagent avec le reste pour éviter trois allers-
+            # retours au démarrage, rien de plus.
             etat = {
                 "schema": lire_json("schema.json"),
                 "elements": {t: lire_json(f"{t}.json") for t in TYPES},
                 "relations": lire_json("relations.json"),
+                "media": lire_json("media.json"),
+                "handoffs": lire_json("handoff.json"),
+                "registre": lire_json("_registre.json"),
             }
             return self._json(etat)
 
@@ -159,7 +168,7 @@ def main():
 
     url = f"http://localhost:{PORT}"
     print()
-    print("  Inventaire Mentis Prime")
+    print("  Mentis Prime OS")
     print("  " + "-" * 44)
     print(f"  Ouvre : {url}")
     print("  Arrêter : Ctrl+C")

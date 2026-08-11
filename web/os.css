@@ -1,0 +1,447 @@
+/* =============================================================================
+   Mentis Prime OS — habillage des écrans Accueil, Écosystème, Médias,
+   Projets et Sources.
+
+   Aucune variable nouvelle : tout reprend la palette de style.css, donc le
+   mode sombre suit sans qu'on ait à le redéclarer. Les seules couleurs en dur
+   sont celles des couches et des états, injectées depuis os.js — elles portent
+   du sens, pas de la décoration.
+   ========================================================================== */
+
+/* ---------- Barre du haut : la marque devient un nom de produit ----------- */
+
+header.top .marque em {
+  font-style: normal;
+  color: var(--accent);
+  letter-spacing: 0.12em;
+}
+.onglets-sep {
+  width: 1px; height: 1.1rem;
+  background: var(--rule);
+  margin: 0 0.3rem;
+}
+
+/* =============================================================================
+   ACCUEIL
+   ========================================================================== */
+
+.os-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+  margin-bottom: 2.5rem;
+}
+@media (max-width: 60rem) { .os-hero { grid-template-columns: 1fr; } }
+
+.os-hero h1 { margin: 0 0 0.3rem; }
+.os-hero-sous {
+  margin: 0 0 1.4rem;
+  color: var(--ink-soft);
+  font-size: 1.02rem;
+  max-width: 34rem;
+}
+
+/* Fond en --paper et liseré porté par chaque case : avec un fond de grille,
+   la dernière rangée incomplète laisse un pavé gris qui ressemble à une case
+   vide alors qu'il n'y a rien à y mettre. */
+.os-chiffres {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
+  gap: 1px;
+  background: var(--paper);
+}
+.os-chiffres.serre { margin-bottom: 0.9rem; }
+
+.os-chiffre {
+  background: var(--paper);
+  box-shadow: 0 0 0 1px var(--rule-soft);
+  border: 0;
+  padding: 0.8rem 0.9rem;
+  text-align: left;
+  font-family: inherit;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 0.08rem;
+  cursor: pointer;
+}
+.os-chiffre.statique { cursor: default; }
+.os-chiffre:not(.statique):hover { background: var(--paper-2); }
+.os-chiffre:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.os-chiffre .n {
+  font-family: var(--mono);
+  font-size: 1.45rem;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.15;
+  color: var(--accent);
+}
+.os-chiffre .l {
+  font-family: var(--mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.os-chiffre .s {
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+  line-height: 1.35;
+}
+
+/* ---------- Le bloc « ce qui est en cours » ------------------------------- */
+
+.os-encours {
+  border: 1px solid var(--accent);
+  background: var(--accent-bg);
+  padding: 1.1rem 1.2rem;
+}
+.os-encours-tete {
+  display: flex; align-items: baseline; gap: 0.55rem; flex-wrap: wrap;
+  margin-bottom: 0.7rem;
+}
+.os-encours-tete strong { font-size: 1.02rem; }
+.os-code {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  padding: 0.16rem 0.42rem;
+  background: var(--accent);
+  color: var(--paper);
+  border-radius: 2px;
+  white-space: nowrap;
+}
+.os-avance {
+  font-family: var(--mono); font-size: 0.66rem;
+  color: var(--ink-faint); margin-left: auto;
+}
+.os-encours-etape {
+  margin: 0 0 0.25rem;
+  display: flex; align-items: baseline; gap: 0.5rem;
+}
+.os-puce-cours {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--accent); flex: none;
+  transform: translateY(-1px);
+}
+.os-encours-critere,
+.os-encours-action {
+  margin: 0 0 0.5rem;
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+.os-encours-critere { padding-left: 1.05rem; font-style: italic; }
+.os-encours-action em { font-style: normal; font-family: var(--mono); font-size: 0.66rem;
+  letter-spacing: 0.07em; text-transform: uppercase; color: var(--ink-faint); }
+
+/* ---------- Les quatre capacités ------------------------------------------ */
+
+.os-capacites {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 1px;
+  background: var(--rule-soft);
+  border: 1px solid var(--rule-soft);
+  margin-bottom: 2.5rem;
+}
+.os-capacite {
+  background: var(--paper);
+  border: 0; padding: 1rem;
+  text-align: left; cursor: pointer;
+  font-family: inherit; color: inherit;
+  display: flex; flex-direction: column; gap: 0.35rem;
+}
+.os-capacite:hover { background: var(--paper-2); }
+.os-capacite:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.os-cap-titre {
+  font-family: var(--mono); font-size: 0.7rem;
+  letter-spacing: 0.13em; text-transform: uppercase; color: var(--accent);
+}
+.os-cap-quoi { font-size: 0.88rem; color: var(--ink-soft); line-height: 1.45; }
+.os-cap-vers {
+  font-family: var(--mono); font-size: 0.64rem;
+  color: var(--ink-faint); margin-top: auto; padding-top: 0.3rem;
+}
+
+/* =============================================================================
+   ÉCOSYSTÈME
+   ========================================================================== */
+
+#eco-hote {
+  border: 1px solid var(--rule-soft);
+  background: var(--paper-2);
+  overflow: hidden;
+}
+#eco-svg { display: block; width: 100%; height: 74vh; min-height: 34rem; }
+#eco-svg text { user-select: none; pointer-events: none; }
+
+.eco-halo { fill: var(--paper); stroke: var(--rule-soft); }
+.eco-couche {
+  font-family: var(--mono); font-size: 11px;
+  letter-spacing: 0.18em; opacity: 0.85;
+}
+.eco-l { stroke-width: 1; stroke-opacity: 0.4; }
+.eco-l-centre { stroke: var(--rule); stroke-width: 1; stroke-opacity: 0.7; }
+.eco-l.flou { stroke-opacity: 0.08; }
+
+.eco-n { cursor: pointer; }
+.eco-n.flou { opacity: 0.2; }
+.eco-centre circle { fill: var(--accent); stroke: var(--paper); stroke-width: 3; }
+.eco-contenu circle { stroke: var(--paper); stroke-width: 2.5; }
+.eco-contenu.vide circle { opacity: 0.35; }
+.eco-plate circle { stroke: var(--paper); stroke-width: 2; }
+.eco-plate:hover circle { stroke: var(--ink); stroke-width: 2.5; }
+.eco-plate.choisi circle { stroke: var(--ink); stroke-width: 3; r: 12; }
+
+.eco-t1 { fill: var(--paper); font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; }
+.eco-t2 { fill: #fff; font-family: var(--mono); font-size: 14px; font-weight: 600; }
+.eco-t3 { fill: #fff; font-family: var(--mono); font-size: 8.5px; letter-spacing: 0.06em; opacity: 0.9; }
+.eco-centre .eco-t3 { fill: var(--paper); opacity: 0.75; }
+.eco-t4 { fill: var(--ink); font-family: var(--mono); font-size: 10px; letter-spacing: 0.03em; }
+.eco-t5 { fill: var(--ink-faint); font-family: var(--mono); font-size: 8px; }
+
+.puce .pt {
+  width: 8px; height: 8px; border-radius: 50%;
+  display: inline-block; margin-right: 0.35rem;
+  vertical-align: -1px;
+}
+
+.os-detail {
+  border: 1px solid var(--rule);
+  background: var(--paper-2);
+  padding: 1.1rem 1.2rem;
+  margin-top: 1.1rem;
+}
+.os-detail h3 {
+  margin: 0 0 0.6rem;
+  display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap;
+}
+.os-etat {
+  font-family: var(--mono); font-size: 0.6rem;
+  letter-spacing: 0.09em; text-transform: uppercase;
+  color: #fff; padding: 0.16rem 0.45rem; border-radius: 2px;
+}
+.os-couche {
+  font-family: var(--mono); font-size: 0.64rem;
+  letter-spacing: 0.06em; margin-left: auto;
+}
+.os-detail-quoi { margin: 0 0 0.4rem; font-size: 0.95rem; }
+.os-detail-mesure {
+  margin: 0 0 0.6rem;
+  font-family: var(--mono); font-size: 0.72rem;
+  color: var(--accent); letter-spacing: 0.04em;
+}
+.os-detail-plus { margin: 0 0 0.8rem; font-size: 0.88rem; color: var(--ink-soft); line-height: 1.55; }
+
+/* =============================================================================
+   MÉDIAS
+   ========================================================================== */
+
+.os-note {
+  font-family: var(--mono); font-size: 0.68rem;
+  color: var(--ink-faint); line-height: 1.8;
+  margin: 0 0 1.4rem;
+}
+.os-vide {
+  padding: 2rem 0; color: var(--ink-faint);
+  font-style: italic; text-align: center;
+}
+
+.os-art { border-bottom: 1px solid var(--rule-soft); }
+.os-art-tete {
+  width: 100%; border: 0; background: none;
+  font-family: inherit; color: inherit;
+  display: flex; align-items: baseline; gap: 1rem;
+  padding: 0.7rem 0.2rem; cursor: pointer; text-align: left;
+}
+.os-art-tete:hover { background: var(--paper-2); }
+.os-art-titre { flex: 1; min-width: 0; }
+.os-art-meta {
+  display: flex; align-items: center; gap: 0.7rem;
+  font-family: var(--mono); font-size: 0.68rem;
+  color: var(--ink-faint); white-space: nowrap;
+}
+.os-partage {
+  background: var(--warn-bg); color: var(--warn);
+  padding: 0.1rem 0.35rem; border-radius: 2px; font-size: 0.62rem;
+}
+.os-partage.mini { font-size: 0.58rem; }
+.os-chevron {
+  font-family: var(--mono); font-size: 0.95rem;
+  color: var(--ink-faint); width: 0.9rem; text-align: center;
+}
+.os-art-corps { padding: 0.2rem 0.2rem 1.1rem; }
+.os-chemin { margin: 0 0 0.6rem; font-size: 0.78rem; color: var(--ink-faint); }
+.os-chemin code { font-size: 0.72rem; }
+.lien {
+  border: 0; background: none; padding: 0; cursor: pointer;
+  font-family: inherit; font-size: inherit;
+  color: var(--accent); text-decoration: underline;
+}
+
+.os-fichiers { width: 100%; border-collapse: collapse; font-size: 0.78rem; }
+.os-fichiers th {
+  text-align: left; font-family: var(--mono); font-size: 0.6rem;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--ink-faint); font-weight: 400;
+  border-bottom: 1px solid var(--rule-soft); padding: 0.3rem 0.5rem 0.3rem 0;
+}
+.os-fichiers td { padding: 0.28rem 0.5rem 0.28rem 0; border-bottom: 1px solid var(--rule-soft); }
+.os-sha { font-family: var(--mono); font-size: 0.68rem; color: var(--ink-faint); cursor: help; }
+
+/* =============================================================================
+   PROJETS
+   ========================================================================== */
+
+.prj {
+  border: 1px solid var(--rule-soft);
+  background: var(--paper);
+  padding: 1.1rem 1.2rem;
+  margin-bottom: 1.1rem;
+}
+.prj.vedette { border-color: var(--accent); border-left-width: 3px; }
+
+.prj-tete {
+  display: flex; align-items: baseline; gap: 0.6rem; flex-wrap: wrap;
+  margin-bottom: 0.6rem;
+}
+.prj-tete h3 { margin: 0; flex: 1; min-width: 12rem; cursor: pointer; }
+.prj-tete h3:hover { color: var(--accent); }
+.prj-prio {
+  font-family: var(--mono); font-size: 0.62rem;
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-faint);
+}
+.prj-objectif {
+  margin: 0 0 0.9rem; color: var(--ink-soft);
+  font-size: 0.92rem; line-height: 1.55; white-space: pre-line;
+}
+
+.prj-courante {
+  border-left: 3px solid var(--accent);
+  background: var(--accent-bg);
+  padding: 0.6rem 0.85rem;
+  margin-bottom: 0.9rem;
+}
+.prj-courante-lib {
+  display: block;
+  font-family: var(--mono); font-size: 0.6rem;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 0.15rem;
+}
+.prj-courante-fin {
+  display: block; margin-top: 0.25rem;
+  font-size: 0.82rem; font-style: italic; color: var(--ink-soft);
+}
+
+.prj-lignes { display: grid; gap: 1px; background: var(--rule-soft); margin-bottom: 1rem; }
+.prj-l {
+  background: var(--paper);
+  display: grid; grid-template-columns: 9.5rem 1fr; gap: 0.9rem;
+  padding: 0.45rem 0;
+}
+@media (max-width: 42rem) { .prj-l { grid-template-columns: 1fr; gap: 0.1rem; } }
+.prj-lib {
+  font-family: var(--mono); font-size: 0.62rem;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--ink-faint); padding-top: 0.15rem;
+}
+.prj-val { font-size: 0.88rem; line-height: 1.5; }
+.prj-l.alerte .prj-val { color: var(--flag); }
+.prj-l.attente .prj-val { color: var(--warn); }
+
+.prj-plan-tete {
+  width: 100%; border: 1px solid var(--rule-soft); background: var(--paper-2);
+  font-family: var(--mono); font-size: 0.68rem;
+  color: var(--ink-soft); cursor: pointer;
+  display: flex; align-items: center; gap: 0.9rem;
+  padding: 0.5rem 0.7rem; text-align: left;
+}
+.prj-plan-tete:hover { background: var(--paper-3); }
+.prj-jauge {
+  flex: 1; height: 3px; background: var(--rule-soft); min-width: 3rem;
+}
+.prj-jauge i { display: block; height: 100%; background: var(--accent); }
+
+.prj-plan { list-style: none; margin: 0; padding: 0.9rem 0 0; }
+.prj-etape {
+  display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.7rem;
+  padding: 0.55rem 0; border-bottom: 1px solid var(--rule-soft);
+}
+.prj-etape:last-child { border-bottom: 0; }
+.prj-etape.fait { opacity: 0.6; }
+.prj-etape.cours { background: var(--accent-bg); padding-left: 0.5rem; padding-right: 0.5rem; }
+.prj-marque {
+  width: 1.4rem; height: 1.4rem; border-radius: 50%;
+  color: #fff; font-family: var(--mono); font-size: 0.7rem;
+  display: flex; align-items: center; justify-content: center;
+  margin-top: 0.1rem;
+}
+.prj-etape-titre { margin: 0 0 0.2rem; font-size: 0.93rem; display: flex; gap: 0.6rem; flex-wrap: wrap; }
+.prj-etape-qui {
+  font-family: var(--mono); font-size: 0.6rem;
+  letter-spacing: 0.06em; color: var(--ink-faint);
+  margin-left: auto; white-space: nowrap;
+}
+.prj-etape-desc { margin: 0 0 0.25rem; font-size: 0.84rem; color: var(--ink-soft); line-height: 1.5; }
+.prj-etape-x { margin: 0 0 0.15rem; font-size: 0.8rem; color: var(--ink-soft); line-height: 1.45; }
+.prj-etape-x em {
+  font-style: normal; font-family: var(--mono); font-size: 0.6rem;
+  letter-spacing: 0.07em; text-transform: uppercase; color: var(--ink-faint);
+}
+.prj-etape-x.alerte { color: var(--flag); }
+.prj-etape-x.attente { color: var(--warn); }
+
+.prj-sans-plan { margin: 0; font-size: 0.82rem; font-style: italic; color: var(--ink-faint); }
+.prj-pied {
+  margin-top: 1rem; padding-top: 0.6rem;
+  border-top: 1px solid var(--rule-soft);
+  font-family: var(--mono); font-size: 0.62rem;
+  color: var(--ink-faint);
+  display: flex; gap: 1rem; flex-wrap: wrap;
+}
+.prj-rec { margin-left: auto; }
+
+.pastille.fini { background: var(--paper-3); color: var(--ink-faint); }
+
+/* =============================================================================
+   SOURCES
+   ========================================================================== */
+
+.src-bandeau {
+  border-left: 3px solid var(--accent);
+  padding: 0.2rem 0 0.2rem 1rem;
+  margin-bottom: 2rem;
+}
+.src-bandeau p { margin: 0 0 0.5rem; }
+
+.src-t { width: 100%; border-collapse: collapse; font-size: 0.86rem; margin-bottom: 1.5rem; }
+.src-t th {
+  text-align: left; font-family: var(--mono); font-size: 0.6rem;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--ink-faint); font-weight: 400;
+  border-bottom: 1px solid var(--rule); padding: 0.4rem 0.8rem 0.4rem 0;
+}
+.src-t td {
+  padding: 0.55rem 0.8rem 0.55rem 0;
+  border-bottom: 1px solid var(--rule-soft);
+  vertical-align: top;
+}
+.src-t td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.src-note { color: var(--ink-soft); font-size: 0.82rem; line-height: 1.5; max-width: 40rem; }
+code.mini { font-size: 0.66rem; color: var(--ink-faint); }
+
+.src-ecarts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 1px; background: var(--rule-soft);
+  border: 1px solid var(--rule-soft); margin-bottom: 1.5rem;
+}
+.src-ecart { background: var(--paper); padding: 0.8rem 0.9rem; }
+.src-ecart-t {
+  margin: 0 0 0.3rem;
+  display: flex; align-items: baseline; gap: 0.5rem; flex-wrap: wrap;
+}
+.src-ecart-t .cliquable { cursor: pointer; font-weight: 600; }
+.src-ecart-t .cliquable:hover { color: var(--accent); }
+.src-ecart-q { margin: 0; font-size: 0.82rem; color: var(--ink-soft); line-height: 1.5; }

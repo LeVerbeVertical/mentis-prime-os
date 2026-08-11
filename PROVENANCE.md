@@ -39,7 +39,10 @@ publie ni tes abonnés, ni tes textes payants.
 | `document.json` | 1 document vérifié (le PDF EN, présent dans le dépôt `International-version`). 2 déduits du PDF : la version FR et le codex — **jamais localisés**. | 1 sur 3 vérifié |
 | `ia.json` | Écrit d'après la conversation. | ⚠ **Airtable a la vraie source** : table `Agents & Rôles`, 3 lignes. Non reprise |
 | `outil.json` | Mélange : conversation, observation directe de la base Airtable, et outils cités en cours de route. | ⚠ Les 4 lignes de `Outils & Modalités` ne sont **pas** reprises telles quelles |
-| `projet.json` | **Aucune source.** Déduit des lacunes constatées pendant la construction. | ⚠ **Écart principal — voir ci-dessous** |
+| `projet.json` | **Airtable**, tables `Projets` et `Plan d'action`, créées et lues le 11/08/2026. 14 chantiers, 43 étapes. Chaque ligne porte son `recId`. | **Vérifié** — photo datée, pas une synchronisation |
+| `handoff.json` | **Airtable**, table `Handoffs IA` (`tblIeLkEknzotSk1H`), 5 lignes, lues le 11/08/2026. | Vérifié — résumés ; le texte intégral reste dans Airtable |
+| `media.json` | Produit par `generer_medias.py` depuis `inventaire_archive.csv`, lui-même produit par le rapatriement réel des fichiers. 83 dossiers, 436 images distinctes, empreintes SHA-256. | **Mesuré** — c'est le seul fichier de `data/` issu d'une vérification physique |
+| `_registre.json` | Écrit à la main d'après ce qui a réellement été lu dans Airtable. | Trace de provenance, pas une donnée |
 | `canal.json` | Déduit du PDF et de la conversation. | Non vérifié |
 | `institution.json` | Vide. | — |
 | `relations.json` | 390 liens. La hiérarchie et les canaux sont écrits à la main ; les 72 rattachements `traite_de` sont **comptés dans le texte réel des articles** (seuil : 4 occurrences), avec le compte inscrit en note. | Mixte — les `traite_de` sont attestés |
@@ -48,19 +51,32 @@ publie ni tes abonnés, ni tes textes payants.
 
 ## Les trois écarts à connaître
 
-### 1. Les Projets n'ont pas de source
+### 1. Les Projets n'avaient pas de source — comblé le 11/08/2026
 
-La base Airtable ne contient **aucune table Projets**. Les 7 projets affichés par
-le Dashboard ont été rédigés par Claude Code à partir des manques observés.
+*C'était le principal écart architectural : l'onglet le plus opérationnel du
+Dashboard était le moins ancré. Les 7 projets affichés avaient été rédigés par
+Claude Code à partir des manques observés ; ils ne reflétaient rien.*
 
-Ils sont pertinents, mais ils ne sont le reflet de rien. C'est le principal écart
-architectural : l'onglet le plus opérationnel du Dashboard est le moins ancré.
+La première des deux issues envisagées a été retenue. Deux tables ont été créées :
 
-**Deux issues possibles**, à trancher :
-- créer une table `Projets` dans Airtable, qui devient la source ;
-- assumer que le Dashboard porte les projets et qu'Airtable ne les porte pas.
+| Table Airtable | Id | Lignes |
+|---|---|---|
+| `Projets` | `tblDqdx4gZQihq303` | 14 |
+| `Plan d'action` | `tblF6i0g0huoKNeJv` | 43 |
 
-Tant que le choix n'est pas fait, ces 7 lignes sont une proposition, pas un registre.
+Airtable est désormais la source, le Dashboard en est la lecture. Chaque projet de
+`data/projet.json` porte son `recId` d'origine dans le champ `airtable` : tout ce
+qui s'affiche est retrouvable dans le registre.
+
+Les 7 projets d'origine ont été migrés, les 5 chantiers de la feuille de route du
+11/08 ajoutés, et 2 écarts jusque-là seulement documentés ici sont devenus des
+chantiers à part entière — le rattachement des personnages au corpus, et le niveau
+canonique.
+
+**Ce qui reste à surveiller** : c'est une photo datée, pas une synchronisation.
+Aucune clé d'API n'est stockée dans le dépôt ; l'export se refait en le demandant
+à Claude, pas en lançant un script. `data/_registre.json` porte la date de la
+dernière photo, et l'écran Sources l'affiche.
 
 ### 2. Les personnages sont dédoublonnés ici, pas à la source
 
@@ -77,7 +93,9 @@ Airtable a raison sur les faits. C'est Airtable qu'il faut corriger.
 
 ### 3. Les relations ne sont importées de nulle part
 
-Les 103 relations sont écrites à la main. Aucune ne vient d'Airtable.
+Sur les 390 relations, **72 sont attestées** — les rattachements `traite_de`,
+comptés dans le texte réel des articles. Toutes les autres sont écrites à la main.
+Aucune ne vient d'Airtable.
 
 Or la table `VENTE — Circuit France` contient **28 nœuds** avec leurs relations,
 stockées en texte libre dans les champs `Entrée depuis` et `Sortie vers` — pas en
@@ -90,9 +108,13 @@ et il n'est pas dans la carte.
 
 | Table Airtable | Lignes | Repris ? |
 |---|---|---|
-| `Agents & Rôles` | 3 | Non — `ia.json` est écrit indépendamment |
-| `Handoffs IA` | 5 | Non |
+| `Projets` | 14 | **Oui** → `projet.json` |
+| `Plan d'action` | 43 | **Oui** → tableau `plan` de chaque projet |
+| `Handoffs IA` | 5 | **Oui** → `handoff.json`, en résumé |
 | `Personnages` | 6 | **Oui**, dédoublonné en 3 |
+| `Corpus` | 96 | Non — `oeuvre.json` en contient 103, périmètre différent |
+| `Concepts` | 18 | Non — `concept.json` est écrit indépendamment |
+| `Agents & Rôles` | 3 | Non — `ia.json` est écrit indépendamment |
 | `KDP — Performance` | 0 | Sans objet — schéma prêt, aucune donnée importée |
 | `VENTE — Circuit France` | 28 | Non |
 | `Droits & Expansion canonique` | 4 | Non |
@@ -100,8 +122,12 @@ et il n'est pas dans la carte.
 | `Outils & Modalités` | 4 | Partiellement |
 | `LUCID — Sync Queue` | 2 | Non |
 
-**1 table sur 9 est reprise.** Le Dashboard n'est pas une vue d'Airtable : c'est
-un inventaire parallèle qui a emprunté une table.
+**4 tables sur 13 sont reprises.** Le Dashboard n'est pas une vue d'Airtable :
+c'est une lecture partielle et datée, qui dit ce qu'elle ne lit pas.
+
+Ce tableau est aussi affiché dans l'interface, écran **Sources**, où le compte est
+recalculé à chaque rendu plutôt qu'écrit — de sorte qu'il ne peut pas dériver
+d'avec la réalité sans que ça se voie.
 
 ---
 
@@ -166,3 +192,35 @@ La date est conservée telle quelle. La description du champ Airtable disait
 « vide pour les brouillons » : c'est cette description qui était fausse, pas la
 donnée. Elle a été corrigée. Effacer une date vraie pour faire coïncider les
 faits avec une étiquette, ce serait détruire de l'information.
+
+
+---
+
+## L'archive médias : trois volumes, et pourquoi ils diffèrent
+
+L'écran Médias affiche trois chiffres de volume. Les confondre donne trois fois
+un faux chiffre — ils se distinguent par ce qu'on dédoublonne.
+
+| Chiffre | Unité dédoublonnée | Valeur | Ce que c'est |
+|---|---|---|---|
+| Cumul apparent | rien | 1,46 Go | La somme brute des lignes. **Faux au sens du disque** : les réutilisations sont des liens physiques et ne pèsent rien. |
+| Volume sur le disque | l'URL téléchargée | 920 Mo | Ce que `du` mesure. 482 fichiers. |
+| Contenu unique | l'empreinte SHA-256 | 841 Mo | Ce qui resterait en dédoublonnant aussi par contenu. 436 images. |
+
+L'écart entre les deux derniers n'est pas une erreur : **46 images sont identiques
+au bit près tout en étant servies par deux URLs Substack distinctes.** Elles ont
+donc été téléchargées deux fois. C'est un gisement de dédoublonnage, pas un défaut.
+
+Contrôle croisé : 920 Mo = 877 Mio calculés, contre 879 M mesurés par `du` — l'écart
+est l'inventaire CSV et les blocs de répertoire.
+
+### Pourquoi chaque dossier d'article est complet
+
+Le téléchargement dédoublonne : une image citée par cinq articles n'est récupérée
+qu'une fois, sous le premier qui la référence. Sans correction, les quatre autres
+dossiers auraient été incomplets — et la colonne « Archive maître » d'Airtable, qui
+pointe vers `archive_medias/<slug>/`, aurait menti.
+
+Une passe de complétion pose un **lien physique** vers le fichier déjà présent :
+même inode, aucun octet supplémentaire. 220 réutilisations reliées. C'est ce qui
+explique 702 fichiers rangés pour 482 fichiers réels sur le disque.
