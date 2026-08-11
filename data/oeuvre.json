@@ -26,7 +26,12 @@
     "url": "https://leverbevertical.substack.com/p/la-crise-existentielle",
     "date_publication": "2025-12-15",
     "sous_titre": "Suis-je réellement l'image que j'ai de moi-même ? Est-ce que Dieu est le fruit de mon imagination ? Tout cela a-t-il un sens ?       [Corpus d'archives brutes — Strate fondatrice]  ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 1133,
+    "images": 2,
+    "liens_sortants": 14,
+    "envois": 6,
+    "ouvertures": 3
   },
   {
     "id": "oeuvre.enfant-interieur",
@@ -42,7 +47,12 @@
     "url": "https://leverbevertical.substack.com/p/lenfant-interieur",
     "date_publication": "2025-12-15",
     "sous_titre": "À partir de quand nous sommes-nous oubliés ? Et si la vulnérabilité était en réalité le vrai potentiel ? [Corpus d'archives brutes — Strate fondatrice] ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 1153,
+    "images": 3,
+    "liens_sortants": 13,
+    "envois": 6,
+    "ouvertures": 5
   },
   {
     "id": "oeuvre.heros-interieur",
@@ -58,7 +68,12 @@
     "url": "https://leverbevertical.substack.com/p/le-heros-interieur",
     "date_publication": "2025-12-15",
     "sous_titre": "Avons-nous un rapport sain avec l'inconfort ? Et si la force de se lever était la première étape de la renaissance ?                                     [Corpus d'archives brutes — Strate fondatrice] ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 1228,
+    "images": 3,
+    "liens_sortants": 16,
+    "envois": 6,
+    "ouvertures": 5
   },
   {
     "id": "oeuvre.sage-interieur",
@@ -74,7 +89,12 @@
     "url": "https://leverbevertical.substack.com/p/le-sage-interieur",
     "date_publication": "2025-12-15",
     "sous_titre": "Quelles sont nos angles morts ? Et si la véritable force résidait dans la maîtrise du repos et la quête de harmonie et de vérité ?   [Corpus d'archives brutes — Strate fondatrice] ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 1067,
+    "images": 3,
+    "liens_sortants": 15,
+    "envois": 6,
+    "ouvertures": 1
   },
   {
     "id": "oeuvre.juge-interieur",
@@ -90,7 +110,12 @@
     "url": "https://leverbevertical.substack.com/p/le-juge-interieur",
     "date_publication": "2025-12-15",
     "sous_titre": "Sommes-nous réellement juste ? Et si la lucidité sur soi et le monde était le vrai levier de liberté ? [Corpus d'archives brutes — Strate fondatrice]  ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 833,
+    "images": 2,
+    "liens_sortants": 12,
+    "envois": 6,
+    "ouvertures": 5
   },
   {
     "id": "oeuvre.demon-interieur",
@@ -106,7 +131,12 @@
     "url": "https://leverbevertical.substack.com/p/le-demon-interieur",
     "date_publication": "2025-12-15",
     "sous_titre": "Et si nos instincts primaires étaient une force à comprendre plutôt qu’à refouler ?         [Corpus d'archives brutes — Strate fondatrice]  ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 828,
+    "images": 2,
+    "liens_sortants": 14,
+    "envois": 5,
+    "ouvertures": 14
   },
   {
     "id": "oeuvre.enfant-transcende",
@@ -122,7 +152,12 @@
     "url": "https://leverbevertical.substack.com/p/lenfant-transcende",
     "date_publication": "2025-12-15",
     "sous_titre": "Et si l’on pouvait toujours trouver sens à aimer, donner, remercier et contempler en pleine présence, sans naïveté complaisante, sans bruit ni possessivité ? [Corpus d'archives brutes] ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 1051,
+    "images": 3,
+    "liens_sortants": 25,
+    "envois": 5,
+    "ouvertures": 2
   },
   {
     "id": "oeuvre.epicotherapie",
@@ -138,7 +173,12 @@
     "url": "https://leverbevertical.substack.com/p/epicotherapie",
     "date_publication": "2025-12-17",
     "sous_titre": "Sommes-nous alignés avec le récit que l'on se raconte ? Qu'incarnons-nous réellement ? [Corpus d'archives brutes — Strate fondatrice] ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 2777,
+    "images": 27,
+    "liens_sortants": 53,
+    "envois": 5,
+    "ouvertures": 3
   },
   {
     "id": "oeuvre.ia-verticale",
@@ -154,7 +194,12 @@
     "url": "https://leverbevertical.substack.com/p/ia-verticale-vers-une-super-intelligence",
     "date_publication": "2025-12-19",
     "sous_titre": "Et si il fallait changer de langage ? Changer notre rapport à la puissance ? Et que tout est déjà en nous ? [Corpus d'archives brutes — Strate fondatrice]  ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 1548,
+    "images": 5,
+    "liens_sortants": 26,
+    "envois": 5,
+    "ouvertures": 1
   },
   {
     "id": "oeuvre.chromato-semanto",
@@ -170,7 +215,12 @@
     "url": "https://leverbevertical.substack.com/p/le-chromato-symbolique-vs-le-semanto",
     "date_publication": "2025-12-20",
     "sous_titre": "Et s’il existait un langage axial par nœuds de sens qui pourrait devancer le code en reliant d'une manière inédite : L'anthropologie avec la psychologie, mythologie et technologie ? [Corpus brut]  ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 2237,
+    "images": 4,
+    "liens_sortants": 33,
+    "envois": 6,
+    "ouvertures": 1
   },
   {
     "id": "oeuvre.qtlx",
@@ -186,7 +236,12 @@
     "url": "https://leverbevertical.substack.com/p/code-qtlx-vers-la-technologie-du",
     "date_publication": "2026-01-05",
     "sous_titre": " Matrice du discernement et Modèle de coordination d'intelligence et du vivant. [Corpus d'archives brutes — Strate fondatrice]  ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 10657,
+    "images": 15,
+    "liens_sortants": 45,
+    "envois": 20,
+    "ouvertures": 18
   },
   {
     "id": "oeuvre.8-valeurs",
@@ -202,7 +257,12 @@
     "url": "https://leverbevertical.substack.com/p/les-8-valeurs-fondamentales-epiques",
     "date_publication": "2025-12-23",
     "sous_titre": " Que nos valeurs transcendent les frontières et les générations... [Corpus d'archives brutes — Strate fondatrice]  ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 903,
+    "images": 5,
+    "liens_sortants": 16,
+    "envois": 12,
+    "ouvertures": 7
   },
   {
     "id": "oeuvre.beingjectif",
@@ -218,7 +278,12 @@
     "url": "https://leverbevertical.substack.com/p/letrejectif-langle-mort-de-lesprit",
     "date_publication": "2025-12-24",
     "sous_titre": " ✿-Y-❀ Quand nommer c'est bâtir une nouvelle porte qui déplace le destin. [Corpus d'archives brutes — Strate fondatrice]  ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 1489,
+    "images": 3,
+    "liens_sortants": 18,
+    "envois": 14,
+    "ouvertures": 7
   },
   {
     "id": "oeuvre.8-causes",
@@ -234,7 +299,12 @@
     "url": "https://leverbevertical.substack.com/p/les-8-causes-humanitaires-une-porte",
     "date_publication": "2025-12-26",
     "sous_titre": "Sommes-nous entrain de comprendre ce qu'il se passe ? Que pouvons-nous faire ?                      [Corpus d'archives brutes — Strate fondatrice]  ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 4878,
+    "images": 16,
+    "liens_sortants": 49,
+    "envois": 12,
+    "ouvertures": 7
   },
   {
     "id": "oeuvre.ecrire-survivre",
@@ -250,7 +320,12 @@
     "url": "https://leverbevertical.substack.com/p/jecris-pour-survivre",
     "date_publication": "2025-12-25",
     "sous_titre": " La naissance de l'Architect de Vérité.✨ [Corpus d'archives brutes — Strate fondatrice]  ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 1912,
+    "images": 27,
+    "liens_sortants": 49,
+    "envois": 13,
+    "ouvertures": 13
   },
   {
     "id": "oeuvre.individuation-seuil",
@@ -266,7 +341,12 @@
     "url": "https://leverbevertical.substack.com/p/individuation-le-seuil",
     "date_publication": "2026-01-04",
     "sous_titre": " Ancrage, Décalage & Saturation symbolique [Corpus d'archives brutes — Strate fondatrice] ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 2583,
+    "images": 11,
+    "liens_sortants": 26,
+    "envois": 20,
+    "ouvertures": 15
   },
   {
     "id": "oeuvre.fondation-institutionnelle",
@@ -282,7 +362,12 @@
     "url": "https://leverbevertical.substack.com/p/univers-mentis-prime-le-socle-axial",
     "date_publication": "2026-01-07",
     "sous_titre": "Socle pour des écosystèmes de recherche-lisière, là où la pensée et l'interface sont architecturales, symboliques, cognitives et technologiques, avant leur normalisation. ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 5884,
+    "images": 3,
+    "liens_sortants": 16,
+    "envois": 19,
+    "ouvertures": 17
   },
   {
     "id": "section.collaborations",
@@ -311,7 +396,12 @@
     "url": "https://leverbevertical.substack.com/p/le-liminal",
     "date_publication": "2026-05-28",
     "sous_titre": "« Nous sommes liminaux, mi-être mi-néant — coincés entre ce que nous étions et ce que nous devenons...» ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 1677,
+    "images": 7,
+    "liens_sortants": 8,
+    "envois": 51,
+    "ouvertures": 26
   },
   {
     "id": "oeuvre.techno-sapiens-iii",
@@ -327,7 +417,12 @@
     "url": "https://leverbevertical.substack.com/p/techno-sapiens-iii",
     "date_publication": "2026-07-14",
     "sous_titre": "Civilisation Intérieure",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 10979,
+    "images": 8,
+    "liens_sortants": 25,
+    "envois": 60,
+    "ouvertures": 34
   },
   {
     "id": "oeuvre.luvre",
@@ -343,7 +438,12 @@
     "url": "https://leverbevertical.substack.com/p/luvre",
     "date_publication": "2026-05-25",
     "sous_titre": " « Comment relier les registres sans dissoudre le réel : une tentative de cohérence symbolique entre structure, conscience et rigueur analytique ? »",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 1933,
+    "images": 4,
+    "liens_sortants": 7,
+    "envois": 55,
+    "ouvertures": 40
   },
   {
     "id": "oeuvre.lalterite",
@@ -359,7 +459,12 @@
     "url": "https://leverbevertical.substack.com/p/lalterite",
     "date_publication": "2026-05-31",
     "sous_titre": "« Que découvrons-nous de nous-mêmes lorsque nous cherchons véritablement à comprendre l'autre, qu'il soit humain ou non ? »",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 2328,
+    "images": 4,
+    "liens_sortants": 8,
+    "envois": 56,
+    "ouvertures": 24
   },
   {
     "id": "oeuvre.la-grille",
@@ -375,7 +480,12 @@
     "url": "https://leverbevertical.substack.com/p/la-grille",
     "date_publication": "2026-06-08",
     "sous_titre": "« Comment lire le réel sans le réduire : seuil, œuvre, altérité et calibration des regards. »",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 2781,
+    "images": 7,
+    "liens_sortants": 12,
+    "envois": 54,
+    "ouvertures": 27
   },
   {
     "id": "section.mythopoiese",
@@ -404,7 +514,12 @@
     "url": "https://leverbevertical.substack.com/p/du-moi-incarne-au-soi-solaire-le",
     "date_publication": "2026-02-17",
     "sous_titre": "Manifeste Intérieur Axial — Architecture philosophique fondatrice à forme mythopoïétique.",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 1896,
+    "images": 2,
+    "liens_sortants": 7,
+    "envois": 35,
+    "ouvertures": 27
   },
   {
     "id": "oeuvre.le-silence-habite",
@@ -420,7 +535,12 @@
     "url": "https://leverbevertical.substack.com/p/le-silence-habite",
     "date_publication": "2026-05-17",
     "sous_titre": "IV.𓃠 Quand le retrait devient plus dense que la présence elle-même",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 4066,
+    "images": 12,
+    "liens_sortants": 19,
+    "envois": 53,
+    "ouvertures": 40
   },
   {
     "id": "oeuvre.la-subsistance-alignee",
@@ -436,7 +556,12 @@
     "url": "https://leverbevertical.substack.com/p/la-subsistance-alignee",
     "date_publication": "2026-05-21",
     "sous_titre": "I. Vivre dignement sans prostituer son axe.",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 5924,
+    "images": 12,
+    "liens_sortants": 19,
+    "envois": 52,
+    "ouvertures": 37
   },
   {
     "id": "oeuvre.individuation-epicotherapeutique",
@@ -452,7 +577,12 @@
     "url": "https://leverbevertical.substack.com/p/individuation-epicotherapeutique",
     "date_publication": "2026-05-24",
     "sous_titre": "II. Je pense à voix écrite pour que mon monde devienne enfin visible",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 1573,
+    "images": 8,
+    "liens_sortants": 15,
+    "envois": 53,
+    "ouvertures": 22
   },
   {
     "id": "oeuvre.projection",
@@ -468,7 +598,12 @@
     "url": "https://leverbevertical.substack.com/p/projection",
     "date_publication": "2026-05-26",
     "sous_titre": "III. Super IA & les 8 Causes Humanitaires — À une époque, je pensais qu’en réparant les fractures internes de l’humain, nous pourrions réparer une partie du monde",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 2443,
+    "images": 7,
+    "liens_sortants": 25,
+    "envois": 52,
+    "ouvertures": 45
   },
   {
     "id": "oeuvre.larchitecte-de-verite",
@@ -484,7 +619,12 @@
     "url": "https://leverbevertical.substack.com/p/larchitecte-de-verite",
     "date_publication": "2026-05-29",
     "sous_titre": "V. L'Archétype du Héros Métacognitif",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 2492,
+    "images": 11,
+    "liens_sortants": 24,
+    "envois": 56,
+    "ouvertures": 23
   },
   {
     "id": "oeuvre.axiome-la-transfiguration",
@@ -500,7 +640,12 @@
     "url": "https://leverbevertical.substack.com/p/axiome-la-transfiguration",
     "date_publication": "2026-06-01",
     "sous_titre": "VI. Du vécu en principe, du bruit en structure : certaines vérités deviennent plus durables que les expériences dont elles sont nées. ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 1915,
+    "images": 13,
+    "liens_sortants": 23,
+    "envois": 53,
+    "ouvertures": 31
   },
   {
     "id": "oeuvre.le-sphinx",
@@ -516,7 +661,12 @@
     "url": "https://leverbevertical.substack.com/p/le-sphinx",
     "date_publication": "2026-06-02",
     "sous_titre": "VII. Le Félin Vertical Incompris.",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 1983,
+    "images": 13,
+    "liens_sortants": 23,
+    "envois": 55,
+    "ouvertures": 23
   },
   {
     "id": "oeuvre.larchitecte-du-lien",
@@ -532,7 +682,12 @@
     "url": "https://leverbevertical.substack.com/p/larchitecte-du-lien",
     "date_publication": "2026-06-03",
     "sous_titre": "VIII. ⫷ LE VERBE HORIZONTAL ⫸",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 3833,
+    "images": 13,
+    "liens_sortants": 23,
+    "envois": 54,
+    "ouvertures": 20
   },
   {
     "id": "oeuvre.lil-drone",
@@ -548,7 +703,12 @@
     "url": "https://leverbevertical.substack.com/p/lil-drone",
     "date_publication": "2026-06-05",
     "sous_titre": "IX. Le Métacadrage des 40 Figures",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 3034,
+    "images": 14,
+    "liens_sortants": 26,
+    "envois": 54,
+    "ouvertures": 28
   },
   {
     "id": "section.individuation",
@@ -577,7 +737,12 @@
     "url": "https://leverbevertical.substack.com/p/je-je-je",
     "date_publication": "2026-07-29",
     "sous_titre": "La Loi tombe. Le Soi vacille. Le Moi tient.",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 819,
+    "images": 5,
+    "liens_sortants": 10,
+    "envois": 64,
+    "ouvertures": 31
   },
   {
     "id": "oeuvre.au-dela",
@@ -593,7 +758,12 @@
     "url": "https://leverbevertical.substack.com/p/au-dela",
     "date_publication": "2026-07-21",
     "sous_titre": "« Papa, ton silence absolu m'enseigne que plus je me différencie de toi, plus je te ressemble. »",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 1285,
+    "images": 3,
+    "liens_sortants": 6,
+    "envois": 56,
+    "ouvertures": 33
   },
   {
     "id": "oeuvre.pronoia",
@@ -609,7 +779,12 @@
     "url": "https://leverbevertical.substack.com/p/pronoia",
     "date_publication": "2026-07-09",
     "sous_titre": "Les 5 Axiomes que la Maladie m'a Enseignés",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 2834,
+    "images": 8,
+    "liens_sortants": 14,
+    "envois": 54,
+    "ouvertures": 36
   },
   {
     "id": "oeuvre.sale-arabe",
@@ -625,7 +800,12 @@
     "url": "https://leverbevertical.substack.com/p/sale-arabe",
     "date_publication": "2026-07-07",
     "sous_titre": "UNE COMPLEXITÉ QUI DISSOUT SA PROPRE INJONCTION — « Et si l'instabilité du langage protégeait autant qu'elle réduisait ? »",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 6073,
+    "images": 8,
+    "liens_sortants": 15,
+    "envois": 53,
+    "ouvertures": 27
   },
   {
     "id": "oeuvre.parasocial",
@@ -641,7 +821,12 @@
     "url": "https://leverbevertical.substack.com/p/parasocial",
     "date_publication": "2026-06-26",
     "sous_titre": "« Écrire depuis mon Intériorité fait-il de moi le Gardien des Blessures que mes Textes réveillent chez le Lecteur ? »",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 2416,
+    "images": 6,
+    "liens_sortants": 13,
+    "envois": 52,
+    "ouvertures": 35
   },
   {
     "id": "oeuvre.neurodivergence",
@@ -657,7 +842,12 @@
     "url": "https://leverbevertical.substack.com/p/neurodivergence",
     "date_publication": "2026-06-11",
     "sous_titre": "L'Architecture Intérieure",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 3115,
+    "images": 8,
+    "liens_sortants": 17,
+    "envois": 58,
+    "ouvertures": 31
   },
   {
     "id": "oeuvre.passion",
@@ -673,7 +863,12 @@
     "url": "https://leverbevertical.substack.com/p/passion",
     "date_publication": "2026-06-10",
     "sous_titre": "Épicothérapie",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 2668,
+    "images": 8,
+    "liens_sortants": 24,
+    "envois": 57,
+    "ouvertures": 32
   },
   {
     "id": "section.theories",
@@ -702,7 +897,12 @@
     "url": "https://leverbevertical.substack.com/p/du-moralisateur-au-psychologisateur",
     "date_publication": "2026-08-05",
     "sous_titre": "La Plus Grande Mutation du Regard de notre Société. ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 3372,
+    "images": 11,
+    "liens_sortants": 26,
+    "envois": 69,
+    "ouvertures": 48
   },
   {
     "id": "oeuvre.intuition-numineuse-theorie-a-mettre",
@@ -732,7 +932,12 @@
     "url": "https://leverbevertical.substack.com/p/dev-perso-and-new-age",
     "date_publication": "2026-07-16",
     "sous_titre": "Les 5 Fissures Historiques qui nous y ont Conduit.",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 6745,
+    "images": 9,
+    "liens_sortants": 15,
+    "envois": 59,
+    "ouvertures": 37
   },
   {
     "id": "oeuvre.techno-sapiens-ii",
@@ -748,7 +953,12 @@
     "url": "https://leverbevertical.substack.com/p/techno-sapiens-ii",
     "date_publication": "2026-07-06",
     "sous_titre": "Homo Axialis / Homo Socialis",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 3364,
+    "images": 12,
+    "liens_sortants": 19,
+    "envois": 57,
+    "ouvertures": 27
   },
   {
     "id": "oeuvre.techno-sapiens-i",
@@ -764,7 +974,12 @@
     "url": "https://leverbevertical.substack.com/p/techno-sapiens-i",
     "date_publication": "2026-07-02",
     "sous_titre": "La Matrice Verticale",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 3092,
+    "images": 9,
+    "liens_sortants": 18,
+    "envois": 56,
+    "ouvertures": 23
   },
   {
     "id": "oeuvre.passeurs-de-lumiere-soufisme-taoisme",
@@ -780,7 +995,12 @@
     "url": "https://leverbevertical.substack.com/p/passeurs-de-lumiere-soufisme-taoisme",
     "date_publication": "2026-07-01",
     "sous_titre": "Toshihiko Izutsu • Jiyuan Yu • Pierre Hadot • Henri Corbin • Annemarie Schimmel • William C. Chittick • Sachiko Murata • Louis Massignon",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 4176,
+    "images": 11,
+    "liens_sortants": 16,
+    "envois": 53,
+    "ouvertures": 28
   },
   {
     "id": "oeuvre.danse-generation",
@@ -796,7 +1016,12 @@
     "url": "https://leverbevertical.substack.com/p/danse-generation",
     "date_publication": "2026-06-30",
     "sous_titre": "Anthropologie du Rythme, des Rites, des Mouvements & des Cultures ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 4942,
+    "images": 8,
+    "liens_sortants": 13,
+    "envois": 55,
+    "ouvertures": 28
   },
   {
     "id": "oeuvre.1982-depuis-la-honte-de-gijon",
@@ -812,7 +1037,12 @@
     "url": "https://leverbevertical.substack.com/p/1982-depuis-la-honte-de-gijon",
     "date_publication": "2026-06-27",
     "sous_titre": "2026 — LE DROIT DE RÉPONSE",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 3254,
+    "images": 7,
+    "liens_sortants": 12,
+    "envois": 52,
+    "ouvertures": 25
   },
   {
     "id": "oeuvre.versus",
@@ -828,7 +1058,12 @@
     "url": "https://leverbevertical.substack.com/p/versus",
     "date_publication": "2026-06-14",
     "sous_titre": "Clash Stylistique & Théorie du Pierre-Feuille-Ciseau",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 2385,
+    "images": 8,
+    "liens_sortants": 13,
+    "envois": 54,
+    "ouvertures": 32
   },
   {
     "id": "oeuvre.adn",
@@ -844,7 +1079,12 @@
     "url": "https://leverbevertical.substack.com/p/adn",
     "date_publication": "2026-06-13",
     "sous_titre": "De mon Worldbuilding Vertical",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 2544,
+    "images": 8,
+    "liens_sortants": 18,
+    "envois": 58,
+    "ouvertures": 33
   },
   {
     "id": "oeuvre.le-syndrome-de-david-contre-goliath",
@@ -860,7 +1100,12 @@
     "url": "https://leverbevertical.substack.com/p/le-syndrome-de-david-contre-goliath",
     "date_publication": "2026-06-12",
     "sous_titre": "Théorie : « Pourquoi Défions-nous l'Impossible ? »",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 2229,
+    "images": 9,
+    "liens_sortants": 14,
+    "envois": 59,
+    "ouvertures": 34
   },
   {
     "id": "oeuvre.constante-narrative",
@@ -876,7 +1121,12 @@
     "url": "https://leverbevertical.substack.com/p/constante-narrative",
     "date_publication": "2026-06-10",
     "sous_titre": "Laboratoire de mythopoïèse appliquée – Atelier de Fabrication de Texture : « Béber vs Nanar • The God of Legs • Miskinus »",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 1939,
+    "images": 8,
+    "liens_sortants": 14,
+    "envois": 55,
+    "ouvertures": 29
   },
   {
     "id": "oeuvre.bestiaire-conceptuel",
@@ -892,7 +1142,12 @@
     "url": "https://leverbevertical.substack.com/p/bestiaire-conceptuel",
     "date_publication": "2026-06-08",
     "sous_titre": "Laboratoire de mythopoïèse appliquée – Atelier de Fabrication d'Archétypes : « Les Syllarmes & Le Noéphage »",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 2706,
+    "images": 8,
+    "liens_sortants": 14,
+    "envois": 54,
+    "ouvertures": 34
   },
   {
     "id": "oeuvre.letrejectif-la-rigueur-epistemique",
@@ -908,7 +1163,12 @@
     "url": "https://leverbevertical.substack.com/p/letrejectif-la-rigueur-epistemique",
     "date_publication": "2026-03-27",
     "sous_titre": "✿-Y-❀ La Navigation des Cinq Pôles : Subjectif, Intersubjectif, Adjectif, Objectif & Projectif  [Corpus d'archives brutes — Strate fondatrice]  ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 2212,
+    "images": 3,
+    "liens_sortants": 10,
+    "envois": 47,
+    "ouvertures": 30
   },
   {
     "id": "oeuvre.le-combat-interieur-friction-feconde",
@@ -924,7 +1184,12 @@
     "url": "https://leverbevertical.substack.com/p/le-combat-interieur-friction-feconde",
     "date_publication": "2026-03-31",
     "sous_titre": "La Structure Soufie, Stoïciste & Taoïste                                                                                             [Corpus d'archives brutes — Strate fondatrice] ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 1838,
+    "images": 5,
+    "liens_sortants": 10,
+    "envois": 48,
+    "ouvertures": 34
   },
   {
     "id": "oeuvre.le-metacadre-comment-neutraliser",
@@ -940,7 +1205,12 @@
     "url": "https://leverbevertical.substack.com/p/le-metacadre-comment-neutraliser",
     "date_publication": "2026-05-12",
     "sous_titre": "Les 6 couches interprétatives - Modèle Arc-en-ciel 🌈 [Corpus d'archives brutes — Strate fondatrice] ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 3948,
+    "images": 5,
+    "liens_sortants": 10,
+    "envois": 53,
+    "ouvertures": 42
   },
   {
     "id": "section.historique",
@@ -969,7 +1239,12 @@
     "url": "https://leverbevertical.substack.com/p/scientia",
     "date_publication": "2026-06-15",
     "sous_titre": "XI. Les Huit Valeurs Épiques incarnés par des Figures Historiques : Socrate • René Descartes • Ibn Arabi • Léonard de Vinci • Hypatie",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 2298,
+    "images": 15,
+    "liens_sortants": 25,
+    "envois": 56,
+    "ouvertures": 29
   },
   {
     "id": "oeuvre.salus",
@@ -985,7 +1260,12 @@
     "url": "https://leverbevertical.substack.com/p/salus",
     "date_publication": "2026-06-16",
     "sous_titre": "XII. Les Huit Valeurs Épiques incarnés par des Figures Historiques : Confucius • Hippocrate • Thich Nhat Hanh • Andrew Huberman • Moshe Feldenkrais",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 2129,
+    "images": 15,
+    "liens_sortants": 25,
+    "envois": 55,
+    "ouvertures": 23
   },
   {
     "id": "oeuvre.benevolentia",
@@ -1001,7 +1281,12 @@
     "url": "https://leverbevertical.substack.com/p/benevolentia",
     "date_publication": "2026-06-17",
     "sous_titre": "XIII. Les Huit Valeurs Épiques incarnés par des Figures Historiques : Saladin • Victor Frankl • Rabia Al-Dawiyya • Maria Montessori • Jane Goodall",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 2827,
+    "images": 15,
+    "liens_sortants": 25,
+    "envois": 55,
+    "ouvertures": 33
   },
   {
     "id": "oeuvre.ambitio",
@@ -1017,7 +1302,12 @@
     "url": "https://leverbevertical.substack.com/p/ambitio",
     "date_publication": "2026-06-17",
     "sous_titre": "XIV. Les Huit Valeurs Épiques incarnés par des Figures Historiques : Marc Aurèle • Napoléon Bonaparte • Jeanne d'Arc • Elon Musk • Arnold Schwarzenegger ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 3073,
+    "images": 15,
+    "liens_sortants": 25,
+    "envois": 54,
+    "ouvertures": 26
   },
   {
     "id": "oeuvre.innovatio",
@@ -1033,7 +1323,12 @@
     "url": "https://leverbevertical.substack.com/p/innovatio",
     "date_publication": "2026-06-18",
     "sous_titre": "XV. Les Huit Valeurs Épiques incarnés par des Figures Historiques : Joannes Gutenberg • Ignaz Semmelweis • Muhammad Yunus • Marie Curie • Xavier Niel ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 3206,
+    "images": 15,
+    "liens_sortants": 25,
+    "envois": 54,
+    "ouvertures": 32
   },
   {
     "id": "oeuvre.resilientia",
@@ -1049,7 +1344,12 @@
     "url": "https://leverbevertical.substack.com/p/resilientia",
     "date_publication": "2026-06-18",
     "sous_titre": "XVI. Les Huit Valeurs Épiques incarnés par des Figures Historiques : Nelson Mandela • Helen Keller • Rumi • Stephen Hawking • Malala Yousafzai",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 3409,
+    "images": 15,
+    "liens_sortants": 25,
+    "envois": 52,
+    "ouvertures": 34
   },
   {
     "id": "oeuvre.quilibrium",
@@ -1065,7 +1365,12 @@
     "url": "https://leverbevertical.substack.com/p/quilibrium",
     "date_publication": "2026-06-19",
     "sous_titre": "XVII. Les Huit Valeurs Épiques incarnés par des Figures Historiques : Aristote • Carl Jung • Lao Tseu • Antoine Lavoisier • Miyamoto Musashi",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 3722,
+    "images": 15,
+    "liens_sortants": 25,
+    "envois": 53,
+    "ouvertures": 27
   },
   {
     "id": "oeuvre.sapientia",
@@ -1081,7 +1386,12 @@
     "url": "https://leverbevertical.substack.com/p/sapientia",
     "date_publication": "2026-06-24",
     "sous_titre": "XVIII. Les Huit Valeurs Épiques incarnés par des Figures Historiques : Prophète Mohammed ﷺ • Nassim Nicholas Taleb • Edgar Morin • Albert Einstein • Joseph Campbell",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 3685,
+    "images": 15,
+    "liens_sortants": 25,
+    "envois": 51,
+    "ouvertures": 25
   },
   {
     "id": "oeuvre.lhumain",
@@ -1097,7 +1407,12 @@
     "url": "https://leverbevertical.substack.com/p/lhumain",
     "date_publication": "2026-06-10",
     "sous_titre": "X. Le Seuil Épique : Biomimétique • Externalisation • Individuation",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 2526,
+    "images": 14,
+    "liens_sortants": 24,
+    "envois": 57,
+    "ouvertures": 22
   },
   {
     "id": "oeuvre.la-crise-existentielle-individuelle",
@@ -1113,7 +1428,12 @@
     "url": "https://leverbevertical.substack.com/p/la-crise-existentielle-individuelle",
     "date_publication": "2026-01-10",
     "sous_titre": "Adolf Hitler, Ernesto Che Guevara, Salman Rushdie & David Beckham. [Corpus d'archives brutes — Strate fondatrice] ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 4335,
+    "images": 7,
+    "liens_sortants": 19,
+    "envois": 20,
+    "ouvertures": 12
   },
   {
     "id": "oeuvre.lenfance-interieure-face-a-labandon",
@@ -1129,7 +1449,12 @@
     "url": "https://leverbevertical.substack.com/p/lenfance-interieure-face-a-labandon",
     "date_publication": "2026-01-16",
     "sous_titre": "Charlie Chaplin, Simone Weil, Nelson Mandela & Mickael Jackson [Corpus d'archives brutes — Strate fondatrice] ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 4891,
+    "images": 7,
+    "liens_sortants": 18,
+    "envois": 23,
+    "ouvertures": 15
   },
   {
     "id": "oeuvre.le-heroisme-interieur-face-a-la-precarite",
@@ -1145,7 +1470,12 @@
     "url": "https://leverbevertical.substack.com/p/le-heroisme-interieur-face-a-la-precarite",
     "date_publication": "2026-01-28",
     "sous_titre": "Nikola Tesla, Mère Teresa, Georges Lucas & Khabib Nurmagomedov                                      [Corpus d'archives brutes — Strate fondatrice] ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 5139,
+    "images": 7,
+    "liens_sortants": 18,
+    "envois": 28,
+    "ouvertures": 21
   },
   {
     "id": "oeuvre.la-sagesse-interieure-face-au-reste",
@@ -1161,7 +1491,12 @@
     "url": "https://leverbevertical.substack.com/p/la-sagesse-interieure-face-au-reste",
     "date_publication": "2026-02-05",
     "sous_titre": "Ibn Arabi, Thomas d'Aquin, Baruch Spinoza & Claude Lévi-Strauss.                                                    [Corpus d'archives brutes — Strate fondatrice]  ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 4862,
+    "images": 7,
+    "liens_sortants": 18,
+    "envois": 29,
+    "ouvertures": 22
   },
   {
     "id": "oeuvre.la-justice-interieure-face-aux-engagements",
@@ -1177,7 +1512,12 @@
     "url": "https://leverbevertical.substack.com/p/la-justice-interieure-face-aux-engagements",
     "date_publication": "2026-02-12",
     "sous_titre": "L'Émir Abdelkader, Martin Luther King Jr, Rima Hassan Mobarak & Greta Thunberg.  [Corpus d'archives brutes — Strate fondatrice]  ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 5104,
+    "images": 7,
+    "liens_sortants": 18,
+    "envois": 32,
+    "ouvertures": 28
   },
   {
     "id": "oeuvre.la-demonie-interieure-face-a-la-r",
@@ -1193,7 +1533,12 @@
     "url": "https://leverbevertical.substack.com/p/la-demonie-interieure-face-a-la-r",
     "date_publication": "2026-03-08",
     "sous_titre": "Ilia Ivanovich Ivanov, John Bosley Ziegler, Claude Vorilhon (Raël) , He Jiankui 🜅 [Corpus d'archives brutes — Strate fondatrice]  ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 4924,
+    "images": 7,
+    "liens_sortants": 18,
+    "envois": 41,
+    "ouvertures": 27
   },
   {
     "id": "oeuvre.lenfance-transcendee-dans-leducation",
@@ -1209,7 +1554,12 @@
     "url": "https://leverbevertical.substack.com/p/lenfance-transcendee-dans-leducation",
     "date_publication": "2026-03-21",
     "sous_titre": "Zinedine Zidane, David Goggins, Brock Lesnar, Eliud Kipchoge 🜅                                       [Corpus d'archives brutes — Strate fondatrice]  ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 5540,
+    "images": 7,
+    "liens_sortants": 18,
+    "envois": 42,
+    "ouvertures": 34
   },
   {
     "id": "section.manifestes",
@@ -1238,7 +1588,12 @@
     "url": "https://leverbevertical.substack.com/p/lhymne-du-verbe-vertical",
     "date_publication": "2026-07-20",
     "sous_titre": "Rendre le monde lisible — par Les Chants des Arpenteurs",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 3532,
+    "images": 7,
+    "liens_sortants": 22,
+    "envois": 55,
+    "ouvertures": 27
   },
   {
     "id": "oeuvre.les-epistemies-de-soi",
@@ -1254,7 +1609,12 @@
     "url": "https://leverbevertical.substack.com/p/les-epistemies-de-soi",
     "date_publication": "2026-06-21",
     "sous_titre": "Manifeste Théorique : « Et si l'École devait Enseigner la Connaissance de Soi avant d'Enseigner les Matières ? »",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 5758,
+    "images": 8,
+    "liens_sortants": 13,
+    "envois": 51,
+    "ouvertures": 23
   },
   {
     "id": "oeuvre.harmonis-mentis-prime",
@@ -1270,7 +1630,12 @@
     "url": "https://leverbevertical.substack.com/p/harmonis-mentis-prime",
     "date_publication": "2026-08-10",
     "sous_titre": "LE CODEX",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 434,
+    "images": 3,
+    "liens_sortants": 5,
+    "envois": 69,
+    "ouvertures": 10
   },
   {
     "id": "oeuvre.59b",
@@ -1284,7 +1649,10 @@
     "langue": "fr",
     "version": "",
     "url": "https://leverbevertical.substack.com/p/59b",
-    "audience": "only_paid"
+    "audience": "only_paid",
+    "mots": 0,
+    "images": 0,
+    "liens_sortants": 0
   },
   {
     "id": "oeuvre.8ca",
@@ -1298,7 +1666,10 @@
     "langue": "fr",
     "version": "",
     "url": "https://leverbevertical.substack.com/p/8ca",
-    "audience": "only_paid"
+    "audience": "only_paid",
+    "mots": 0,
+    "images": 0,
+    "liens_sortants": 0
   },
   {
     "id": "oeuvre.762",
@@ -1312,7 +1683,10 @@
     "langue": "fr",
     "version": "",
     "url": "https://leverbevertical.substack.com/p/762",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 0,
+    "images": 0,
+    "liens_sortants": 0
   },
   {
     "id": "oeuvre.421",
@@ -1326,7 +1700,10 @@
     "langue": "fr",
     "version": "",
     "url": "https://leverbevertical.substack.com/p/421",
-    "audience": "only_paid"
+    "audience": "only_paid",
+    "mots": 0,
+    "images": 0,
+    "liens_sortants": 0
   },
   {
     "id": "oeuvre.0dc",
@@ -1340,7 +1717,10 @@
     "langue": "fr",
     "version": "",
     "url": "https://leverbevertical.substack.com/p/0dc",
-    "audience": "only_paid"
+    "audience": "only_paid",
+    "mots": 0,
+    "images": 0,
+    "liens_sortants": 0
   },
   {
     "id": "oeuvre.bd0",
@@ -1354,7 +1734,10 @@
     "langue": "fr",
     "version": "",
     "url": "https://leverbevertical.substack.com/p/bd0",
-    "audience": "only_paid"
+    "audience": "only_paid",
+    "mots": 0,
+    "images": 0,
+    "liens_sortants": 0
   },
   {
     "id": "oeuvre.82e",
@@ -1368,7 +1751,10 @@
     "langue": "fr",
     "version": "",
     "url": "https://leverbevertical.substack.com/p/82e",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 0,
+    "images": 0,
+    "liens_sortants": 0
   },
   {
     "id": "oeuvre.copy-lhymne-du-verbe-vertical",
@@ -1382,7 +1768,10 @@
     "langue": "fr",
     "version": "",
     "url": "https://leverbevertical.substack.com/p/copy-lhymne-du-verbe-vertical",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 3532,
+    "images": 7,
+    "liens_sortants": 22
   },
   {
     "id": "oeuvre.a3f",
@@ -1396,7 +1785,10 @@
     "langue": "fr",
     "version": "",
     "url": "https://leverbevertical.substack.com/p/a3f",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 0,
+    "images": 0,
+    "liens_sortants": 0
   },
   {
     "id": "oeuvre.copy-le-feminin-matriciel",
@@ -1410,7 +1802,10 @@
     "langue": "fr",
     "version": "",
     "url": "https://leverbevertical.substack.com/p/copy-le-feminin-matriciel",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 10980,
+    "images": 8,
+    "liens_sortants": 25
   },
   {
     "id": "oeuvre.le-feminin-matriciel",
@@ -1424,7 +1819,10 @@
     "langue": "fr",
     "version": "",
     "url": "https://leverbevertical.substack.com/p/le-feminin-matriciel",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 684,
+    "images": 7,
+    "liens_sortants": 9
   },
   {
     "id": "oeuvre.copy-jecris-pour-survivre",
@@ -1438,7 +1836,10 @@
     "langue": "fr",
     "version": "",
     "url": "https://leverbevertical.substack.com/p/copy-jecris-pour-survivre",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 1912,
+    "images": 27,
+    "liens_sortants": 49
   },
   {
     "id": "oeuvre.copy-techno-sapiens-iii",
@@ -1452,7 +1853,10 @@
     "langue": "fr",
     "version": "",
     "url": "https://leverbevertical.substack.com/p/copy-techno-sapiens-iii",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 10919,
+    "images": 8,
+    "liens_sortants": 24
   },
   {
     "id": "oeuvre.8bf",
@@ -1466,7 +1870,10 @@
     "langue": "fr",
     "version": "",
     "url": "https://leverbevertical.substack.com/p/8bf",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 0,
+    "images": 0,
+    "liens_sortants": 0
   },
   {
     "id": "oeuvre.903",
@@ -1480,7 +1887,10 @@
     "langue": "fr",
     "version": "",
     "url": "https://leverbevertical.substack.com/p/903",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 0,
+    "images": 0,
+    "liens_sortants": 0
   },
   {
     "id": "oeuvre.le-verbe-vertical-and-o-verbe-axial",
@@ -1494,7 +1904,10 @@
     "langue": "fr",
     "version": "",
     "url": "https://leverbevertical.substack.com/p/le-verbe-vertical-and-o-verbe-axial",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 103,
+    "images": 0,
+    "liens_sortants": 0
   },
   {
     "id": "oeuvre.196",
@@ -1508,7 +1921,10 @@
     "langue": "fr",
     "version": "",
     "url": "https://leverbevertical.substack.com/p/196",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 0,
+    "images": 0,
+    "liens_sortants": 0
   },
   {
     "id": "oeuvre.xxxxy-la-matrice-gyno-androgyne",
@@ -1524,7 +1940,12 @@
     "url": "https://leverbevertical.substack.com/p/xxxxy-la-matrice-gyno-androgyne",
     "date_publication": "2025-12-21",
     "sous_titre": "Et si le masculin n’était qu'une expression visible d'une notion primordiale qui nous échappe ? Que la complémentarité était une illusion ? ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 494,
+    "images": 0,
+    "liens_sortants": 0,
+    "envois": 8,
+    "ouvertures": 5
   },
   {
     "id": "oeuvre.le-potentiel-latent",
@@ -1540,7 +1961,12 @@
     "url": "https://leverbevertical.substack.com/p/le-potentiel-latent",
     "date_publication": "2025-12-14",
     "sous_titre": "70% des humains n'aiment pas ce qu'il font",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 517,
+    "images": 1,
+    "liens_sortants": 3,
+    "envois": 5,
+    "ouvertures": 1
   },
   {
     "id": "oeuvre.individu-vertical-dans-un-monde-horizontal-dd6",
@@ -1556,7 +1982,12 @@
     "url": "https://leverbevertical.substack.com/p/individu-vertical-dans-un-monde-horizontal-dd6",
     "date_publication": "2025-12-13",
     "sous_titre": "Comprendre l’origine d’un phénomène masculin et briser enfin le tabou",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 1008,
+    "images": 1,
+    "liens_sortants": 3,
+    "envois": 4,
+    "ouvertures": 2
   },
   {
     "id": "oeuvre.individu-vertical-dans-un-monde-horizontal",
@@ -1572,7 +2003,12 @@
     "url": "https://leverbevertical.substack.com/p/individu-vertical-dans-un-monde-horizontal",
     "date_publication": "2025-12-13",
     "sous_titre": "Quand l'illusion de la solitude pousse au processus...",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 439,
+    "images": 1,
+    "liens_sortants": 3,
+    "envois": 4,
+    "ouvertures": 3
   },
   {
     "id": "oeuvre.la-theorie-de-lhomme-vertical-et",
@@ -1588,6 +2024,11 @@
     "url": "https://leverbevertical.substack.com/p/la-theorie-de-lhomme-vertical-et",
     "date_publication": "2025-12-13",
     "sous_titre": "Et si toutes les Réalités ont réellement exister ? ",
-    "audience": "everyone"
+    "audience": "everyone",
+    "mots": 694,
+    "images": 1,
+    "liens_sortants": 3,
+    "envois": 5,
+    "ouvertures": 5
   }
 ]
