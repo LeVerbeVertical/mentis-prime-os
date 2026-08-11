@@ -67,8 +67,9 @@ Chaque carte mène à l'écran qui la démontre.
 
 **Écosystème** — la carte des quatre couches du Schéma Directeur, avec la
 Bibliothèque Axiale au centre et chaque plateforme à sa place. Chaque nœud
-porte son état **réel** : branché, lu une fois, ou jamais connecté. Filtre par
-état, clique un nœud pour le détail.
+porte son état **réel** : lu en direct, photo datée, sans canal, jamais branché.
+Filtre par état ; clique un compteur pour savoir de quoi il est fait, une
+plateforme pour l'état de sa connexion.
 
 **Bibliothèque** — tout, cherchable et filtrable. Clique une ligne pour sa fiche.
 
@@ -151,22 +152,26 @@ il s'ajoute dans `data/schema.json`.
 
 Volontairement, à ce stade :
 
-- aucune connexion à Drive, Airtable, Notion, Substack ou GitHub
-- aucune clé d'API
+- **aucune liaison en direct.** Ce qui vient d'Airtable, de Drive ou de Substack
+  est une *photo datée* : une lecture faite à un instant, recopiée dans `data/`.
+  Modifier Airtable ne modifie pas cet écran tant que l'export n'est pas refait.
+- aucune clé d'API dans le dépôt — l'export se redemande, il ne se déclenche pas
 - aucun agent autonome, aucune orchestration entre IA
 - aucune automatisation, aucune publication
-- aucun envoi de données vers l'extérieur
+- aucun envoi de données vers l'extérieur : le serveur ne parle qu'à ton navigateur
 
 Les fiches `IA` et `outil` sont **descriptives** : elles enregistrent ce qui existe,
 elles ne pilotent rien.
 
 La séquence est : **inventorier → cartographier → structurer → stocker → connecter
-→ orchestrer → automatiser → expérimenter**. On en est aux deux premiers.
+→ orchestrer → automatiser → expérimenter**. Les deux premiers sont faits ; le
+troisième est en cours.
 
 ---
 
 ## La suite
 
-Quand l'inventaire sera fiable — personnages saisis, documents localisés,
-URLs complétées — on pourra parler de GitHub, de stockage partagé et de connecteurs.
-Pas avant.
+Le chantier **P0** attend une seule chose : que tu ouvres l'interface et que tu
+dises ce que tu en penses. Les chantiers suivants — KDP, distribution, transmédia,
+diffusion — sont écrits et ordonnés dans l'écran **Projets**, et aucun ne s'ouvre
+avant cette validation.
