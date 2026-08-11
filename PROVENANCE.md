@@ -33,7 +33,7 @@ publie ni tes abonnés, ni tes textes payants.
 | Fichier | Origine | Fiable ? |
 |---|---|---|
 | `schema.json` | Écrit à la main. Aucune source externe. | Le modèle est une décision, pas une donnée |
-| `oeuvre.json` | 103 œuvres. Titres, sous-titres et dates **confirmés par l'export Substack**. URLs et sections issues de la banque de liens. 84 publiés, 19 brouillons. | **Vérifié** — sauf 1 titre encore déduit (`intuition-numineuse`, absent de l'export) |
+| `oeuvre.json` | 103 œuvres. Titres, sous-titres et dates **confirmés par l'export Substack**. URLs et sections issues de la banque de liens. 84 publiés, 18 brouillons, 1 stabilisé. Le registre Airtable en retient 96 (hors 6 sections et univers-racine) : **78 publiés, 18 brouillons**. | **Vérifié** — sauf 1 titre encore déduit (`intuition-numineuse`, absent de l'export) |
 | `concept.json` | Noyau conceptuel et 4 axes : sections III et IV du PDF. Les 7 archétypes sont déduits des titres des articles 1 à 7. Définitions reformulées. | Fidèle au PDF, reformulé |
 | `personnage.json` | **Airtable**, table `Personnages` (`tblBkNntbHz5EikKn`), lue le 10/08/2026. | ⚠ Voir ci-dessous |
 | `document.json` | 1 document vérifié (le PDF EN, présent dans le dépôt `International-version`). 2 déduits du PDF : la version FR et le codex — **jamais localisés**. | 1 sur 3 vérifié |
@@ -150,3 +150,19 @@ l'Êtrejectif, et le reste sur les archétypes.
 
 C'est une méthode grossière, et elle ne prétend pas remplacer une lecture. Elle
 donne un échafaudage vérifiable, pas un jugement sur le sens.
+
+
+---
+
+## Une date sur un brouillon : ce n'est pas une erreur
+
+`xxxxy-la-matrice-gyno-androgyne` est marqué **brouillon** et porte pourtant une
+date de publication au 21/12/2025. C'est exact : `posts.csv` le donne avec
+`is_published: false`, un titre complet et un `post_date` renseigné — le seul
+cas sur 23 brouillons. Substack date certains brouillons qui ont été programmés
+ou dépubliés.
+
+La date est conservée telle quelle. La description du champ Airtable disait
+« vide pour les brouillons » : c'est cette description qui était fausse, pas la
+donnée. Elle a été corrigée. Effacer une date vraie pour faire coïncider les
+faits avec une étiquette, ce serait détruire de l'information.
