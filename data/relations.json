@@ -616,5 +616,1355 @@
     "verbe": "travaille_sur",
     "vers": "projet.n8n-mvp0",
     "note": ""
+  },
+  {
+    "de": "section.collaborations",
+    "verbe": "partie_de",
+    "vers": "univers.mentis-prime",
+    "note": ""
+  },
+  {
+    "de": "section.collaborations",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.le-liminal",
+    "verbe": "partie_de",
+    "vers": "section.collaborations",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.le-liminal",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.le-liminal",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.le-liminal",
+    "verbe": "traite_de",
+    "vers": "concept.noetique",
+    "note": "Rattachement déduit du slug."
+  },
+  {
+    "de": "oeuvre.techno-sapiens-iii",
+    "verbe": "partie_de",
+    "vers": "section.collaborations",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.techno-sapiens-iii",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.techno-sapiens-iii",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.techno-sapiens-iii",
+    "verbe": "traite_de",
+    "vers": "concept.sens-info-performance",
+    "note": "Rattachement déduit du slug."
+  },
+  {
+    "de": "oeuvre.luvre",
+    "verbe": "partie_de",
+    "vers": "section.collaborations",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.luvre",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.luvre",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.lalterite",
+    "verbe": "partie_de",
+    "vers": "section.collaborations",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.lalterite",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.lalterite",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.la-grille",
+    "verbe": "partie_de",
+    "vers": "section.collaborations",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.la-grille",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.la-grille",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.la-grille",
+    "verbe": "traite_de",
+    "vers": "concept.axe",
+    "note": "Rattachement déduit du slug."
+  },
+  {
+    "de": "section.mythopoiese",
+    "verbe": "partie_de",
+    "vers": "univers.mentis-prime",
+    "note": ""
+  },
+  {
+    "de": "section.mythopoiese",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.ecrire-survivre",
+    "verbe": "partie_de",
+    "vers": "section.mythopoiese",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.du-moi-incarne-au-soi-solaire-le",
+    "verbe": "partie_de",
+    "vers": "section.mythopoiese",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.du-moi-incarne-au-soi-solaire-le",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.du-moi-incarne-au-soi-solaire-le",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.le-silence-habite",
+    "verbe": "partie_de",
+    "vers": "section.mythopoiese",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.le-silence-habite",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.le-silence-habite",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.le-silence-habite",
+    "verbe": "traite_de",
+    "vers": "concept.noetique",
+    "note": "Rattachement déduit du slug."
+  },
+  {
+    "de": "oeuvre.la-subsistance-alignee",
+    "verbe": "partie_de",
+    "vers": "section.mythopoiese",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.la-subsistance-alignee",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.la-subsistance-alignee",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.individuation-epicotherapeutique",
+    "verbe": "partie_de",
+    "vers": "section.mythopoiese",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.individuation-epicotherapeutique",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.individuation-epicotherapeutique",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.individuation-epicotherapeutique",
+    "verbe": "traite_de",
+    "vers": "concept.individuation",
+    "note": "Rattachement déduit du slug."
+  },
+  {
+    "de": "oeuvre.individuation-epicotherapeutique",
+    "verbe": "traite_de",
+    "vers": "concept.epicotherapie",
+    "note": "Rattachement déduit du slug."
+  },
+  {
+    "de": "oeuvre.projection",
+    "verbe": "partie_de",
+    "vers": "section.mythopoiese",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.projection",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.projection",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.larchitecte-de-verite",
+    "verbe": "partie_de",
+    "vers": "section.mythopoiese",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.larchitecte-de-verite",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.larchitecte-de-verite",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.axiome-la-transfiguration",
+    "verbe": "partie_de",
+    "vers": "section.mythopoiese",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.axiome-la-transfiguration",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.axiome-la-transfiguration",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.axiome-la-transfiguration",
+    "verbe": "traite_de",
+    "vers": "concept.axe",
+    "note": "Rattachement déduit du slug."
+  },
+  {
+    "de": "oeuvre.le-sphinx",
+    "verbe": "partie_de",
+    "vers": "section.mythopoiese",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.le-sphinx",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.le-sphinx",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.larchitecte-du-lien",
+    "verbe": "partie_de",
+    "vers": "section.mythopoiese",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.larchitecte-du-lien",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.larchitecte-du-lien",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.lil-drone",
+    "verbe": "partie_de",
+    "vers": "section.mythopoiese",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.lil-drone",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.lil-drone",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "section.individuation",
+    "verbe": "partie_de",
+    "vers": "univers.mentis-prime",
+    "note": ""
+  },
+  {
+    "de": "section.individuation",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.je-je-je",
+    "verbe": "partie_de",
+    "vers": "section.individuation",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.je-je-je",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.je-je-je",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.au-dela",
+    "verbe": "partie_de",
+    "vers": "section.individuation",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.au-dela",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.au-dela",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.pronoia",
+    "verbe": "partie_de",
+    "vers": "section.individuation",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.pronoia",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.pronoia",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.sale-arabe",
+    "verbe": "partie_de",
+    "vers": "section.individuation",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.sale-arabe",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.sale-arabe",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.parasocial",
+    "verbe": "partie_de",
+    "vers": "section.individuation",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.parasocial",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.parasocial",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.neurodivergence",
+    "verbe": "partie_de",
+    "vers": "section.individuation",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.neurodivergence",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.neurodivergence",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.passion",
+    "verbe": "partie_de",
+    "vers": "section.individuation",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.passion",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.passion",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.crise-existentielle",
+    "verbe": "partie_de",
+    "vers": "section.individuation",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.crise-existentielle",
+    "verbe": "traite_de",
+    "vers": "concept.individuation",
+    "note": "Rattachement déduit du slug."
+  },
+  {
+    "de": "oeuvre.enfant-interieur",
+    "verbe": "partie_de",
+    "vers": "section.individuation",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.enfant-interieur",
+    "verbe": "traite_de",
+    "vers": "concept.individuation",
+    "note": "Rattachement déduit du slug."
+  },
+  {
+    "de": "oeuvre.heros-interieur",
+    "verbe": "partie_de",
+    "vers": "section.individuation",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.heros-interieur",
+    "verbe": "traite_de",
+    "vers": "concept.individuation",
+    "note": "Rattachement déduit du slug."
+  },
+  {
+    "de": "oeuvre.sage-interieur",
+    "verbe": "partie_de",
+    "vers": "section.individuation",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.sage-interieur",
+    "verbe": "traite_de",
+    "vers": "concept.individuation",
+    "note": "Rattachement déduit du slug."
+  },
+  {
+    "de": "oeuvre.juge-interieur",
+    "verbe": "partie_de",
+    "vers": "section.individuation",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.juge-interieur",
+    "verbe": "traite_de",
+    "vers": "concept.individuation",
+    "note": "Rattachement déduit du slug."
+  },
+  {
+    "de": "oeuvre.demon-interieur",
+    "verbe": "partie_de",
+    "vers": "section.individuation",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.demon-interieur",
+    "verbe": "traite_de",
+    "vers": "concept.individuation",
+    "note": "Rattachement déduit du slug."
+  },
+  {
+    "de": "oeuvre.enfant-transcende",
+    "verbe": "partie_de",
+    "vers": "section.individuation",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.enfant-transcende",
+    "verbe": "traite_de",
+    "vers": "concept.individuation",
+    "note": "Rattachement déduit du slug."
+  },
+  {
+    "de": "oeuvre.epicotherapie",
+    "verbe": "partie_de",
+    "vers": "section.individuation",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.8-valeurs",
+    "verbe": "partie_de",
+    "vers": "section.individuation",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.individuation-seuil",
+    "verbe": "partie_de",
+    "vers": "section.individuation",
+    "note": ""
+  },
+  {
+    "de": "section.theories",
+    "verbe": "partie_de",
+    "vers": "univers.mentis-prime",
+    "note": ""
+  },
+  {
+    "de": "section.theories",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.du-moralisateur-au-psychologisateur",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.du-moralisateur-au-psychologisateur",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.du-moralisateur-au-psychologisateur",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.intuition-numineuse-theorie-a-mettre",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.intuition-numineuse-theorie-a-mettre",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.intuition-numineuse-theorie-a-mettre",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.intuition-numineuse-theorie-a-mettre",
+    "verbe": "traite_de",
+    "vers": "concept.noetique",
+    "note": "Rattachement déduit du slug."
+  },
+  {
+    "de": "oeuvre.dev-perso-and-new-age",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.dev-perso-and-new-age",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.dev-perso-and-new-age",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.techno-sapiens-ii",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.techno-sapiens-ii",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.techno-sapiens-ii",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.techno-sapiens-ii",
+    "verbe": "traite_de",
+    "vers": "concept.sens-info-performance",
+    "note": "Rattachement déduit du slug."
+  },
+  {
+    "de": "oeuvre.techno-sapiens-i",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.techno-sapiens-i",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.techno-sapiens-i",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.techno-sapiens-i",
+    "verbe": "traite_de",
+    "vers": "concept.sens-info-performance",
+    "note": "Rattachement déduit du slug."
+  },
+  {
+    "de": "oeuvre.passeurs-de-lumiere-soufisme-taoisme",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.passeurs-de-lumiere-soufisme-taoisme",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.passeurs-de-lumiere-soufisme-taoisme",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.danse-generation",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.danse-generation",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.danse-generation",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.1982-depuis-la-honte-de-gijon",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.1982-depuis-la-honte-de-gijon",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.1982-depuis-la-honte-de-gijon",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.versus",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.versus",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.versus",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.adn",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.adn",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.adn",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.le-syndrome-de-david-contre-goliath",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.le-syndrome-de-david-contre-goliath",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.le-syndrome-de-david-contre-goliath",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.constante-narrative",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.constante-narrative",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.constante-narrative",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.bestiaire-conceptuel",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.bestiaire-conceptuel",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.bestiaire-conceptuel",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.ia-verticale",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.chromato-semanto",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.beingjectif",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.qtlx",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.qtlx",
+    "verbe": "traite_de",
+    "vers": "concept.sens-info-performance",
+    "note": "Rattachement déduit du slug."
+  },
+  {
+    "de": "oeuvre.letrejectif-la-rigueur-epistemique",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.letrejectif-la-rigueur-epistemique",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.letrejectif-la-rigueur-epistemique",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.letrejectif-la-rigueur-epistemique",
+    "verbe": "traite_de",
+    "vers": "concept.noetique",
+    "note": "Rattachement déduit du slug."
+  },
+  {
+    "de": "oeuvre.letrejectif-la-rigueur-epistemique",
+    "verbe": "traite_de",
+    "vers": "concept.beingjectif",
+    "note": "Rattachement déduit du slug."
+  },
+  {
+    "de": "oeuvre.le-combat-interieur-friction-feconde",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.le-combat-interieur-friction-feconde",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.le-combat-interieur-friction-feconde",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.le-metacadre-comment-neutraliser",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.le-metacadre-comment-neutraliser",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.le-metacadre-comment-neutraliser",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.le-metacadre-comment-neutraliser",
+    "verbe": "traite_de",
+    "vers": "concept.axe",
+    "note": "Rattachement déduit du slug."
+  },
+  {
+    "de": "section.historique",
+    "verbe": "partie_de",
+    "vers": "univers.mentis-prime",
+    "note": ""
+  },
+  {
+    "de": "section.historique",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.scientia",
+    "verbe": "partie_de",
+    "vers": "section.historique",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.scientia",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.scientia",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.salus",
+    "verbe": "partie_de",
+    "vers": "section.historique",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.salus",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.salus",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.benevolentia",
+    "verbe": "partie_de",
+    "vers": "section.historique",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.benevolentia",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.benevolentia",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.ambitio",
+    "verbe": "partie_de",
+    "vers": "section.historique",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.ambitio",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.ambitio",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.innovatio",
+    "verbe": "partie_de",
+    "vers": "section.historique",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.innovatio",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.innovatio",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.resilientia",
+    "verbe": "partie_de",
+    "vers": "section.historique",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.resilientia",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.resilientia",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.quilibrium",
+    "verbe": "partie_de",
+    "vers": "section.historique",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.quilibrium",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.quilibrium",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.sapientia",
+    "verbe": "partie_de",
+    "vers": "section.historique",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.sapientia",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.sapientia",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.lhumain",
+    "verbe": "partie_de",
+    "vers": "section.historique",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.lhumain",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.lhumain",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.la-crise-existentielle-individuelle",
+    "verbe": "partie_de",
+    "vers": "section.historique",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.la-crise-existentielle-individuelle",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.la-crise-existentielle-individuelle",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.la-crise-existentielle-individuelle",
+    "verbe": "traite_de",
+    "vers": "concept.individuation",
+    "note": "Rattachement déduit du slug."
+  },
+  {
+    "de": "oeuvre.lenfance-interieure-face-a-labandon",
+    "verbe": "partie_de",
+    "vers": "section.historique",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.lenfance-interieure-face-a-labandon",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.lenfance-interieure-face-a-labandon",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.le-heroisme-interieur-face-a-la-precarite",
+    "verbe": "partie_de",
+    "vers": "section.historique",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.le-heroisme-interieur-face-a-la-precarite",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.le-heroisme-interieur-face-a-la-precarite",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.la-sagesse-interieure-face-au-reste",
+    "verbe": "partie_de",
+    "vers": "section.historique",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.la-sagesse-interieure-face-au-reste",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.la-sagesse-interieure-face-au-reste",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.la-sagesse-interieure-face-au-reste",
+    "verbe": "traite_de",
+    "vers": "concept.individuation",
+    "note": "Rattachement déduit du slug."
+  },
+  {
+    "de": "oeuvre.la-justice-interieure-face-aux-engagements",
+    "verbe": "partie_de",
+    "vers": "section.historique",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.la-justice-interieure-face-aux-engagements",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.la-justice-interieure-face-aux-engagements",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.la-demonie-interieure-face-a-la-r",
+    "verbe": "partie_de",
+    "vers": "section.historique",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.la-demonie-interieure-face-a-la-r",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.la-demonie-interieure-face-a-la-r",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.la-demonie-interieure-face-a-la-r",
+    "verbe": "traite_de",
+    "vers": "concept.individuation",
+    "note": "Rattachement déduit du slug."
+  },
+  {
+    "de": "oeuvre.lenfance-transcendee-dans-leducation",
+    "verbe": "partie_de",
+    "vers": "section.historique",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.lenfance-transcendee-dans-leducation",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.lenfance-transcendee-dans-leducation",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.lenfance-transcendee-dans-leducation",
+    "verbe": "traite_de",
+    "vers": "concept.individuation",
+    "note": "Rattachement déduit du slug."
+  },
+  {
+    "de": "section.manifestes",
+    "verbe": "partie_de",
+    "vers": "univers.mentis-prime",
+    "note": ""
+  },
+  {
+    "de": "section.manifestes",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.lhymne-du-verbe-vertical",
+    "verbe": "partie_de",
+    "vers": "section.manifestes",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.lhymne-du-verbe-vertical",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.lhymne-du-verbe-vertical",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.lhymne-du-verbe-vertical",
+    "verbe": "traite_de",
+    "vers": "concept.axe",
+    "note": "Rattachement déduit du slug."
+  },
+  {
+    "de": "oeuvre.les-epistemies-de-soi",
+    "verbe": "partie_de",
+    "vers": "section.manifestes",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.les-epistemies-de-soi",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.les-epistemies-de-soi",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.fondation-institutionnelle",
+    "verbe": "partie_de",
+    "vers": "section.manifestes",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.fondation-institutionnelle",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.fondation-institutionnelle",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.8-causes",
+    "verbe": "partie_de",
+    "vers": "section.manifestes",
+    "note": ""
   }
 ]

@@ -137,6 +137,7 @@ function allerA(vue) {
   if (vue === "projets") rendreProjets();
   if (vue === "carte") rendreCarte();
   if (vue === "dossier") rendreDossier();
+  if (vue === "reseau") rendreReseau();
 }
 
 /* =============================================================================
@@ -465,6 +466,7 @@ function rafraichirVue() {
   else if (S.vue === "projets") rendreProjets();
   else if (S.vue === "carte") { S.carte.init = false; rendreCarte(); }
   else if (S.vue === "dossier") rendreDossier();
+  else if (S.vue === "reseau") rendreReseau();
 }
 
 /* ---------- Création ------------------------------------------------------ */

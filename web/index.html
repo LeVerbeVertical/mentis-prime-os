@@ -18,6 +18,7 @@
     <button data-vue="projets">Projets</button>
     <button data-vue="carte">Carte</button>
     <button data-vue="dossier">Dossier Axial</button>
+    <button data-vue="reseau">Réseau Axial</button>
   </nav>
   <span id="etat-sauvegarde">chargement…</span>
 </header>
@@ -104,12 +105,26 @@
     <div id="planche"></div>
   </section>
 
+  <!-- ================= RÉSEAU AXIAL (3D) ================= -->
+  <section class="vue" id="vue-reseau">
+    <h1>Réseau Axial</h1>
+    <p class="sous">La carte conceptuelle en volume. L'univers au centre, les sections en sphère,
+      les articles en grappe autour de la leur, et les concepts attirés vers l'axe à proportion
+      des sections qu'ils traversent. Glisse pour faire tourner, molette pour zoomer,
+      clic sur un nœud pour ouvrir sa fiche.</p>
+    <div class="carte-outils" id="reseau-outils"></div>
+    <div class="carte-outils" id="reseau-verbes"></div>
+    <div id="reseau-hote"><canvas id="reseau-canvas"></canvas></div>
+    <p class="note-bas" id="reseau-compte"></p>
+  </section>
+
 </main>
 
 <!-- ================= PANNEAU FICHE / ÉDITEUR ================= -->
 <div id="voile"></div>
 <aside id="panneau" aria-label="Fiche de l'élément"></aside>
 
+<script src="reseau.js"></script>
 <script src="dossier.js"></script>
 <script src="app.js"></script>
 </body>

@@ -398,3 +398,30 @@
 }
 #vue-dossier .provenance b { color: var(--or-sombre); }
 #vue-dossier .vide-signal { color: var(--rouge); }
+
+
+/* ---------- Réseau Axial (3D) ------------------------------------------------ */
+
+#reseau-hote {
+  border: 1px solid var(--rule-soft);
+  background: #07060A;
+  overflow: hidden;
+  touch-action: none;
+}
+#reseau-canvas {
+  display: block;
+  width: 100%;
+  height: 74vh;
+  min-height: 32rem;
+  cursor: grab;
+}
+#reseau-canvas:active { cursor: grabbing; }
+#reseau-compte {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  color: var(--ink-faint);
+  margin-top: 0.8rem;
+  border: 0;
+  padding: 0;
+}
