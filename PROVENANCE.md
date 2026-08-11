@@ -3,10 +3,28 @@
 > D'où vient chaque chiffre affiché par le Dashboard. À lire avant de faire
 > confiance à un compteur.
 
-**Statut au 11/08/2026 : le Dashboard n'est connecté à aucune source.**
-Toutes les données de `data/` ont été saisies à la main par Claude Code, à partir
-de trois origines : le PDF institutionnel, une lecture ponctuelle d'Airtable, et
-la conversation. **Rien ne se met à jour tout seul. Tout va diverger.**
+**Statut au 11/08/2026.** Le Dashboard n'est connecté à aucune source en direct :
+rien ne se met à jour tout seul, tout finira par diverger. Mais la qualité des
+données a changé de nature avec l'export Substack officiel du 10/08/2026.
+
+| Origine | Ce qu'elle garantit |
+|---|---|
+| **Export Substack** | Titres, sous-titres, dates de publication, statut publié/brouillon, audience. **Vérifiés, pas devinés.** |
+| Banque de liens (11/08) | URLs et rattachement aux 6 sections. Fournie par Hamza. |
+| PDF institutionnel | Les axes, le noyau conceptuel, les 4 axes de recherche. |
+| Lecture Airtable | Les 3 personnages, l'état des tables. |
+| Conversation | Outils, IA, canaux, projets. |
+
+### Ce qui ne quitte jamais cette machine
+
+L'export Substack contient deux choses qui ne sont **pas** versionnées, et que
+le `.gitignore` bloque explicitement :
+
+- `email_list.leverbevertical.csv` — les adresses de 103 abonnés
+- `posts/*.html` — le corpus intégral, dont **5 articles réservés aux abonnés payants**
+
+Seules les métadonnées dérivées entrent dans `data/`. Publier le dépôt ne
+publie ni tes abonnés, ni tes textes payants.
 
 ---
 
@@ -15,7 +33,7 @@ la conversation. **Rien ne se met à jour tout seul. Tout va diverger.**
 | Fichier | Origine | Fiable ? |
 |---|---|---|
 | `schema.json` | Écrit à la main. Aucune source externe. | Le modèle est une décision, pas une donnée |
-| `oeuvre.json` | Les 17 articles viennent de l'annexe du PDF `Univers_Mentis_Prime_Institutional_Document_EN.pdf`, pages 18–19. L'univers-racine a été ajouté comme conteneur, il n'existe pas dans le PDF. | Titres fiables · **URLs jamais saisies** |
+| `oeuvre.json` | 103 œuvres. Titres, sous-titres et dates **confirmés par l'export Substack**. URLs et sections issues de la banque de liens. 84 publiés, 19 brouillons. | **Vérifié** — sauf 1 titre encore déduit (`intuition-numineuse`, absent de l'export) |
 | `concept.json` | Noyau conceptuel et 4 axes : sections III et IV du PDF. Les 7 archétypes sont déduits des titres des articles 1 à 7. Définitions reformulées. | Fidèle au PDF, reformulé |
 | `personnage.json` | **Airtable**, table `Personnages` (`tblBkNntbHz5EikKn`), lue le 10/08/2026. | ⚠ Voir ci-dessous |
 | `document.json` | 1 document vérifié (le PDF EN, présent dans le dépôt `International-version`). 2 déduits du PDF : la version FR et le codex — **jamais localisés**. | 1 sur 3 vérifié |
@@ -24,7 +42,7 @@ la conversation. **Rien ne se met à jour tout seul. Tout va diverger.**
 | `projet.json` | **Aucune source.** Déduit des lacunes constatées pendant la construction. | ⚠ **Écart principal — voir ci-dessous** |
 | `canal.json` | Déduit du PDF et de la conversation. | Non vérifié |
 | `institution.json` | Vide. | — |
-| `relations.json` | **100 % écrites à la main.** Aucune n'est importée. | ⚠ Voir ci-dessous |
+| `relations.json` | 390 liens. La hiérarchie et les canaux sont écrits à la main ; les 72 rattachements `traite_de` sont **comptés dans le texte réel des articles** (seuil : 4 occurrences), avec le compte inscrit en note. | Mixte — les `traite_de` sont attestés |
 
 ---
 
@@ -106,3 +124,29 @@ construite, aucun connecteur n'est branché, aucune clé n'est stockée.
 C'est l'inverse : l'énoncé honnête de ce que le Dashboard sait, de ce qu'il devine,
 et de ce qu'il ignore — pour qu'aucun chiffre affiché ne soit pris pour une vérité
 mesurée alors qu'il est une saisie manuelle.
+
+
+---
+
+## Note de méthode : comment les concepts sont rattachés
+
+Les liens `traite_de` ne sont plus devinés d'après l'URL. Chaque article de
+l'export est lu, son texte est débarrassé de ses balises, et l'on compte les
+occurrences d'un vocabulaire propre au corpus. Un lien n'est créé qu'à partir
+de **4 occurrences** — une mention isolée n'est pas un sujet. Le compte figure
+dans la note de chaque relation, donc chaque lien est contestable pièce en main.
+
+### Ce que la première version comptait mal
+
+Elle rattachait **77 articles sur 103** au concept de l'Axe. La cause : le terme
+« le verbe vertical » figure dans le pied de page de *chaque* article. C'est la
+signature de la publication, pas un sujet traité. Les mots « information »,
+« performance » et « transmission » posaient le même problème : trop ordinaires
+pour signifier quoi que ce soit.
+
+Après resserrement du vocabulaire, il reste **72 rattachements** répartis ainsi :
+14 articles sur l'Axe, 11 sur l'Individuation, 7 sur l'Épicothérapie, 6 sur
+l'Êtrejectif, et le reste sur les archétypes.
+
+C'est une méthode grossière, et elle ne prétend pas remplacer une lecture. Elle
+donne un échafaudage vérifiable, pas un jugement sur le sens.

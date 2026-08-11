@@ -234,15 +234,19 @@ function rendreDossier() {
     </div>`);
 
   /* ---------- Historique axial : ce que disent les dates ------------------ */
+  // La date de publication réelle prime sur la date de fiche : une chronologie
+  // d'œuvre ne se lit pas dans la date à laquelle on a saisi la fiche.
   const parAn = {};
+  let surMaj = 0;
   for (const e of tous()) {
-    const an = (e.maj || "").slice(0, 4);
+    const an = (e.date_publication || e.maj || "").slice(0, 4);
     if (!an) continue;
+    if (!e.date_publication) surMaj++;
     (parAn[an] = parAn[an] || []).push(e);
   }
   const annees = Object.keys(parAn).sort();
   P.push(`<div class="bloc historique">
-      <div class="bloc-titre">Historique axial <span class="cpt">d'après le champ « dernière modification »</span></div>
+      <div class="bloc-titre">Historique axial <span class="cpt">dates de publication réelles · ${surMaj} élément(s) datés faute de mieux par leur fiche</span></div>
       <div class="frise">
         ${annees.map(an => {
           const l = parAn[an];
@@ -267,7 +271,7 @@ function rendreDossier() {
       <b>Provenance —</b> tous les chiffres de cette planche sont calculés depuis <b>data/</b>, au chargement.
       La résonance est un indice de Jaccard sur les voisinages du graphe, pas une appréciation.
       Le triptyque <b>Relier · Cartographier · Aligner</b> reprend les trois verbes de <b>Techno Sapiens I — La Matrice Verticale</b>.
-      L'historique n'est pas une chronologie de l'œuvre : il compte les dates de dernière modification des fiches.
+      L'historique suit les dates de publication réelles issues de l'export Substack ; les éléments qui n'en ont pas sont datés par leur fiche, et comptés à part.
       Voir <b>PROVENANCE.md</b> pour ce que chaque donnée vaut réellement.
     </div>`);
 

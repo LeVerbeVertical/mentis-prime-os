@@ -1,3 +1,15 @@
+# === Export Substack — JAMAIS versionné ===
+# Contient les adresses des abonnés et le corpus intégral, dont des
+# articles réservés aux abonnés payants. Le dépôt ne garde que les
+# métadonnées dérivées, dans data/.
+export_substack/
+substack/
+posts/
+email_list*.csv
+posts.csv
+*.delivers.csv
+*.opens.csv
+
 # === Secrets — ne jamais versionner ===
 *.env
 .env

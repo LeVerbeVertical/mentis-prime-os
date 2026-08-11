@@ -648,12 +648,6 @@
     "note": ""
   },
   {
-    "de": "oeuvre.le-liminal",
-    "verbe": "traite_de",
-    "vers": "concept.noetique",
-    "note": "Rattachement déduit du slug."
-  },
-  {
     "de": "oeuvre.techno-sapiens-iii",
     "verbe": "partie_de",
     "vers": "section.collaborations",
@@ -670,12 +664,6 @@
     "verbe": "stocke_dans",
     "vers": "outil.substack",
     "note": ""
-  },
-  {
-    "de": "oeuvre.techno-sapiens-iii",
-    "verbe": "traite_de",
-    "vers": "concept.sens-info-performance",
-    "note": "Rattachement déduit du slug."
   },
   {
     "de": "oeuvre.luvre",
@@ -730,12 +718,6 @@
     "verbe": "stocke_dans",
     "vers": "outil.substack",
     "note": ""
-  },
-  {
-    "de": "oeuvre.la-grille",
-    "verbe": "traite_de",
-    "vers": "concept.axe",
-    "note": "Rattachement déduit du slug."
   },
   {
     "de": "section.mythopoiese",
@@ -792,12 +774,6 @@
     "note": ""
   },
   {
-    "de": "oeuvre.le-silence-habite",
-    "verbe": "traite_de",
-    "vers": "concept.noetique",
-    "note": "Rattachement déduit du slug."
-  },
-  {
     "de": "oeuvre.la-subsistance-alignee",
     "verbe": "partie_de",
     "vers": "section.mythopoiese",
@@ -832,18 +808,6 @@
     "verbe": "stocke_dans",
     "vers": "outil.substack",
     "note": ""
-  },
-  {
-    "de": "oeuvre.individuation-epicotherapeutique",
-    "verbe": "traite_de",
-    "vers": "concept.individuation",
-    "note": "Rattachement déduit du slug."
-  },
-  {
-    "de": "oeuvre.individuation-epicotherapeutique",
-    "verbe": "traite_de",
-    "vers": "concept.epicotherapie",
-    "note": "Rattachement déduit du slug."
   },
   {
     "de": "oeuvre.projection",
@@ -898,12 +862,6 @@
     "verbe": "stocke_dans",
     "vers": "outil.substack",
     "note": ""
-  },
-  {
-    "de": "oeuvre.axiome-la-transfiguration",
-    "verbe": "traite_de",
-    "vers": "concept.axe",
-    "note": "Rattachement déduit du slug."
   },
   {
     "de": "oeuvre.le-sphinx",
@@ -1104,22 +1062,10 @@
     "note": ""
   },
   {
-    "de": "oeuvre.crise-existentielle",
-    "verbe": "traite_de",
-    "vers": "concept.individuation",
-    "note": "Rattachement déduit du slug."
-  },
-  {
     "de": "oeuvre.enfant-interieur",
     "verbe": "partie_de",
     "vers": "section.individuation",
     "note": ""
-  },
-  {
-    "de": "oeuvre.enfant-interieur",
-    "verbe": "traite_de",
-    "vers": "concept.individuation",
-    "note": "Rattachement déduit du slug."
   },
   {
     "de": "oeuvre.heros-interieur",
@@ -1128,22 +1074,10 @@
     "note": ""
   },
   {
-    "de": "oeuvre.heros-interieur",
-    "verbe": "traite_de",
-    "vers": "concept.individuation",
-    "note": "Rattachement déduit du slug."
-  },
-  {
     "de": "oeuvre.sage-interieur",
     "verbe": "partie_de",
     "vers": "section.individuation",
     "note": ""
-  },
-  {
-    "de": "oeuvre.sage-interieur",
-    "verbe": "traite_de",
-    "vers": "concept.individuation",
-    "note": "Rattachement déduit du slug."
   },
   {
     "de": "oeuvre.juge-interieur",
@@ -1152,34 +1086,16 @@
     "note": ""
   },
   {
-    "de": "oeuvre.juge-interieur",
-    "verbe": "traite_de",
-    "vers": "concept.individuation",
-    "note": "Rattachement déduit du slug."
-  },
-  {
     "de": "oeuvre.demon-interieur",
     "verbe": "partie_de",
     "vers": "section.individuation",
     "note": ""
   },
   {
-    "de": "oeuvre.demon-interieur",
-    "verbe": "traite_de",
-    "vers": "concept.individuation",
-    "note": "Rattachement déduit du slug."
-  },
-  {
     "de": "oeuvre.enfant-transcende",
     "verbe": "partie_de",
     "vers": "section.individuation",
     "note": ""
-  },
-  {
-    "de": "oeuvre.enfant-transcende",
-    "verbe": "traite_de",
-    "vers": "concept.individuation",
-    "note": "Rattachement déduit du slug."
   },
   {
     "de": "oeuvre.epicotherapie",
@@ -1248,12 +1164,6 @@
     "note": ""
   },
   {
-    "de": "oeuvre.intuition-numineuse-theorie-a-mettre",
-    "verbe": "traite_de",
-    "vers": "concept.noetique",
-    "note": "Rattachement déduit du slug."
-  },
-  {
     "de": "oeuvre.dev-perso-and-new-age",
     "verbe": "partie_de",
     "vers": "section.theories",
@@ -1290,12 +1200,6 @@
     "note": ""
   },
   {
-    "de": "oeuvre.techno-sapiens-ii",
-    "verbe": "traite_de",
-    "vers": "concept.sens-info-performance",
-    "note": "Rattachement déduit du slug."
-  },
-  {
     "de": "oeuvre.techno-sapiens-i",
     "verbe": "partie_de",
     "vers": "section.theories",
@@ -1312,12 +1216,6 @@
     "verbe": "stocke_dans",
     "vers": "outil.substack",
     "note": ""
-  },
-  {
-    "de": "oeuvre.techno-sapiens-i",
-    "verbe": "traite_de",
-    "vers": "concept.sens-info-performance",
-    "note": "Rattachement déduit du slug."
   },
   {
     "de": "oeuvre.passeurs-de-lumiere-soufisme-taoisme",
@@ -1488,12 +1386,6 @@
     "note": ""
   },
   {
-    "de": "oeuvre.qtlx",
-    "verbe": "traite_de",
-    "vers": "concept.sens-info-performance",
-    "note": "Rattachement déduit du slug."
-  },
-  {
     "de": "oeuvre.letrejectif-la-rigueur-epistemique",
     "verbe": "partie_de",
     "vers": "section.theories",
@@ -1510,18 +1402,6 @@
     "verbe": "stocke_dans",
     "vers": "outil.substack",
     "note": ""
-  },
-  {
-    "de": "oeuvre.letrejectif-la-rigueur-epistemique",
-    "verbe": "traite_de",
-    "vers": "concept.noetique",
-    "note": "Rattachement déduit du slug."
-  },
-  {
-    "de": "oeuvre.letrejectif-la-rigueur-epistemique",
-    "verbe": "traite_de",
-    "vers": "concept.beingjectif",
-    "note": "Rattachement déduit du slug."
   },
   {
     "de": "oeuvre.le-combat-interieur-friction-feconde",
@@ -1558,12 +1438,6 @@
     "verbe": "stocke_dans",
     "vers": "outil.substack",
     "note": ""
-  },
-  {
-    "de": "oeuvre.le-metacadre-comment-neutraliser",
-    "verbe": "traite_de",
-    "vers": "concept.axe",
-    "note": "Rattachement déduit du slug."
   },
   {
     "de": "section.historique",
@@ -1758,12 +1632,6 @@
     "note": ""
   },
   {
-    "de": "oeuvre.la-crise-existentielle-individuelle",
-    "verbe": "traite_de",
-    "vers": "concept.individuation",
-    "note": "Rattachement déduit du slug."
-  },
-  {
     "de": "oeuvre.lenfance-interieure-face-a-labandon",
     "verbe": "partie_de",
     "vers": "section.historique",
@@ -1818,12 +1686,6 @@
     "note": ""
   },
   {
-    "de": "oeuvre.la-sagesse-interieure-face-au-reste",
-    "verbe": "traite_de",
-    "vers": "concept.individuation",
-    "note": "Rattachement déduit du slug."
-  },
-  {
     "de": "oeuvre.la-justice-interieure-face-aux-engagements",
     "verbe": "partie_de",
     "vers": "section.historique",
@@ -1860,12 +1722,6 @@
     "note": ""
   },
   {
-    "de": "oeuvre.la-demonie-interieure-face-a-la-r",
-    "verbe": "traite_de",
-    "vers": "concept.individuation",
-    "note": "Rattachement déduit du slug."
-  },
-  {
     "de": "oeuvre.lenfance-transcendee-dans-leducation",
     "verbe": "partie_de",
     "vers": "section.historique",
@@ -1882,12 +1738,6 @@
     "verbe": "stocke_dans",
     "vers": "outil.substack",
     "note": ""
-  },
-  {
-    "de": "oeuvre.lenfance-transcendee-dans-leducation",
-    "verbe": "traite_de",
-    "vers": "concept.individuation",
-    "note": "Rattachement déduit du slug."
   },
   {
     "de": "section.manifestes",
@@ -1918,12 +1768,6 @@
     "verbe": "stocke_dans",
     "vers": "outil.substack",
     "note": ""
-  },
-  {
-    "de": "oeuvre.lhymne-du-verbe-vertical",
-    "verbe": "traite_de",
-    "vers": "concept.axe",
-    "note": "Rattachement déduit du slug."
   },
   {
     "de": "oeuvre.les-epistemies-de-soi",
@@ -1966,5 +1810,533 @@
     "verbe": "partie_de",
     "vers": "section.manifestes",
     "note": ""
+  },
+  {
+    "de": "oeuvre.harmonis-mentis-prime",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": "Rattachement par défaut : absent de la banque de liens."
+  },
+  {
+    "de": "oeuvre.harmonis-mentis-prime",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.harmonis-mentis-prime",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.59b",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": "Rattachement par défaut : absent de la banque de liens."
+  },
+  {
+    "de": "oeuvre.8ca",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": "Rattachement par défaut : absent de la banque de liens."
+  },
+  {
+    "de": "oeuvre.762",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": "Rattachement par défaut : absent de la banque de liens."
+  },
+  {
+    "de": "oeuvre.421",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": "Rattachement par défaut : absent de la banque de liens."
+  },
+  {
+    "de": "oeuvre.0dc",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": "Rattachement par défaut : absent de la banque de liens."
+  },
+  {
+    "de": "oeuvre.bd0",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": "Rattachement par défaut : absent de la banque de liens."
+  },
+  {
+    "de": "oeuvre.82e",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": "Rattachement par défaut : absent de la banque de liens."
+  },
+  {
+    "de": "oeuvre.copy-lhymne-du-verbe-vertical",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": "Rattachement par défaut : absent de la banque de liens."
+  },
+  {
+    "de": "oeuvre.a3f",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": "Rattachement par défaut : absent de la banque de liens."
+  },
+  {
+    "de": "oeuvre.copy-le-feminin-matriciel",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": "Rattachement par défaut : absent de la banque de liens."
+  },
+  {
+    "de": "oeuvre.le-feminin-matriciel",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": "Rattachement par défaut : absent de la banque de liens."
+  },
+  {
+    "de": "oeuvre.copy-jecris-pour-survivre",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": "Rattachement par défaut : absent de la banque de liens."
+  },
+  {
+    "de": "oeuvre.copy-techno-sapiens-iii",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": "Rattachement par défaut : absent de la banque de liens."
+  },
+  {
+    "de": "oeuvre.8bf",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": "Rattachement par défaut : absent de la banque de liens."
+  },
+  {
+    "de": "oeuvre.903",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": "Rattachement par défaut : absent de la banque de liens."
+  },
+  {
+    "de": "oeuvre.le-verbe-vertical-and-o-verbe-axial",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": "Rattachement par défaut : absent de la banque de liens."
+  },
+  {
+    "de": "oeuvre.196",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": "Rattachement par défaut : absent de la banque de liens."
+  },
+  {
+    "de": "oeuvre.xxxxy-la-matrice-gyno-androgyne",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": "Rattachement par défaut : absent de la banque de liens."
+  },
+  {
+    "de": "oeuvre.le-potentiel-latent",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": "Rattachement par défaut : absent de la banque de liens."
+  },
+  {
+    "de": "oeuvre.le-potentiel-latent",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.le-potentiel-latent",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.individu-vertical-dans-un-monde-horizontal-dd6",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": "Rattachement par défaut : absent de la banque de liens."
+  },
+  {
+    "de": "oeuvre.individu-vertical-dans-un-monde-horizontal-dd6",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.individu-vertical-dans-un-monde-horizontal-dd6",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.individu-vertical-dans-un-monde-horizontal",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": "Rattachement par défaut : absent de la banque de liens."
+  },
+  {
+    "de": "oeuvre.individu-vertical-dans-un-monde-horizontal",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.individu-vertical-dans-un-monde-horizontal",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.la-theorie-de-lhomme-vertical-et",
+    "verbe": "partie_de",
+    "vers": "section.theories",
+    "note": "Rattachement par défaut : absent de la banque de liens."
+  },
+  {
+    "de": "oeuvre.la-theorie-de-lhomme-vertical-et",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.la-theorie-de-lhomme-vertical-et",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.la-theorie-de-lhomme-vertical-et",
+    "verbe": "traite_de",
+    "vers": "concept.axe",
+    "note": "4 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.individu-vertical-dans-un-monde-horizontal-dd6",
+    "verbe": "traite_de",
+    "vers": "concept.axe",
+    "note": "6 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.enfant-interieur",
+    "verbe": "traite_de",
+    "vers": "concept.axe",
+    "note": "4 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.heros-interieur",
+    "verbe": "traite_de",
+    "vers": "arch.sage",
+    "note": "4 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.juge-interieur",
+    "verbe": "traite_de",
+    "vers": "arch.demon",
+    "note": "4 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.enfant-transcende",
+    "verbe": "traite_de",
+    "vers": "concept.axe",
+    "note": "4 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.enfant-transcende",
+    "verbe": "traite_de",
+    "vers": "concept.epicotherapie",
+    "note": "4 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.epicotherapie",
+    "verbe": "traite_de",
+    "vers": "concept.axe",
+    "note": "6 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.chromato-semanto",
+    "verbe": "traite_de",
+    "vers": "concept.epicotherapie",
+    "note": "7 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.chromato-semanto",
+    "verbe": "traite_de",
+    "vers": "concept.beingjectif",
+    "note": "6 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.ecrire-survivre",
+    "verbe": "traite_de",
+    "vers": "concept.axe",
+    "note": "4 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.8-causes",
+    "verbe": "traite_de",
+    "vers": "concept.epicotherapie",
+    "note": "4 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.8-causes",
+    "verbe": "traite_de",
+    "vers": "arch.crise",
+    "note": "6 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.le-verbe-vertical-and-o-verbe-axial",
+    "verbe": "traite_de",
+    "vers": "arch.crise",
+    "note": "5 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.individuation-seuil",
+    "verbe": "traite_de",
+    "vers": "concept.beingjectif",
+    "note": "6 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.qtlx",
+    "verbe": "traite_de",
+    "vers": "concept.individuation",
+    "note": "6 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.qtlx",
+    "verbe": "traite_de",
+    "vers": "axe.methodologique",
+    "note": "4 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.fondation-institutionnelle",
+    "verbe": "traite_de",
+    "vers": "concept.beingjectif",
+    "note": "4 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.la-crise-existentielle-individuelle",
+    "verbe": "traite_de",
+    "vers": "arch.crise",
+    "note": "17 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.lenfance-interieure-face-a-labandon",
+    "verbe": "traite_de",
+    "vers": "arch.enfant",
+    "note": "23 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.lenfance-interieure-face-a-labandon",
+    "verbe": "traite_de",
+    "vers": "axe.anthropologique",
+    "note": "10 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.le-heroisme-interieur-face-a-la-precarite",
+    "verbe": "traite_de",
+    "vers": "concept.axe",
+    "note": "16 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.le-heroisme-interieur-face-a-la-precarite",
+    "verbe": "traite_de",
+    "vers": "arch.heros",
+    "note": "52 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.la-sagesse-interieure-face-au-reste",
+    "verbe": "traite_de",
+    "vers": "concept.axe",
+    "note": "6 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.la-sagesse-interieure-face-au-reste",
+    "verbe": "traite_de",
+    "vers": "arch.sage",
+    "note": "52 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.la-justice-interieure-face-aux-engagements",
+    "verbe": "traite_de",
+    "vers": "concept.axe",
+    "note": "4 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.la-justice-interieure-face-aux-engagements",
+    "verbe": "traite_de",
+    "vers": "arch.juge",
+    "note": "34 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.la-justice-interieure-face-aux-engagements",
+    "verbe": "traite_de",
+    "vers": "axe.anthropologique",
+    "note": "4 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.la-demonie-interieure-face-a-la-r",
+    "verbe": "traite_de",
+    "vers": "arch.demon",
+    "note": "31 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.lenfance-transcendee-dans-leducation",
+    "verbe": "traite_de",
+    "vers": "arch.transcende",
+    "note": "14 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.letrejectif-la-rigueur-epistemique",
+    "verbe": "traite_de",
+    "vers": "concept.beingjectif",
+    "note": "6 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.le-combat-interieur-friction-feconde",
+    "verbe": "traite_de",
+    "vers": "concept.individuation",
+    "note": "7 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.le-metacadre-comment-neutraliser",
+    "verbe": "traite_de",
+    "vers": "concept.individuation",
+    "note": "4 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.luvre",
+    "verbe": "traite_de",
+    "vers": "axe.anthropologique",
+    "note": "5 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.individuation-epicotherapeutique",
+    "verbe": "traite_de",
+    "vers": "concept.axe",
+    "note": "4 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.individuation-epicotherapeutique",
+    "verbe": "traite_de",
+    "vers": "concept.individuation",
+    "note": "8 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.individuation-epicotherapeutique",
+    "verbe": "traite_de",
+    "vers": "concept.epicotherapie",
+    "note": "6 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.projection",
+    "verbe": "traite_de",
+    "vers": "concept.individuation",
+    "note": "7 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.projection",
+    "verbe": "traite_de",
+    "vers": "concept.epicotherapie",
+    "note": "7 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.lalterite",
+    "verbe": "traite_de",
+    "vers": "concept.beingjectif",
+    "note": "10 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.le-sphinx",
+    "verbe": "traite_de",
+    "vers": "concept.beingjectif",
+    "note": "14 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.lhumain",
+    "verbe": "traite_de",
+    "vers": "concept.individuation",
+    "note": "9 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.passion",
+    "verbe": "traite_de",
+    "vers": "concept.individuation",
+    "note": "8 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.passion",
+    "verbe": "traite_de",
+    "vers": "concept.epicotherapie",
+    "note": "11 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.parasocial",
+    "verbe": "traite_de",
+    "vers": "concept.individuation",
+    "note": "4 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.passeurs-de-lumiere-soufisme-taoisme",
+    "verbe": "traite_de",
+    "vers": "concept.axe",
+    "note": "4 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.techno-sapiens-i",
+    "verbe": "traite_de",
+    "vers": "concept.qtlx",
+    "note": "13 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.techno-sapiens-ii",
+    "verbe": "traite_de",
+    "vers": "axe.anthropologique",
+    "note": "4 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.sale-arabe",
+    "verbe": "traite_de",
+    "vers": "concept.individuation",
+    "note": "4 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.sale-arabe",
+    "verbe": "traite_de",
+    "vers": "concept.epicotherapie",
+    "note": "4 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.dev-perso-and-new-age",
+    "verbe": "traite_de",
+    "vers": "concept.individuation",
+    "note": "6 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.lhymne-du-verbe-vertical",
+    "verbe": "traite_de",
+    "vers": "concept.axe",
+    "note": "5 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.copy-jecris-pour-survivre",
+    "verbe": "traite_de",
+    "vers": "concept.axe",
+    "note": "4 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.du-moralisateur-au-psychologisateur",
+    "verbe": "traite_de",
+    "vers": "concept.individuation",
+    "note": "5 occurrences dans le texte de l'article."
+  },
+  {
+    "de": "oeuvre.copy-lhymne-du-verbe-vertical",
+    "verbe": "traite_de",
+    "vers": "concept.axe",
+    "note": "5 occurrences dans le texte de l'article."
   }
 ]
