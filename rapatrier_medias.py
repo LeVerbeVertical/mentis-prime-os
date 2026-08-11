@@ -127,6 +127,36 @@ def main():
                 mo = sum(x["octets"] for x in resultats) / 1e6
                 print(f"    {i}/{len(taches)} — {mo:.0f} Mo — {ko} échec(s)")
 
+    # ---- Complétion des dossiers -------------------------------------------
+    # Le téléchargement dédoublonne : une image citée par plusieurs articles
+    # n'est récupérée qu'une fois. Sans cette passe, le dossier d'un article
+    # qui réutilise une image serait incomplet — et un registre pointant vers
+    # « archive_medias/<slug>/ » mentirait. On y place donc un lien physique
+    # vers le fichier déjà présent : même inode, aucun octet supplémentaire.
+    par_url = {r["url"]: r for r in resultats if r["fichier"]}
+    liens = 0
+    for r in lignes:
+        src = par_url.get(r["url"])
+        if not src:
+            continue
+        cible_dir = os.path.join(racine, r["slug"])
+        cible = os.path.join(cible_dir, nom_fichier(r["url"]))
+        if os.path.exists(cible):
+            continue
+        os.makedirs(cible_dir, exist_ok=True)
+        origine = os.path.join(racine, src["fichier"])
+        try:
+            os.link(origine, cible)
+        except OSError:
+            import shutil
+            shutil.copy2(origine, cible)
+        liens += 1
+        resultats.append({**src, "slug": r["slug"],
+                          "fichier": os.path.relpath(cible, racine),
+                          "etat": "lien vers l'original"})
+    if liens:
+        print(f"\n  {liens} réutilisation(s) reliée(s) : chaque dossier d'article est complet")
+
     chemin_inv = os.path.join(racine, "inventaire_archive.csv")
     with open(chemin_inv, "w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=["slug", "fichier", "octets", "sha256", "etat", "url"])
