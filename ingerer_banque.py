@@ -155,16 +155,27 @@ INDICES = {
 }
 
 
+ARTICLES = {"le", "la", "les", "au", "aux", "du", "des", "un", "une", "de", "et", "a"}
+
+
 def joli(slug):
-    """Titre déduit d'un slug. Approximatif par construction."""
+    """Titre déduit d'un slug. Approximatif par construction.
+
+    L'élision ne s'applique qu'aux mots agglutinés du slug (« lenfant » ->
+    « l'enfant ») et jamais aux articles eux-mêmes : « le-silence » doit
+    rester « le silence », pas « l'e silence »."""
     if slug in TITRES_SURS:
         return TITRES_SURS[slug], False
     if slug in LATIN:
         return LATIN[slug], False
-    t = slug.replace("-and-", " & ").replace("-", " ")
-    t = re.sub(r"^l(?=[aeiouyh])", "l'", t)
-    t = re.sub(r"\bl (?=[aeiouyh])", "l'", t)
-    t = re.sub(r"\bd (?=[aeiouyh])", "d'", t)
+    mots = slug.replace("-and-", "-&-").split("-")
+    out = []
+    for m in mots:
+        if m != "&" and m.lower() not in ARTICLES and len(m) > 2 \
+           and m[0] in "ld" and m[1] in "aeiouyh":
+            m = m[0] + "'" + m[1:]
+        out.append(m)
+    t = re.sub(r"(\w)' (\w)", r"\1'\2", " ".join(out))
     return t[:1].upper() + t[1:], True
 
 
