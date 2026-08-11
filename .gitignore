@@ -1,0 +1,29 @@
+# === Secrets — ne jamais versionner ===
+*.env
+.env
+.env.*
+*.key
+*.pem
+credentials.json
+secrets.yaml
+private/
+
+# === Sauvegardes automatiques du serveur ===
+# Horodatées, régénérées à chaque enregistrement. C'est du bruit dans l'historique :
+# git tient déjà l'historique des données.
+data/_versions/
+data/_sauvegarde/
+
+# === Python ===
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# === Systèmes et éditeurs ===
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~

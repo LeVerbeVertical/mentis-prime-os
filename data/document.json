@@ -1,0 +1,38 @@
+[
+  {
+    "id": "doc.fondation-en",
+    "type": "document",
+    "titre": "Fondation Institutionnelle — version anglaise",
+    "statut": "localisé",
+    "maj": "2026-08-10",
+    "note": "20 pages. Version de travail vérifiée.",
+    "genre": "pdf",
+    "emplacement": "github",
+    "chemin": "International-version/Univers_Mentis_Prime_Institutional_Document_EN.pdf",
+    "langue": "en"
+  },
+  {
+    "id": "doc.fondation-fr",
+    "type": "document",
+    "titre": "Fondation Institutionnelle — version française",
+    "statut": "à retrouver",
+    "maj": "2026-08-10",
+    "note": "Version originale. Le document anglais indique explicitement en dériver, mais je n'ai pas trouvé le fichier source.",
+    "genre": "pdf",
+    "emplacement": "inconnu",
+    "chemin": "",
+    "langue": "fr"
+  },
+  {
+    "id": "doc.codex",
+    "type": "document",
+    "titre": "Codex écrit en hospitalisation",
+    "statut": "à retrouver",
+    "maj": "2026-08-10",
+    "note": "Mentionné dans la Fondation Institutionnelle comme matière première du cadre. Emplacement inconnu.",
+    "genre": "texte",
+    "emplacement": "inconnu",
+    "chemin": "",
+    "langue": "fr"
+  }
+]

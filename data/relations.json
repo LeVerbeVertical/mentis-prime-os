@@ -1,0 +1,620 @@
+[
+  {
+    "de": "oeuvre.crise-existentielle",
+    "verbe": "partie_de",
+    "vers": "univers.mentis-prime",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.crise-existentielle",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.crise-existentielle",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.enfant-interieur",
+    "verbe": "partie_de",
+    "vers": "univers.mentis-prime",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.enfant-interieur",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.enfant-interieur",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.heros-interieur",
+    "verbe": "partie_de",
+    "vers": "univers.mentis-prime",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.heros-interieur",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.heros-interieur",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.sage-interieur",
+    "verbe": "partie_de",
+    "vers": "univers.mentis-prime",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.sage-interieur",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.sage-interieur",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.juge-interieur",
+    "verbe": "partie_de",
+    "vers": "univers.mentis-prime",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.juge-interieur",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.juge-interieur",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.demon-interieur",
+    "verbe": "partie_de",
+    "vers": "univers.mentis-prime",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.demon-interieur",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.demon-interieur",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.enfant-transcende",
+    "verbe": "partie_de",
+    "vers": "univers.mentis-prime",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.enfant-transcende",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.enfant-transcende",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.epicotherapie",
+    "verbe": "partie_de",
+    "vers": "univers.mentis-prime",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.epicotherapie",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.epicotherapie",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.ia-verticale",
+    "verbe": "partie_de",
+    "vers": "univers.mentis-prime",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.ia-verticale",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.ia-verticale",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.chromato-semanto",
+    "verbe": "partie_de",
+    "vers": "univers.mentis-prime",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.chromato-semanto",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.chromato-semanto",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.qtlx",
+    "verbe": "partie_de",
+    "vers": "univers.mentis-prime",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.qtlx",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.qtlx",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.8-valeurs",
+    "verbe": "partie_de",
+    "vers": "univers.mentis-prime",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.8-valeurs",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.8-valeurs",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.beingjectif",
+    "verbe": "partie_de",
+    "vers": "univers.mentis-prime",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.beingjectif",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.beingjectif",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.8-causes",
+    "verbe": "partie_de",
+    "vers": "univers.mentis-prime",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.8-causes",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.8-causes",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.ecrire-survivre",
+    "verbe": "partie_de",
+    "vers": "univers.mentis-prime",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.ecrire-survivre",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.ecrire-survivre",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.individuation-seuil",
+    "verbe": "partie_de",
+    "vers": "univers.mentis-prime",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.individuation-seuil",
+    "verbe": "publie_sur",
+    "vers": "canal.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.individuation-seuil",
+    "verbe": "stocke_dans",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.fondation-institutionnelle",
+    "verbe": "partie_de",
+    "vers": "univers.mentis-prime",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.crise-existentielle",
+    "verbe": "traite_de",
+    "vers": "arch.crise",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.enfant-interieur",
+    "verbe": "traite_de",
+    "vers": "arch.enfant",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.heros-interieur",
+    "verbe": "traite_de",
+    "vers": "arch.heros",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.sage-interieur",
+    "verbe": "traite_de",
+    "vers": "arch.sage",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.juge-interieur",
+    "verbe": "traite_de",
+    "vers": "arch.juge",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.demon-interieur",
+    "verbe": "traite_de",
+    "vers": "arch.demon",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.enfant-transcende",
+    "verbe": "traite_de",
+    "vers": "arch.transcende",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.epicotherapie",
+    "verbe": "traite_de",
+    "vers": "concept.epicotherapie",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.epicotherapie",
+    "verbe": "traite_de",
+    "vers": "concept.individuation",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.ia-verticale",
+    "verbe": "traite_de",
+    "vers": "concept.axe",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.ia-verticale",
+    "verbe": "traite_de",
+    "vers": "concept.sens-info-performance",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.chromato-semanto",
+    "verbe": "traite_de",
+    "vers": "concept.sens-info-performance",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.qtlx",
+    "verbe": "traite_de",
+    "vers": "concept.qtlx",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.qtlx",
+    "verbe": "traite_de",
+    "vers": "concept.noetique",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.8-valeurs",
+    "verbe": "traite_de",
+    "vers": "concept.axe",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.beingjectif",
+    "verbe": "traite_de",
+    "vers": "concept.beingjectif",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.beingjectif",
+    "verbe": "traite_de",
+    "vers": "concept.noetique",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.8-causes",
+    "verbe": "traite_de",
+    "vers": "concept.axe",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.individuation-seuil",
+    "verbe": "traite_de",
+    "vers": "concept.individuation",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.fondation-institutionnelle",
+    "verbe": "traite_de",
+    "vers": "axe.epistemique",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.fondation-institutionnelle",
+    "verbe": "traite_de",
+    "vers": "axe.methodologique",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.fondation-institutionnelle",
+    "verbe": "traite_de",
+    "vers": "axe.anthropologique",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.fondation-institutionnelle",
+    "verbe": "traite_de",
+    "vers": "axe.transmissibilite",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.fondation-institutionnelle",
+    "verbe": "traite_de",
+    "vers": "concept.axe",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.fondation-institutionnelle",
+    "verbe": "traite_de",
+    "vers": "concept.noetique",
+    "note": ""
+  },
+  {
+    "de": "oeuvre.fondation-institutionnelle",
+    "verbe": "traite_de",
+    "vers": "concept.individuation",
+    "note": ""
+  },
+  {
+    "de": "doc.fondation-en",
+    "verbe": "partie_de",
+    "vers": "oeuvre.fondation-institutionnelle",
+    "note": ""
+  },
+  {
+    "de": "doc.fondation-fr",
+    "verbe": "partie_de",
+    "vers": "oeuvre.fondation-institutionnelle",
+    "note": ""
+  },
+  {
+    "de": "doc.fondation-en",
+    "verbe": "derive_de",
+    "vers": "doc.fondation-fr",
+    "note": "Traduction pour le dialogue académique international."
+  },
+  {
+    "de": "doc.fondation-en",
+    "verbe": "stocke_dans",
+    "vers": "outil.github",
+    "note": ""
+  },
+  {
+    "de": "doc.codex",
+    "verbe": "derive_de",
+    "vers": "oeuvre.fondation-institutionnelle",
+    "note": "Matière première du cadre."
+  },
+  {
+    "de": "canal.substack",
+    "verbe": "utilise",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "canal.notion",
+    "verbe": "utilise",
+    "vers": "outil.notion",
+    "note": ""
+  },
+  {
+    "de": "canal.kdp",
+    "verbe": "utilise",
+    "vers": "outil.kdp",
+    "note": ""
+  },
+  {
+    "de": "canal.boutique",
+    "verbe": "utilise",
+    "vers": "outil.shopify",
+    "note": ""
+  },
+  {
+    "de": "projet.completer-corpus",
+    "verbe": "utilise",
+    "vers": "outil.substack",
+    "note": ""
+  },
+  {
+    "de": "projet.retrouver-fr",
+    "verbe": "utilise",
+    "vers": "outil.drive",
+    "note": ""
+  },
+  {
+    "de": "projet.retrouver-fr",
+    "verbe": "utilise",
+    "vers": "outil.notion",
+    "note": ""
+  },
+  {
+    "de": "projet.inventaire",
+    "verbe": "utilise",
+    "vers": "ia.claude-code",
+    "note": ""
+  },
+  {
+    "de": "projet.liste-institutions",
+    "verbe": "utilise",
+    "vers": "ia.chatgpt",
+    "note": ""
+  },
+  {
+    "de": "projet.confidentialite",
+    "verbe": "utilise",
+    "vers": "outil.github",
+    "note": ""
+  },
+  {
+    "de": "projet.liste-institutions",
+    "verbe": "depend_de",
+    "vers": "projet.retrouver-fr",
+    "note": "Difficile de démarcher sans la version française du document."
+  },
+  {
+    "de": "projet.completer-corpus",
+    "verbe": "depend_de",
+    "vers": "projet.inventaire",
+    "note": "Les métadonnées se saisissent dans l'inventaire."
+  },
+  {
+    "de": "ia.claude-code",
+    "verbe": "travaille_sur",
+    "vers": "projet.inventaire",
+    "note": ""
+  },
+  {
+    "de": "ia.chatgpt",
+    "verbe": "travaille_sur",
+    "vers": "projet.liste-institutions",
+    "note": ""
+  },
+  {
+    "de": "ia.claude-conversationnel",
+    "verbe": "travaille_sur",
+    "vers": "oeuvre.fondation-institutionnelle",
+    "note": ""
+  },
+  {
+    "de": "personnage.leonudus",
+    "verbe": "apparait_dans",
+    "vers": "univers.mentis-prime",
+    "note": ""
+  },
+  {
+    "de": "personnage.metaloquus",
+    "verbe": "apparait_dans",
+    "vers": "univers.mentis-prime",
+    "note": ""
+  },
+  {
+    "de": "personnage.exion",
+    "verbe": "apparait_dans",
+    "vers": "univers.mentis-prime",
+    "note": ""
+  },
+  {
+    "de": "projet.n8n-mvp0",
+    "verbe": "utilise",
+    "vers": "outil.n8n",
+    "note": ""
+  },
+  {
+    "de": "projet.n8n-mvp0",
+    "verbe": "utilise",
+    "vers": "outil.airtable",
+    "note": ""
+  },
+  {
+    "de": "projet.n8n-mvp0",
+    "verbe": "depend_de",
+    "vers": "projet.dedoublonner-personnages",
+    "note": "Ne pas router un registre qui se contredit."
+  },
+  {
+    "de": "projet.dedoublonner-personnages",
+    "verbe": "utilise",
+    "vers": "outil.airtable",
+    "note": ""
+  },
+  {
+    "de": "ia.chatgpt",
+    "verbe": "travaille_sur",
+    "vers": "projet.n8n-mvp0",
+    "note": ""
+  }
+]

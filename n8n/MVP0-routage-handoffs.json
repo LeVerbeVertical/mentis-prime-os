@@ -1,0 +1,327 @@
+{
+  "name": "MVP0 — Routage Handoffs IA",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "## MVP0 — Routage Handoffs IA\n\nCircuit minimal : Airtable → n8n → Airtable.\n\n**Ce qu'il fait**\n1. Toutes les 15 min, cherche les handoffs dont `État Zapier = À router`\n2. Aiguille selon `Route Zapier`\n3. Écrit l'accusé de passage dans Airtable\n\n**Ce qu'il ne fait PAS**\nIl n'envoie rien à Claude. Le registre `Agents & Rôles` déclare qu'aucun canal direct vers Claude n'existe. Tant que cette décision n'est pas prise, la branche « Vers Claude » se contente d'accuser réception — ce qui est exactement la mission de HMP-ZAPIER-001 : *test de transmission sans modification canonique*.\n\n**Avant de lancer**\n- Créer la credential Airtable (Personal Access Token, scopes `data.records:read` + `data.records:write`)\n- Vérifier sur le premier import que les champs se lisent bien en `$json['Route Zapier']` — selon la version de n8n, ils peuvent arriver sous `$json.fields['Route Zapier']`\n- Exécuter d'abord en manuel (bouton « Test workflow »), pas en planifié",
+        "height": 520,
+        "width": 460
+      },
+      "id": "note-principale",
+      "name": "Lisez-moi",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [-560, 40]
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 15
+            }
+          ]
+        }
+      },
+      "id": "declencheur",
+      "name": "Toutes les 15 min",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [-40, 300],
+      "notes": "Schedule plutôt qu'Airtable Trigger : le trigger natif a besoin d'un champ 'Last modified time' dédié, absent de la table Handoffs IA. Ne pas modifier le schéma avant preuve de fonctionnement."
+    },
+    {
+      "parameters": {
+        "operation": "search",
+        "base": {
+          "__rl": true,
+          "value": "appUqaTCTNgvQtrwq",
+          "mode": "id"
+        },
+        "table": {
+          "__rl": true,
+          "value": "tblIeLkEknzotSk1H",
+          "mode": "id"
+        },
+        "filterByFormula": "={État Zapier} = \"À router\"",
+        "options": {}
+      },
+      "id": "chercher",
+      "name": "Chercher les handoffs à router",
+      "type": "n8n-nodes-base.airtable",
+      "typeVersion": 2.1,
+      "position": [200, 300],
+      "notes": "Au 10/08/2026 cette recherche remonte exactement 1 enregistrement : HMP-ZAPIER-001. Trois autres handoffs ont un État Zapier VIDE et ne sont donc pas vus par ce filtre — c'est volontaire, mais à trancher."
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json['Route Zapier'] }}",
+                    "rightValue": "Vers Claude",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Vers Claude"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json['Route Zapier'] }}",
+                    "rightValue": "Vers Vertice",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Vers Vertice"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json['Route Zapier'] }}",
+                    "rightValue": "Vers Drive",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Vers Drive"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json['Route Zapier'] }}",
+                    "rightValue": "Vers Canva",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Vers Canva"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json['Route Zapier'] }}",
+                    "rightValue": "Vers Publication",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Vers Publication"
+            }
+          ]
+        },
+        "options": {
+          "fallbackOutput": "extra",
+          "renameFallbackOutput": "Route inconnue"
+        }
+      },
+      "id": "aiguillage",
+      "name": "Aiguillage par Route",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [460, 300],
+      "notes": "Les 5 routes existent dans le schéma Airtable. Seule « Vers Claude » a un enregistrement vivant aujourd'hui. Les autres sorties restent non câblées : visibles, mais inertes."
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "a1",
+              "name": "recordId",
+              "value": "={{ $json.id }}",
+              "type": "string"
+            },
+            {
+              "id": "a2",
+              "name": "handoffId",
+              "value": "={{ $json['Handoff ID'] }}",
+              "type": "string"
+            },
+            {
+              "id": "a3",
+              "name": "passageId",
+              "value": "=n8n-{{ $execution.id }}-{{ $json['Handoff ID'] }}",
+              "type": "string"
+            },
+            {
+              "id": "a4",
+              "name": "horodatage",
+              "value": "={{ $now.toISO() }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "marquer",
+      "name": "Préparer l'accusé de passage",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [740, 220],
+      "notes": "Le Passage ID contient l'ID d'exécution n8n : c'est ce qui permet de détecter un double routage a posteriori."
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "base": {
+          "__rl": true,
+          "value": "appUqaTCTNgvQtrwq",
+          "mode": "id"
+        },
+        "table": {
+          "__rl": true,
+          "value": "tblIeLkEknzotSk1H",
+          "mode": "id"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "id": "={{ $json.recordId }}",
+            "État Zapier": "Routé",
+            "Zapier Passage ID": "={{ $json.passageId }}",
+            "Dernier passage Zapier": "={{ $json.horodatage }}"
+          },
+          "matchingColumns": [
+            "id"
+          ]
+        },
+        "options": {}
+      },
+      "id": "ecrire",
+      "name": "Écrire Routé dans Airtable",
+      "type": "n8n-nodes-base.airtable",
+      "typeVersion": 2.1,
+      "position": [1000, 220],
+      "notes": "Les noms de champs gardent le mot « Zapier » à dessein. Aucun renommage cosmétique avant que le circuit ait tourné pour de vrai."
+    },
+    {
+      "parameters": {
+        "content": "### Ce qu'il reste à décider\n\n**La branche « Vers Claude » n'envoie rien.**\n\nElle ne peut pas : `Agents & Rôles` déclare que Claude n'a « pas de connexion directe à ChatGPT » et que Vertice n'a « pas de canal permanent direct vers Claude ».\n\nTrois options, à trancher par Hamza :\n\n1. **Accusé seul** (ce workflow) — le registre trace, un humain porte le message. Zéro clé, zéro coût.\n2. **Nœud API Anthropic** — n8n appelle l'API Claude. Ce n'est PAS le Claude avec qui tu converses : autre contexte, autre mémoire, clé et coût à la clé.\n3. **File d'attente** — n8n écrit dans une table `À traiter`, relevée manuellement.\n\nTant que ce choix n'est pas fait, « router vers Claude » n'a pas de destination réelle.",
+        "height": 380,
+        "width": 420,
+        "color": 3
+      },
+      "id": "note-decision",
+      "name": "Décision en suspens",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [740, 440]
+    }
+  ],
+  "connections": {
+    "Toutes les 15 min": {
+      "main": [
+        [
+          {
+            "node": "Chercher les handoffs à router",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Chercher les handoffs à router": {
+      "main": [
+        [
+          {
+            "node": "Aiguillage par Route",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Aiguillage par Route": {
+      "main": [
+        [
+          {
+            "node": "Préparer l'accusé de passage",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    "Préparer l'accusé de passage": {
+      "main": [
+        [
+          {
+            "node": "Écrire Routé dans Airtable",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {}
+}

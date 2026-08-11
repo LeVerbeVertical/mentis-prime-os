@@ -1,0 +1,182 @@
+[
+  {
+    "id": "concept.axe",
+    "type": "concept",
+    "titre": "L'Axe (verticalité)",
+    "statut": "stabilisé",
+    "maj": "2026-08-10",
+    "note": "",
+    "genre": "concept",
+    "definition": "Principe de cohérence intérieure et collective. Donne son nom au Verbe Vertical."
+  },
+  {
+    "id": "concept.individuation",
+    "type": "concept",
+    "titre": "Individuation",
+    "statut": "stabilisé",
+    "maj": "2026-08-10",
+    "note": "",
+    "genre": "concept",
+    "definition": "Condition première de toute harmonisation non violente."
+  },
+  {
+    "id": "concept.noetique",
+    "type": "concept",
+    "titre": "Noétique",
+    "statut": "stabilisé",
+    "maj": "2026-08-10",
+    "note": "",
+    "genre": "concept",
+    "definition": "Régime de compréhension préverbal, incarné, non linéaire. Ni substitut ni adversaire de la raison — elle la cadre, l'oriente et la pèse."
+  },
+  {
+    "id": "concept.sens-info-performance",
+    "type": "concept",
+    "titre": "Sens / information / performance",
+    "statut": "stabilisé",
+    "maj": "2026-08-10",
+    "note": "",
+    "genre": "concept",
+    "definition": "Trois registres à ne jamais confondre."
+  },
+  {
+    "id": "concept.epicotherapie",
+    "type": "concept",
+    "titre": "Épicothérapie",
+    "statut": "stabilisé",
+    "maj": "2026-08-10",
+    "note": "",
+    "genre": "théorie",
+    "definition": "Architecture complète de la méthode d'individuation par les archétypes."
+  },
+  {
+    "id": "concept.beingjectif",
+    "type": "concept",
+    "titre": "Le Beingjectif",
+    "statut": "exploratoire",
+    "maj": "2026-08-10",
+    "note": "",
+    "genre": "concept",
+    "definition": "Le point aveugle de l'esprit."
+  },
+  {
+    "id": "concept.qtlx",
+    "type": "concept",
+    "titre": "Code QTLX",
+    "statut": "exploratoire",
+    "maj": "2026-08-10",
+    "note": "",
+    "genre": "théorie",
+    "definition": "Vers une technologie du sens."
+  },
+  {
+    "id": "axe.epistemique",
+    "type": "concept",
+    "titre": "Axe épistémique",
+    "statut": "stabilisé",
+    "maj": "2026-08-10",
+    "note": "",
+    "genre": "axe",
+    "definition": "Statut du sens et des concepts. Distinguer concept, métaphore, mythe, symbole et artefact."
+  },
+  {
+    "id": "axe.methodologique",
+    "type": "concept",
+    "titre": "Axe méthodologique",
+    "statut": "stabilisé",
+    "maj": "2026-08-10",
+    "note": "",
+    "genre": "axe",
+    "definition": "Protocole de recherche non linéaire. La temporalité comme paramètre méthodologique."
+  },
+  {
+    "id": "axe.anthropologique",
+    "type": "concept",
+    "titre": "Axe anthropologique",
+    "statut": "stabilisé",
+    "maj": "2026-08-10",
+    "note": "",
+    "genre": "axe",
+    "definition": "Lien structurel entre individuation et fractures collectives."
+  },
+  {
+    "id": "axe.transmissibilite",
+    "type": "concept",
+    "titre": "Axe de transmissibilité",
+    "statut": "stabilisé",
+    "maj": "2026-08-10",
+    "note": "",
+    "genre": "axe",
+    "definition": "Rendre la complexité habitable sans la simplifier ni la spectaculariser."
+  },
+  {
+    "id": "arch.crise",
+    "type": "concept",
+    "titre": "La Crise Existentielle",
+    "statut": "stabilisé",
+    "maj": "2026-08-10",
+    "note": "",
+    "genre": "archétype",
+    "definition": "Premier archétype du parcours d'individuation."
+  },
+  {
+    "id": "arch.enfant",
+    "type": "concept",
+    "titre": "L'Enfant Intérieur",
+    "statut": "stabilisé",
+    "maj": "2026-08-10",
+    "note": "",
+    "genre": "archétype",
+    "definition": "Cinq types d'enfants intérieurs, cinq blessures de l'âme."
+  },
+  {
+    "id": "arch.heros",
+    "type": "concept",
+    "titre": "Le Héros Intérieur",
+    "statut": "stabilisé",
+    "maj": "2026-08-10",
+    "note": "",
+    "genre": "archétype",
+    "definition": "Énergie de transformation et syndromes du héros."
+  },
+  {
+    "id": "arch.sage",
+    "type": "concept",
+    "titre": "Le Sage Intérieur",
+    "statut": "stabilisé",
+    "maj": "2026-08-10",
+    "note": "",
+    "genre": "archétype",
+    "definition": "Maître du repos, de l'équilibre et du discernement."
+  },
+  {
+    "id": "arch.juge",
+    "type": "concept",
+    "titre": "Le Juge Intérieur",
+    "statut": "stabilisé",
+    "maj": "2026-08-10",
+    "note": "",
+    "genre": "archétype",
+    "definition": "Régulation éthique et justice intérieure."
+  },
+  {
+    "id": "arch.demon",
+    "type": "concept",
+    "titre": "Le Démon Intérieur",
+    "statut": "stabilisé",
+    "maj": "2026-08-10",
+    "note": "",
+    "genre": "archétype",
+    "definition": "Intégration de l'ombre et puissance refoulée."
+  },
+  {
+    "id": "arch.transcende",
+    "type": "concept",
+    "titre": "L'Enfant Transcendé",
+    "statut": "stabilisé",
+    "maj": "2026-08-10",
+    "note": "",
+    "genre": "archétype",
+    "definition": "Retour intégré, présence et contemplation."
+  }
+]

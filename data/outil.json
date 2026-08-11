@@ -1,0 +1,134 @@
+[
+  {
+    "id": "outil.drive",
+    "type": "outil",
+    "titre": "Google Drive",
+    "statut": "actif",
+    "maj": "2026-08-10",
+    "note": "",
+    "genre": "stockage",
+    "url": "drive.google.com",
+    "compte": ""
+  },
+  {
+    "id": "outil.airtable",
+    "type": "outil",
+    "titre": "Airtable",
+    "statut": "actif",
+    "maj": "2026-08-10",
+    "note": "Base « Base sans titre » (appUqaTCTNgvQtrwq) — 9 tables : Agents & Rôles, Handoffs IA, Personnages, KDP Performance, VENTE Circuit France, Droits & Expansion, Expériences éditoriales, Outils & Modalités, LUCID Sync Queue. C'est le registre central réel.",
+    "genre": "base",
+    "url": "airtable.com",
+    "compte": ""
+  },
+  {
+    "id": "outil.canva",
+    "type": "outil",
+    "titre": "Canva",
+    "statut": "actif",
+    "maj": "2026-08-10",
+    "note": "Couvertures et visuels.",
+    "genre": "design",
+    "url": "canva.com",
+    "compte": ""
+  },
+  {
+    "id": "outil.substack",
+    "type": "outil",
+    "titre": "Substack",
+    "statut": "actif",
+    "maj": "2026-08-10",
+    "note": "Support du canal de publication principal.",
+    "genre": "publication",
+    "url": "leverbevertical.substack.com",
+    "compte": "Le Verbe Vertical"
+  },
+  {
+    "id": "outil.kdp",
+    "type": "outil",
+    "titre": "Amazon KDP",
+    "statut": "en essai",
+    "maj": "2026-08-10",
+    "note": "",
+    "genre": "édition",
+    "url": "kdp.amazon.com",
+    "compte": ""
+  },
+  {
+    "id": "outil.shopify",
+    "type": "outil",
+    "titre": "Shopify",
+    "statut": "dormant",
+    "maj": "2026-08-10",
+    "note": "",
+    "genre": "boutique",
+    "url": "shopify.com",
+    "compte": ""
+  },
+  {
+    "id": "outil.zapier",
+    "type": "outil",
+    "titre": "Zapier",
+    "statut": "en essai",
+    "maj": "2026-08-10",
+    "note": "Couche de routage déclarée dans Handoffs IA (Route Zapier / État Zapier / Passage ID). 1 handoff en attente : HMP-ZAPIER-001, jamais routé. Aucun passage enregistré à ce jour.",
+    "genre": "automatisation",
+    "url": "zapier.com",
+    "compte": ""
+  },
+  {
+    "id": "outil.github",
+    "type": "outil",
+    "titre": "GitHub",
+    "statut": "actif",
+    "maj": "2026-08-10",
+    "note": "Compte LeVerbeVertical. 2 dépôts : mentis-prime-os, International-version.",
+    "genre": "code",
+    "url": "github.com/LeVerbeVertical",
+    "compte": "LeVerbeVertical"
+  },
+  {
+    "id": "outil.notion",
+    "type": "outil",
+    "titre": "Notion",
+    "statut": "actif",
+    "maj": "2026-08-10",
+    "note": "Organisation structurée du corpus.",
+    "genre": "note",
+    "url": "notion.so/Le-Verbe-Vertical",
+    "compte": ""
+  },
+  {
+    "id": "outil.n8n",
+    "type": "outil",
+    "titre": "n8n",
+    "statut": "en essai",
+    "maj": "2026-08-10",
+    "note": "Destiné à remplacer progressivement la couche Zapier. MVP0 prêt : n8n/MVP0-routage-handoffs.json",
+    "genre": "automatisation",
+    "url": "n8n.io",
+    "compte": ""
+  },
+  {
+    "id": "outil.elevenlabs",
+    "type": "outil",
+    "titre": "ElevenLabs",
+    "statut": "en essai",
+    "maj": "2026-08-10",
+    "note": "Repéré. Branche narration audio de la matrice transmedia. Aucun script de narration n'existe encore dans l'inventaire.",
+    "genre": "design",
+    "url": "elevenlabs.io",
+    "compte": ""
+  },
+  {
+    "id": "outil.lucid",
+    "type": "outil",
+    "titre": "Lucid",
+    "statut": "en essai",
+    "maj": "2026-08-10",
+    "note": "Déclaré P0 dans Outils & Modalités. Garde-fou explicite : « Lucid n'est pas source de vérité ; une relation dessinée n'est jamais canonique par elle-même ».",
+    "genre": "design",
+    "url": "lucid.app",
+    "compte": ""
+  }
+]

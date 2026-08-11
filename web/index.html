@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inventaire — Mentis Prime</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232E6B5D'/%3E%3Cpath d='M16 5v22M9 12h14' stroke='%23EDEFEE' stroke-width='2.5'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <span class="marque">Mentis Prime · Inventaire</span>
+  <nav class="onglets" id="onglets">
+    <button data-vue="etat" class="actif">État des lieux</button>
+    <button data-vue="inventaire">Inventaire</button>
+    <button data-vue="projets">Projets</button>
+    <button data-vue="carte">Carte</button>
+  </nav>
+  <span id="etat-sauvegarde">chargement…</span>
+</header>
+
+<main>
+
+  <!-- ================= ÉTAT DES LIEUX ================= -->
+  <section class="vue actif" id="vue-etat">
+    <h1>Qu'est-ce qui existe ?</h1>
+    <p class="sous">Le compte de ce que tu possèdes, et surtout de ce qui manque encore. Clique sur un compteur pour ouvrir la liste correspondante.</p>
+
+    <div class="compteurs" id="compteurs"></div>
+
+    <h2>Ce qui manque</h2>
+    <div class="lacunes" id="lacunes"></div>
+
+    <h2>Modifié récemment</h2>
+    <div class="liste" id="recents"></div>
+
+    <p class="note-bas">
+      Toutes les données vivent dans le dossier <code>data/</code>, en fichiers JSON lisibles.<br>
+      Une copie horodatée est faite avant chaque enregistrement, dans <code>data/_versions/</code>.<br>
+      Rien ne quitte cette machine.
+    </p>
+  </section>
+
+  <!-- ================= INVENTAIRE ================= -->
+  <section class="vue" id="vue-inventaire">
+    <h1>Inventaire</h1>
+    <p class="sous">Tout, filtrable et cherchable. Clique sur une ligne pour ouvrir sa fiche.</p>
+
+    <div class="filtres">
+      <input type="search" id="recherche" placeholder="Chercher dans les titres, notes et identifiants…" autocomplete="off">
+      <select id="f-type"><option value="">Tous les types</option></select>
+      <select id="f-statut"><option value="">Tous les statuts</option></select>
+      <select id="f-tri">
+        <option value="titre">Trier par titre</option>
+        <option value="maj">Trier par date</option>
+        <option value="type">Trier par type</option>
+        <option value="liens">Trier par nombre de liens</option>
+      </select>
+      <button class="btn primaire" id="btn-nouveau">+ Nouvel élément</button>
+    </div>
+
+    <div class="liste" id="liste"></div>
+  </section>
+
+  <!-- ================= PROJETS ================= -->
+  <section class="vue" id="vue-projets">
+    <h1>Projets</h1>
+    <p class="sous">La seule vue orientée action : ce qui avance, ce qui bloque, et la prochaine chose à faire.</p>
+    <div class="scroll-x">
+      <table id="table-projets">
+        <thead>
+          <tr>
+            <th>Projet</th><th>Statut</th><th>Priorité</th>
+            <th>Prochaine action</th><th>Blocage</th><th>Dépend de</th><th>Responsable</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ================= CARTE ================= -->
+  <section class="vue" id="vue-carte">
+    <h1>Carte</h1>
+    <p class="sous">Le graphe est calculé depuis les données de l'inventaire. Chaque nœud est un élément réel, chaque trait une relation enregistrée. Glisse un nœud pour le déplacer, clique pour ouvrir sa fiche.</p>
+
+    <div class="carte-outils" id="carte-outils"></div>
+    <div id="carte-hote">
+      <svg id="carte-svg" role="img" aria-label="Graphe des relations entre les éléments de l'inventaire"></svg>
+    </div>
+    <div class="legende" id="legende"></div>
+  </section>
+
+</main>
+
+<!-- ================= PANNEAU FICHE / ÉDITEUR ================= -->
+<div id="voile"></div>
+<aside id="panneau" aria-label="Fiche de l'élément"></aside>
+
+<script src="app.js"></script>
+</body>
+</html>

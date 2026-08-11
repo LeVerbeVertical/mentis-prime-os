@@ -1,0 +1,35 @@
+[
+  {
+    "id": "personnage.leonudus",
+    "type": "personnage",
+    "titre": "Coaex Leonudus",
+    "statut": "stabilisé",
+    "maj": "2026-08-10",
+    "note": "Canon verrouillé dans Airtable. ⚠ Présent en DOUBLE dans la table Personnages (recGi9Xh1kiT2Y14V riche, rec8cxrldt8keoc8D plus court).",
+    "genre": "personnage",
+    "role": "Figure axiale du Conventus Archæpoeiarum",
+    "description": "Entre à Euridis avec trois drones personnels qui fusionnent en Lion-drone à l'approche du conflit. Sa larme lors de l'hommage à Métaloquus devient un serment collectif. Symboles : lion, panneau bleu, marteau-outil."
+  },
+  {
+    "id": "personnage.metaloquus",
+    "type": "personnage",
+    "titre": "Métaloquus",
+    "statut": "stabilisé",
+    "maj": "2026-08-10",
+    "note": "Canon verrouillé. ⚠ Présent en DOUBLE (recqWdKDrCPuLgTUD riche, recMp1XoeXBHGq6hM plus court).",
+    "genre": "personnage",
+    "role": "Philosophe des Mémoires, Sage de l'Analogie",
+    "description": "Statue holographique s'élevant au-dessus du Forum durant le Conventus ; son dernier aphorisme est projeté dans les deux langues de la République. Honoré par Leonudus et par le peuple."
+  },
+  {
+    "id": "personnage.exion",
+    "type": "personnage",
+    "titre": "Exion",
+    "statut": "stabilisé",
+    "maj": "2026-08-10",
+    "note": "Canon verrouillé. ⚠ Présent en DOUBLE (recd2EwvpGiTNXZcx riche, recswf7DCvgYhr9B6 plus court).",
+    "genre": "personnage",
+    "role": "Antagoniste — présence d'ombre",
+    "description": "Œil bichrome qui apprend les symboles de la République pendant l'hommage. Annonce une contre-civilisation qui ne détruit pas la cité mais parlera en son nom. Tension héraldique avec Leonudus : panneau rouge/serpent contre panneau bleu/lion."
+  }
+]

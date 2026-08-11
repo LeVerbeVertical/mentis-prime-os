@@ -1,0 +1,86 @@
+[
+  {
+    "id": "projet.completer-corpus",
+    "type": "projet",
+    "titre": "Compléter les métadonnées du corpus",
+    "statut": "actif",
+    "maj": "2026-08-10",
+    "note": "Les 17 articles sont inventoriés mais leurs URLs Substack manquent.",
+    "priorite": "haute",
+    "prochaine_action": "Coller les 17 liens Substack dans les fiches œuvre",
+    "blocage": "",
+    "responsable": "Hamza"
+  },
+  {
+    "id": "projet.retrouver-fr",
+    "type": "projet",
+    "titre": "Retrouver la version française de la Fondation",
+    "statut": "bloqué",
+    "maj": "2026-08-10",
+    "note": "Le document anglais existe et dit dériver d'un original français introuvable.",
+    "priorite": "haute",
+    "prochaine_action": "Chercher dans Drive et Notion",
+    "blocage": "Emplacement du fichier source inconnu",
+    "responsable": "Hamza"
+  },
+  {
+    "id": "projet.liste-institutions",
+    "type": "projet",
+    "titre": "Établir la liste des institutions cibles",
+    "statut": "actif",
+    "maj": "2026-08-10",
+    "note": "Instituts d'études avancées, centres transdisciplinaires, fellowships, labos IA éthique.",
+    "priorite": "moyenne",
+    "prochaine_action": "Repérer 10 institutions compatibles avec les conditions de viabilité",
+    "blocage": "",
+    "responsable": "Hamza"
+  },
+  {
+    "id": "projet.inventaire",
+    "type": "projet",
+    "titre": "Construire l'inventaire Mentis Prime",
+    "statut": "actif",
+    "maj": "2026-08-10",
+    "note": "Ce tableau de bord. Phase 1 de la séquence.",
+    "priorite": "haute",
+    "prochaine_action": "Compléter les personnages et les projets manquants",
+    "blocage": "",
+    "responsable": "Claude Code"
+  },
+  {
+    "id": "projet.confidentialite",
+    "type": "projet",
+    "titre": "Trancher la confidentialité du dépôt GitHub",
+    "statut": "en attente",
+    "maj": "2026-08-10",
+    "note": "Le README de mentis-prime-os annonce un dépôt privé ; il est actuellement public.",
+    "priorite": "moyenne",
+    "prochaine_action": "Décider : privé ou public",
+    "blocage": "Décision à prendre",
+    "responsable": "Hamza"
+  },
+  {
+    "id": "projet.n8n-mvp0",
+    "type": "projet",
+    "titre": "MVP0 — router HMP-ZAPIER-001 par n8n",
+    "statut": "bloqué",
+    "maj": "2026-08-10",
+    "note": "Workflow n8n construit et prêt à importer. Le circuit lire→aiguiller→écrire fonctionne sans clé. Mais la branche « Vers Claude » n'a aucune destination réelle.",
+    "priorite": "haute",
+    "prochaine_action": "Importer le workflow dans n8n, créer la credential Airtable, exécuter en manuel",
+    "blocage": "Agents & Rôles déclare qu'aucun canal direct vers Claude n'existe — décision à prendre : accusé seul, API Anthropic, ou file d'attente",
+    "responsable": "Hamza"
+  },
+  {
+    "id": "projet.dedoublonner-personnages",
+    "type": "projet",
+    "titre": "Dédoublonner la table Personnages",
+    "statut": "actif",
+    "maj": "2026-08-10",
+    "note": "6 enregistrements « Canon verrouillé » pour 3 personnages. Deux lots créés à 40 secondes d'intervalle le 09/08, avec des contenus DIFFÉRENTS. Le registre de vérité se contredit.",
+    "priorite": "haute",
+    "prochaine_action": "Fusionner chaque paire en gardant la version riche, puis supprimer la courte",
+    "blocage": "",
+    "responsable": "Hamza"
+  }
+]

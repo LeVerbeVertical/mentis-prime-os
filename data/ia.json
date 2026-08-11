@@ -1,0 +1,41 @@
+[
+  {
+    "id": "ia.claude-conversationnel",
+    "type": "ia",
+    "titre": "Claude conversationnel",
+    "statut": "active",
+    "maj": "2026-08-10",
+    "note": "L'opérateur de la pensée, pas de la construction.",
+    "fonction": "Réflexion, critique, rédaction, investigation",
+    "capacites": "Analyse longue, contradiction qualifiée, reformulation, recherche",
+    "autorise": "Critiquer, proposer, reformuler, structurer une idée",
+    "interdit": "Rédiger un texte signé Le Verbe Vertical destiné à la publication",
+    "autonomie": "L1 — proposition"
+  },
+  {
+    "id": "ia.claude-code",
+    "type": "ia",
+    "titre": "Claude Code",
+    "statut": "active",
+    "maj": "2026-08-10",
+    "note": "L'opérateur de la construction.",
+    "fonction": "Construction, fichiers, scripts, architecture, intégrations",
+    "capacites": "Écriture de code, manipulation de fichiers, git, exécution locale",
+    "autorise": "Créer et modifier des fichiers du projet",
+    "interdit": "Publier, envoyer, ou pousser sans validation explicite",
+    "autonomie": "L2 — écriture locale"
+  },
+  {
+    "id": "ia.chatgpt",
+    "type": "ia",
+    "titre": "ChatGPT",
+    "statut": "active",
+    "maj": "2026-08-10",
+    "note": "L'opérateur de la continuité entre sessions.",
+    "fonction": "Orchestration, analyse, création, continuité",
+    "capacites": "Mémoire de session longue, synthèse, génération",
+    "autorise": "Analyser, synthétiser, maintenir le fil entre les sessions",
+    "interdit": "Décider seul d'une orientation du projet",
+    "autonomie": "L1 — proposition"
+  }
+]

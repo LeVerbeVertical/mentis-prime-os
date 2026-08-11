@@ -1,0 +1,50 @@
+[
+  {
+    "id": "canal.substack",
+    "type": "canal",
+    "titre": "Substack — Le Verbe Vertical",
+    "statut": "actif",
+    "maj": "2026-08-10",
+    "note": "Canal principal. Les 17 articles y sont publiés.",
+    "genre": "publication",
+    "url": "leverbevertical.substack.com",
+    "audience": "",
+    "monetisation": "abonnement possible"
+  },
+  {
+    "id": "canal.notion",
+    "type": "canal",
+    "titre": "Notion — Le Verbe Vertical",
+    "statut": "actif",
+    "maj": "2026-08-10",
+    "note": "Organisation structurée du corpus, accessible publiquement.",
+    "genre": "publication",
+    "url": "notion.so/Le-Verbe-Vertical",
+    "audience": "",
+    "monetisation": "aucune"
+  },
+  {
+    "id": "canal.kdp",
+    "type": "canal",
+    "titre": "Édition livre (KDP)",
+    "statut": "en préparation",
+    "maj": "2026-08-10",
+    "note": "",
+    "genre": "édition",
+    "url": "",
+    "audience": "",
+    "monetisation": "vente à l'unité"
+  },
+  {
+    "id": "canal.boutique",
+    "type": "canal",
+    "titre": "Boutique",
+    "statut": "dormant",
+    "maj": "2026-08-10",
+    "note": "",
+    "genre": "boutique",
+    "url": "",
+    "audience": "",
+    "monetisation": "produits"
+  }
+]
