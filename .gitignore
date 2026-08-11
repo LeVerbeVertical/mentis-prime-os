@@ -1,3 +1,9 @@
+# === Archive maître des médias — JAMAIS versionnée ===
+# 482 fichiers, ~900 Mo : ce sont tes images, le dépôt est destiné à devenir
+# public, et git n'est pas fait pour du binaire lourd. Seul l'inventaire —
+# URLs, tailles, empreintes SHA-256 — est versionné, à la racine.
+archive_medias/
+
 # === Export Substack — JAMAIS versionné ===
 # Contient les adresses des abonnés et le corpus intégral, dont des
 # articles réservés aux abonnés payants. Le dépôt ne garde que les
