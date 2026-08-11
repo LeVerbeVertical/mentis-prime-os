@@ -158,8 +158,19 @@ def main(racine):
             dates += 1
         if r["subtitle"]:
             o["sous_titre"] = r["subtitle"]
-        o["audience"] = r["audience"]
-        o["statut"] = "publié" if publie else "brouillon"
+
+        # ATTENTION — plusieurs post_id peuvent partager un même slug :
+        # harmonis-mentis-prime en a trois (une newsletter publiée et deux
+        # podcasts en brouillon). Écraser le statut à chaque ligne laissait
+        # le dernier gagner, et un brouillon effaçait la publication réelle.
+        # Une œuvre publiée le reste : le statut publié l'emporte toujours.
+        deja_publie = o.get("statut") == "publié"
+        if publie or not deja_publie:
+            o["statut"] = "publié" if publie else "brouillon"
+        if publie:
+            o["audience"] = r["audience"]
+        elif not o.get("audience"):
+            o["audience"] = r["audience"]
         if not publie:
             brouillons += 1
         o["note"] = ("Titre, sous-titre et date confirmés par l'export Substack "
