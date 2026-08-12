@@ -3,7 +3,7 @@
 > D'où vient chaque chiffre affiché par le Dashboard. À lire avant de faire
 > confiance à un compteur.
 
-**Statut au 11/08/2026.** Le Dashboard n'est connecté à aucune source en direct :
+**Statut au 12/08/2026.** Le Dashboard n'est connecté à aucune source en direct :
 rien ne se met à jour tout seul, tout finira par diverger. Mais la qualité des
 données a changé de nature avec l'export Substack officiel du 10/08/2026.
 
@@ -45,7 +45,7 @@ publie ni tes abonnés, ni tes textes payants.
 | `_registre.json` | Écrit à la main d'après ce qui a réellement été lu dans Airtable. | Trace de provenance, pas une donnée |
 | `canal.json` | Déduit du PDF et de la conversation. | Non vérifié |
 | `institution.json` | Vide. | — |
-| `relations.json` | 390 liens. La hiérarchie et les canaux sont écrits à la main ; les 72 rattachements `traite_de` sont **comptés dans le texte réel des articles** (seuil : 4 occurrences), avec le compte inscrit en note. | Mixte — les `traite_de` sont attestés |
+| `relations.json` | 390 liens. Les 81 `traite_de` portent désormais un champ `origine` : **55 lexicaux** (comptés dans le texte réel, seuil de 4 occurrences, `occurrences` inscrit) et **26 sémantiques** (déduits du titre et du propos, sans comptage). La hiérarchie et les canaux restent écrits à la main. | Mixte, mais la nature de chaque lien est déclarée |
 
 ---
 
@@ -62,7 +62,7 @@ La première des deux issues envisagées a été retenue. Deux tables ont été 
 | Table Airtable | Id | Lignes |
 |---|---|---|
 | `Projets` | `tblDqdx4gZQihq303` | 14 |
-| `Plan d'action` | `tblF6i0g0huoKNeJv` | 43 |
+| `Plan d'action` | `tblF6i0g0huoKNeJv` | 44 |
 
 Airtable est désormais la source, le Dashboard en est la lecture. Chaque projet de
 `data/projet.json` porte son `recId` d'origine dans le champ `airtable` : tout ce
@@ -93,9 +93,10 @@ Airtable a raison sur les faits. C'est Airtable qu'il faut corriger.
 
 ### 3. Les relations ne sont importées de nulle part
 
-Sur les 390 relations, **72 sont attestées** — les rattachements `traite_de`,
-comptés dans le texte réel des articles. Toutes les autres sont écrites à la main.
-Aucune ne vient d'Airtable.
+Sur les 390 relations, **55 sont attestées par un comptage** — les `traite_de`
+d'origine lexicale, avec leur nombre d'occurrences inscrit. 26 autres `traite_de`
+sont des qualifications sémantiques déduites du titre. Tout le reste est écrit à
+la main. Aucune relation ne vient d'Airtable.
 
 Or la table `VENTE — Circuit France` contient **28 nœuds** avec leurs relations,
 stockées en texte libre dans les champs `Entrée depuis` et `Sortie vers` — pas en
@@ -109,17 +110,17 @@ et il n'est pas dans la carte.
 | Table Airtable | Lignes | Repris ? |
 |---|---|---|
 | `Projets` | 14 | **Oui** → `projet.json` |
-| `Plan d'action` | 43 | **Oui** → tableau `plan` de chaque projet |
-| `Handoffs IA` | 5 | **Oui** → `handoff.json`, en résumé |
+| `Plan d'action` | 44 | **Oui** → tableau `plan` de chaque projet |
+| `Handoffs IA` | 6 | **Oui** → `handoff.json`, en résumé |
 | `Personnages` | 6 | **Oui**, dédoublonné en 3 |
 | `Corpus` | 96 | Non — `oeuvre.json` en contient 103, périmètre différent |
 | `Concepts` | 18 | Non — `concept.json` est écrit indépendamment |
 | `Agents & Rôles` | 3 | Non — `ia.json` est écrit indépendamment |
 | `KDP — Performance` | 0 | Sans objet — schéma prêt, aucune donnée importée |
 | `VENTE — Circuit France` | 28 | Non |
-| `Droits & Expansion canonique` | 4 | Non |
+| `Droits & Expansion canonique` | 5 | Non — porte la North Star depuis le 12/08/2026 |
 | `Expériences éditoriales` | 1 | Non |
-| `Outils & Modalités` | 4 | Partiellement |
+| `Outils & Modalités` | 18 | Non — registre officiel des outils depuis le 11/08/2026 |
 | `LUCID — Sync Queue` | 2 | Non |
 
 **4 tables sur 13 sont reprises.** Le Dashboard n'est pas une vue d'Airtable :
@@ -170,9 +171,18 @@ signature de la publication, pas un sujet traité. Les mots « information »,
 « performance » et « transmission » posaient le même problème : trop ordinaires
 pour signifier quoi que ce soit.
 
-Après resserrement du vocabulaire, il reste **72 rattachements** répartis ainsi :
-14 articles sur l'Axe, 11 sur l'Individuation, 7 sur l'Épicothérapie, 6 sur
-l'Êtrejectif, et le reste sur les archétypes.
+Après resserrement du vocabulaire, il reste **55 rattachements comptés** — c'est
+le chiffre mesuré, vérifié par `verifier.py`. S'y ajoutent **26 rattachements
+sémantiques**, qui ne viennent d'aucun comptage : les archétypes, déduits du titre
+et du propos de chaque article.
+
+**Ces deux natures étaient mélangées sous le même verbe**, et rien ne permettait
+de les distinguer — ce qui donnait à une lecture l'autorité d'un chiffre. Chaque
+relation `traite_de` porte maintenant un champ `origine`, `lexical` ou
+`semantique`, et le vérificateur refuse une relation qui n'en déclare aucune.
+
+Un rattachement sémantique n'est pas moins vrai qu'un rattachement lexical. Il
+est autrement établi, et c'est précisément ce qu'il faut pouvoir dire.
 
 C'est une méthode grossière, et elle ne prétend pas remplacer une lecture. Elle
 donne un échafaudage vérifiable, pas un jugement sur le sens.
@@ -224,3 +234,32 @@ pointe vers `archive_medias/<slug>/`, aurait menti.
 Une passe de complétion pose un **lien physique** vers le fichier déjà présent :
 même inode, aucun octet supplémentaire. 220 réutilisations reliées. C'est ce qui
 explique 702 entrées rangées pour 482 fichiers réels sur le disque.
+
+
+---
+
+## Ce que le durcissement du 12/08/2026 a changé
+
+Contre-audit de Vertice (`OS-DURCISSEMENT-001`). Rien d'architectural — des états
+qui avaient divergé, et un vocabulaire qui promettait plus que ce que le système fait.
+
+**Deux défauts réels du serveur, corrigés.** Les sauvegardes étaient horodatées à
+la seconde et le dossier créé avec `exist_ok=True` : deux enregistrements
+rapprochés tombaient dans le même dossier et le second écrasait la copie de
+secours du premier — la protection disparaissait donc exactement pendant une
+rafale de modifications, quand elle sert le plus. Horodatage à la milliseconde,
+création exclusive. Et l'écriture n'était presque pas validée : deux contrôles
+seulement. Elle en fait maintenant sept, dont le typage des verbes de relation.
+
+**Un vérificateur reproductible.** `python3 verifier.py` réutilise les règles du
+serveur plutôt que de les réimplémenter — deux jeux de règles finiraient par
+diverger, et le contrôle certifierait alors un état que le serveur refuse.
+
+**La fraîcheur devient visible.** L'interface affiche l'âge de la photo Airtable
+en jours, et la signale au-delà de sept. Une date seule ne se lit pas ; un âge se
+sent.
+
+**Ce que le vérificateur a trouvé en s'exécutant pour la première fois** : les 81
+rattachements `traite_de` mélangeaient deux natures indistinguables — 55 comptages
+et 26 jugements. Voir la note de méthode ci-dessus. Le contrôle a donc trouvé quelque
+chose dès sa première exécution, ce qui est plutôt bon signe pour la suite.

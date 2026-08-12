@@ -24,6 +24,17 @@ Pour arrêter : `Ctrl+C` dans le terminal.
 
 C'est tout. Rien à installer.
 
+**Vérifier que tout est cohérent** — à tout moment, avant comme après une
+modification :
+
+```bash
+python3 verifier.py
+```
+
+Il contrôle les données contre le modèle, la règle « une seule étape en cours »,
+la fraîcheur de l'export Airtable et la cohérence du catalogue médias. Il sort 0
+si tout va bien. Les avertissements signalent ce qui vieillit, pas ce qui casse.
+
 ---
 
 ## Le consulter sans rien lancer
@@ -169,9 +180,24 @@ troisième est en cours.
 
 ---
 
+## Mode pilote
+
+Le système avance seul sur ce qui est réversible : il choisit une action utile,
+l'exécute, la vérifie, met le registre à jour et te le dit. **Il ne te demande
+pas la permission de faire son travail.**
+
+Cinq choses seulement remontent à toi : le **canon**, une **dépense**, une action
+**irréversible**, les **données sensibles**, un **changement de cap**. Le reste
+s'exécute puis se raconte — dans cet ordre.
+
+Le contrat complet est dans `MODE_PILOTE.md`, et il est rappelé sur l'Accueil et
+sur l'écran Projets.
+
+---
+
 ## La suite
 
-Le chantier **P0** attend une seule chose : que tu ouvres l'interface et que tu
-dises ce que tu en penses. Les chantiers suivants — KDP, distribution, transmédia,
-diffusion — sont écrits et ordonnés dans l'écran **Projets**, et aucun ne s'ouvre
-avant cette validation.
+Le chantier **P0** se termine par un **durcissement**, pas par une validation :
+il se ferme quand `verifier.py` est au vert et que les tests navigateur passent.
+Les chantiers suivants — KDP, distribution, transmédia, diffusion — sont écrits
+et ordonnés dans l'écran **Projets**, et s'ouvrent un par un.

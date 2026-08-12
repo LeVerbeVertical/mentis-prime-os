@@ -297,157 +297,183 @@
     "de": "oeuvre.crise-existentielle",
     "verbe": "traite_de",
     "vers": "arch.crise",
-    "note": ""
+    "note": "Rattachement déduit du titre et du propos de l'article, non d'un comptage. Qualification sémantique, pas une mesure.",
+    "origine": "semantique"
   },
   {
     "de": "oeuvre.enfant-interieur",
     "verbe": "traite_de",
     "vers": "arch.enfant",
-    "note": ""
+    "note": "Rattachement déduit du titre et du propos de l'article, non d'un comptage. Qualification sémantique, pas une mesure.",
+    "origine": "semantique"
   },
   {
     "de": "oeuvre.heros-interieur",
     "verbe": "traite_de",
     "vers": "arch.heros",
-    "note": ""
+    "note": "Rattachement déduit du titre et du propos de l'article, non d'un comptage. Qualification sémantique, pas une mesure.",
+    "origine": "semantique"
   },
   {
     "de": "oeuvre.sage-interieur",
     "verbe": "traite_de",
     "vers": "arch.sage",
-    "note": ""
+    "note": "Rattachement déduit du titre et du propos de l'article, non d'un comptage. Qualification sémantique, pas une mesure.",
+    "origine": "semantique"
   },
   {
     "de": "oeuvre.juge-interieur",
     "verbe": "traite_de",
     "vers": "arch.juge",
-    "note": ""
+    "note": "Rattachement déduit du titre et du propos de l'article, non d'un comptage. Qualification sémantique, pas une mesure.",
+    "origine": "semantique"
   },
   {
     "de": "oeuvre.demon-interieur",
     "verbe": "traite_de",
     "vers": "arch.demon",
-    "note": ""
+    "note": "Rattachement déduit du titre et du propos de l'article, non d'un comptage. Qualification sémantique, pas une mesure.",
+    "origine": "semantique"
   },
   {
     "de": "oeuvre.enfant-transcende",
     "verbe": "traite_de",
     "vers": "arch.transcende",
-    "note": ""
+    "note": "Rattachement déduit du titre et du propos de l'article, non d'un comptage. Qualification sémantique, pas une mesure.",
+    "origine": "semantique"
   },
   {
     "de": "oeuvre.epicotherapie",
     "verbe": "traite_de",
     "vers": "concept.epicotherapie",
-    "note": ""
+    "note": "Rattachement déduit du titre et du propos de l'article, non d'un comptage. Qualification sémantique, pas une mesure.",
+    "origine": "semantique"
   },
   {
     "de": "oeuvre.epicotherapie",
     "verbe": "traite_de",
     "vers": "concept.individuation",
-    "note": ""
+    "note": "Rattachement déduit du titre et du propos de l'article, non d'un comptage. Qualification sémantique, pas une mesure.",
+    "origine": "semantique"
   },
   {
     "de": "oeuvre.ia-verticale",
     "verbe": "traite_de",
     "vers": "concept.axe",
-    "note": ""
+    "note": "Rattachement déduit du titre et du propos de l'article, non d'un comptage. Qualification sémantique, pas une mesure.",
+    "origine": "semantique"
   },
   {
     "de": "oeuvre.ia-verticale",
     "verbe": "traite_de",
     "vers": "concept.sens-info-performance",
-    "note": ""
+    "note": "Rattachement déduit du titre et du propos de l'article, non d'un comptage. Qualification sémantique, pas une mesure.",
+    "origine": "semantique"
   },
   {
     "de": "oeuvre.chromato-semanto",
     "verbe": "traite_de",
     "vers": "concept.sens-info-performance",
-    "note": ""
+    "note": "Rattachement déduit du titre et du propos de l'article, non d'un comptage. Qualification sémantique, pas une mesure.",
+    "origine": "semantique"
   },
   {
     "de": "oeuvre.qtlx",
     "verbe": "traite_de",
     "vers": "concept.qtlx",
-    "note": ""
+    "note": "Rattachement déduit du titre et du propos de l'article, non d'un comptage. Qualification sémantique, pas une mesure.",
+    "origine": "semantique"
   },
   {
     "de": "oeuvre.qtlx",
     "verbe": "traite_de",
     "vers": "concept.noetique",
-    "note": ""
+    "note": "Rattachement déduit du titre et du propos de l'article, non d'un comptage. Qualification sémantique, pas une mesure.",
+    "origine": "semantique"
   },
   {
     "de": "oeuvre.8-valeurs",
     "verbe": "traite_de",
     "vers": "concept.axe",
-    "note": ""
+    "note": "Rattachement déduit du titre et du propos de l'article, non d'un comptage. Qualification sémantique, pas une mesure.",
+    "origine": "semantique"
   },
   {
     "de": "oeuvre.beingjectif",
     "verbe": "traite_de",
     "vers": "concept.beingjectif",
-    "note": ""
+    "note": "Rattachement déduit du titre et du propos de l'article, non d'un comptage. Qualification sémantique, pas une mesure.",
+    "origine": "semantique"
   },
   {
     "de": "oeuvre.beingjectif",
     "verbe": "traite_de",
     "vers": "concept.noetique",
-    "note": ""
+    "note": "Rattachement déduit du titre et du propos de l'article, non d'un comptage. Qualification sémantique, pas une mesure.",
+    "origine": "semantique"
   },
   {
     "de": "oeuvre.8-causes",
     "verbe": "traite_de",
     "vers": "concept.axe",
-    "note": ""
+    "note": "Rattachement déduit du titre et du propos de l'article, non d'un comptage. Qualification sémantique, pas une mesure.",
+    "origine": "semantique"
   },
   {
     "de": "oeuvre.individuation-seuil",
     "verbe": "traite_de",
     "vers": "concept.individuation",
-    "note": ""
+    "note": "Rattachement déduit du titre et du propos de l'article, non d'un comptage. Qualification sémantique, pas une mesure.",
+    "origine": "semantique"
   },
   {
     "de": "oeuvre.fondation-institutionnelle",
     "verbe": "traite_de",
     "vers": "axe.epistemique",
-    "note": ""
+    "note": "Rattachement déduit du titre et du propos de l'article, non d'un comptage. Qualification sémantique, pas une mesure.",
+    "origine": "semantique"
   },
   {
     "de": "oeuvre.fondation-institutionnelle",
     "verbe": "traite_de",
     "vers": "axe.methodologique",
-    "note": ""
+    "note": "Rattachement déduit du titre et du propos de l'article, non d'un comptage. Qualification sémantique, pas une mesure.",
+    "origine": "semantique"
   },
   {
     "de": "oeuvre.fondation-institutionnelle",
     "verbe": "traite_de",
     "vers": "axe.anthropologique",
-    "note": ""
+    "note": "Rattachement déduit du titre et du propos de l'article, non d'un comptage. Qualification sémantique, pas une mesure.",
+    "origine": "semantique"
   },
   {
     "de": "oeuvre.fondation-institutionnelle",
     "verbe": "traite_de",
     "vers": "axe.transmissibilite",
-    "note": ""
+    "note": "Rattachement déduit du titre et du propos de l'article, non d'un comptage. Qualification sémantique, pas une mesure.",
+    "origine": "semantique"
   },
   {
     "de": "oeuvre.fondation-institutionnelle",
     "verbe": "traite_de",
     "vers": "concept.axe",
-    "note": ""
+    "note": "Rattachement déduit du titre et du propos de l'article, non d'un comptage. Qualification sémantique, pas une mesure.",
+    "origine": "semantique"
   },
   {
     "de": "oeuvre.fondation-institutionnelle",
     "verbe": "traite_de",
     "vers": "concept.noetique",
-    "note": ""
+    "note": "Rattachement déduit du titre et du propos de l'article, non d'un comptage. Qualification sémantique, pas une mesure.",
+    "origine": "semantique"
   },
   {
     "de": "oeuvre.fondation-institutionnelle",
     "verbe": "traite_de",
     "vers": "concept.individuation",
-    "note": ""
+    "note": "Rattachement déduit du titre et du propos de l'article, non d'un comptage. Qualification sémantique, pas une mesure.",
+    "origine": "semantique"
   },
   {
     "de": "doc.fondation-en",
@@ -2013,330 +2039,440 @@
     "de": "oeuvre.la-theorie-de-lhomme-vertical-et",
     "verbe": "traite_de",
     "vers": "concept.axe",
-    "note": "4 occurrences dans le texte de l'article."
+    "note": "4 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 4
   },
   {
     "de": "oeuvre.individu-vertical-dans-un-monde-horizontal-dd6",
     "verbe": "traite_de",
     "vers": "concept.axe",
-    "note": "6 occurrences dans le texte de l'article."
+    "note": "6 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 6
   },
   {
     "de": "oeuvre.enfant-interieur",
     "verbe": "traite_de",
     "vers": "concept.axe",
-    "note": "4 occurrences dans le texte de l'article."
+    "note": "4 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 4
   },
   {
     "de": "oeuvre.heros-interieur",
     "verbe": "traite_de",
     "vers": "arch.sage",
-    "note": "4 occurrences dans le texte de l'article."
+    "note": "4 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 4
   },
   {
     "de": "oeuvre.juge-interieur",
     "verbe": "traite_de",
     "vers": "arch.demon",
-    "note": "4 occurrences dans le texte de l'article."
+    "note": "4 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 4
   },
   {
     "de": "oeuvre.enfant-transcende",
     "verbe": "traite_de",
     "vers": "concept.axe",
-    "note": "4 occurrences dans le texte de l'article."
+    "note": "4 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 4
   },
   {
     "de": "oeuvre.enfant-transcende",
     "verbe": "traite_de",
     "vers": "concept.epicotherapie",
-    "note": "4 occurrences dans le texte de l'article."
+    "note": "4 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 4
   },
   {
     "de": "oeuvre.epicotherapie",
     "verbe": "traite_de",
     "vers": "concept.axe",
-    "note": "6 occurrences dans le texte de l'article."
+    "note": "6 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 6
   },
   {
     "de": "oeuvre.chromato-semanto",
     "verbe": "traite_de",
     "vers": "concept.epicotherapie",
-    "note": "7 occurrences dans le texte de l'article."
+    "note": "7 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 7
   },
   {
     "de": "oeuvre.chromato-semanto",
     "verbe": "traite_de",
     "vers": "concept.beingjectif",
-    "note": "6 occurrences dans le texte de l'article."
+    "note": "6 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 6
   },
   {
     "de": "oeuvre.ecrire-survivre",
     "verbe": "traite_de",
     "vers": "concept.axe",
-    "note": "4 occurrences dans le texte de l'article."
+    "note": "4 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 4
   },
   {
     "de": "oeuvre.8-causes",
     "verbe": "traite_de",
     "vers": "concept.epicotherapie",
-    "note": "4 occurrences dans le texte de l'article."
+    "note": "4 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 4
   },
   {
     "de": "oeuvre.8-causes",
     "verbe": "traite_de",
     "vers": "arch.crise",
-    "note": "6 occurrences dans le texte de l'article."
+    "note": "6 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 6
   },
   {
     "de": "oeuvre.le-verbe-vertical-and-o-verbe-axial",
     "verbe": "traite_de",
     "vers": "arch.crise",
-    "note": "5 occurrences dans le texte de l'article."
+    "note": "5 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 5
   },
   {
     "de": "oeuvre.individuation-seuil",
     "verbe": "traite_de",
     "vers": "concept.beingjectif",
-    "note": "6 occurrences dans le texte de l'article."
+    "note": "6 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 6
   },
   {
     "de": "oeuvre.qtlx",
     "verbe": "traite_de",
     "vers": "concept.individuation",
-    "note": "6 occurrences dans le texte de l'article."
+    "note": "6 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 6
   },
   {
     "de": "oeuvre.qtlx",
     "verbe": "traite_de",
     "vers": "axe.methodologique",
-    "note": "4 occurrences dans le texte de l'article."
+    "note": "4 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 4
   },
   {
     "de": "oeuvre.fondation-institutionnelle",
     "verbe": "traite_de",
     "vers": "concept.beingjectif",
-    "note": "4 occurrences dans le texte de l'article."
+    "note": "4 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 4
   },
   {
     "de": "oeuvre.la-crise-existentielle-individuelle",
     "verbe": "traite_de",
     "vers": "arch.crise",
-    "note": "17 occurrences dans le texte de l'article."
+    "note": "17 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 17
   },
   {
     "de": "oeuvre.lenfance-interieure-face-a-labandon",
     "verbe": "traite_de",
     "vers": "arch.enfant",
-    "note": "23 occurrences dans le texte de l'article."
+    "note": "23 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 23
   },
   {
     "de": "oeuvre.lenfance-interieure-face-a-labandon",
     "verbe": "traite_de",
     "vers": "axe.anthropologique",
-    "note": "10 occurrences dans le texte de l'article."
+    "note": "10 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 10
   },
   {
     "de": "oeuvre.le-heroisme-interieur-face-a-la-precarite",
     "verbe": "traite_de",
     "vers": "concept.axe",
-    "note": "16 occurrences dans le texte de l'article."
+    "note": "16 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 16
   },
   {
     "de": "oeuvre.le-heroisme-interieur-face-a-la-precarite",
     "verbe": "traite_de",
     "vers": "arch.heros",
-    "note": "52 occurrences dans le texte de l'article."
+    "note": "52 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 52
   },
   {
     "de": "oeuvre.la-sagesse-interieure-face-au-reste",
     "verbe": "traite_de",
     "vers": "concept.axe",
-    "note": "6 occurrences dans le texte de l'article."
+    "note": "6 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 6
   },
   {
     "de": "oeuvre.la-sagesse-interieure-face-au-reste",
     "verbe": "traite_de",
     "vers": "arch.sage",
-    "note": "52 occurrences dans le texte de l'article."
+    "note": "52 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 52
   },
   {
     "de": "oeuvre.la-justice-interieure-face-aux-engagements",
     "verbe": "traite_de",
     "vers": "concept.axe",
-    "note": "4 occurrences dans le texte de l'article."
+    "note": "4 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 4
   },
   {
     "de": "oeuvre.la-justice-interieure-face-aux-engagements",
     "verbe": "traite_de",
     "vers": "arch.juge",
-    "note": "34 occurrences dans le texte de l'article."
+    "note": "34 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 34
   },
   {
     "de": "oeuvre.la-justice-interieure-face-aux-engagements",
     "verbe": "traite_de",
     "vers": "axe.anthropologique",
-    "note": "4 occurrences dans le texte de l'article."
+    "note": "4 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 4
   },
   {
     "de": "oeuvre.la-demonie-interieure-face-a-la-r",
     "verbe": "traite_de",
     "vers": "arch.demon",
-    "note": "31 occurrences dans le texte de l'article."
+    "note": "31 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 31
   },
   {
     "de": "oeuvre.lenfance-transcendee-dans-leducation",
     "verbe": "traite_de",
     "vers": "arch.transcende",
-    "note": "14 occurrences dans le texte de l'article."
+    "note": "14 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 14
   },
   {
     "de": "oeuvre.letrejectif-la-rigueur-epistemique",
     "verbe": "traite_de",
     "vers": "concept.beingjectif",
-    "note": "6 occurrences dans le texte de l'article."
+    "note": "6 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 6
   },
   {
     "de": "oeuvre.le-combat-interieur-friction-feconde",
     "verbe": "traite_de",
     "vers": "concept.individuation",
-    "note": "7 occurrences dans le texte de l'article."
+    "note": "7 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 7
   },
   {
     "de": "oeuvre.le-metacadre-comment-neutraliser",
     "verbe": "traite_de",
     "vers": "concept.individuation",
-    "note": "4 occurrences dans le texte de l'article."
+    "note": "4 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 4
   },
   {
     "de": "oeuvre.luvre",
     "verbe": "traite_de",
     "vers": "axe.anthropologique",
-    "note": "5 occurrences dans le texte de l'article."
+    "note": "5 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 5
   },
   {
     "de": "oeuvre.individuation-epicotherapeutique",
     "verbe": "traite_de",
     "vers": "concept.axe",
-    "note": "4 occurrences dans le texte de l'article."
+    "note": "4 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 4
   },
   {
     "de": "oeuvre.individuation-epicotherapeutique",
     "verbe": "traite_de",
     "vers": "concept.individuation",
-    "note": "8 occurrences dans le texte de l'article."
+    "note": "8 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 8
   },
   {
     "de": "oeuvre.individuation-epicotherapeutique",
     "verbe": "traite_de",
     "vers": "concept.epicotherapie",
-    "note": "6 occurrences dans le texte de l'article."
+    "note": "6 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 6
   },
   {
     "de": "oeuvre.projection",
     "verbe": "traite_de",
     "vers": "concept.individuation",
-    "note": "7 occurrences dans le texte de l'article."
+    "note": "7 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 7
   },
   {
     "de": "oeuvre.projection",
     "verbe": "traite_de",
     "vers": "concept.epicotherapie",
-    "note": "7 occurrences dans le texte de l'article."
+    "note": "7 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 7
   },
   {
     "de": "oeuvre.lalterite",
     "verbe": "traite_de",
     "vers": "concept.beingjectif",
-    "note": "10 occurrences dans le texte de l'article."
+    "note": "10 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 10
   },
   {
     "de": "oeuvre.le-sphinx",
     "verbe": "traite_de",
     "vers": "concept.beingjectif",
-    "note": "14 occurrences dans le texte de l'article."
+    "note": "14 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 14
   },
   {
     "de": "oeuvre.lhumain",
     "verbe": "traite_de",
     "vers": "concept.individuation",
-    "note": "9 occurrences dans le texte de l'article."
+    "note": "9 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 9
   },
   {
     "de": "oeuvre.passion",
     "verbe": "traite_de",
     "vers": "concept.individuation",
-    "note": "8 occurrences dans le texte de l'article."
+    "note": "8 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 8
   },
   {
     "de": "oeuvre.passion",
     "verbe": "traite_de",
     "vers": "concept.epicotherapie",
-    "note": "11 occurrences dans le texte de l'article."
+    "note": "11 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 11
   },
   {
     "de": "oeuvre.parasocial",
     "verbe": "traite_de",
     "vers": "concept.individuation",
-    "note": "4 occurrences dans le texte de l'article."
+    "note": "4 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 4
   },
   {
     "de": "oeuvre.passeurs-de-lumiere-soufisme-taoisme",
     "verbe": "traite_de",
     "vers": "concept.axe",
-    "note": "4 occurrences dans le texte de l'article."
+    "note": "4 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 4
   },
   {
     "de": "oeuvre.techno-sapiens-i",
     "verbe": "traite_de",
     "vers": "concept.qtlx",
-    "note": "13 occurrences dans le texte de l'article."
+    "note": "13 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 13
   },
   {
     "de": "oeuvre.techno-sapiens-ii",
     "verbe": "traite_de",
     "vers": "axe.anthropologique",
-    "note": "4 occurrences dans le texte de l'article."
+    "note": "4 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 4
   },
   {
     "de": "oeuvre.sale-arabe",
     "verbe": "traite_de",
     "vers": "concept.individuation",
-    "note": "4 occurrences dans le texte de l'article."
+    "note": "4 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 4
   },
   {
     "de": "oeuvre.sale-arabe",
     "verbe": "traite_de",
     "vers": "concept.epicotherapie",
-    "note": "4 occurrences dans le texte de l'article."
+    "note": "4 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 4
   },
   {
     "de": "oeuvre.dev-perso-and-new-age",
     "verbe": "traite_de",
     "vers": "concept.individuation",
-    "note": "6 occurrences dans le texte de l'article."
+    "note": "6 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 6
   },
   {
     "de": "oeuvre.lhymne-du-verbe-vertical",
     "verbe": "traite_de",
     "vers": "concept.axe",
-    "note": "5 occurrences dans le texte de l'article."
+    "note": "5 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 5
   },
   {
     "de": "oeuvre.copy-jecris-pour-survivre",
     "verbe": "traite_de",
     "vers": "concept.axe",
-    "note": "4 occurrences dans le texte de l'article."
+    "note": "4 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 4
   },
   {
     "de": "oeuvre.du-moralisateur-au-psychologisateur",
     "verbe": "traite_de",
     "vers": "concept.individuation",
-    "note": "5 occurrences dans le texte de l'article."
+    "note": "5 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 5
   },
   {
     "de": "oeuvre.copy-lhymne-du-verbe-vertical",
     "verbe": "traite_de",
     "vers": "concept.axe",
-    "note": "5 occurrences dans le texte de l'article."
+    "note": "5 occurrences dans le texte de l'article.",
+    "origine": "lexical",
+    "occurrences": 5
   }
 ]

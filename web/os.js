@@ -52,6 +52,40 @@ function osEtapeCourante(p) {
   return (p.plan || []).find(e => e.statut === "en cours") || null;
 }
 
+/* Âge de la photo Airtable, en jours. Un export ne se périme pas d'un coup :
+   il vieillit. Afficher l'âge plutôt qu'une date rend la dérive sensible sans
+   qu'on ait à faire le calcul de tête. */
+function osFraicheur() {
+  const r = osRegistre();
+  if (!r || !r.export || !r.export.date) return null;
+  const pris = new Date(r.export.date + "T00:00:00");
+  if (isNaN(pris)) return null;
+  const jours = Math.floor((Date.now() - pris.getTime()) / 86400000);
+  return {
+    date: pris.toLocaleDateString("fr-FR"),
+    jours,
+    texte: jours <= 0 ? "aujourd'hui" : jours === 1 ? "hier" : `il y a ${jours} jours`,
+    vieille: jours > 7,
+  };
+}
+
+/* Le MODE PILOTE gouverne la façon dont le système avance. Il doit donc être
+   lisible là où l'on regarde ce qui avance — pas rangé dans un fichier que
+   personne n'ouvre. */
+function osBandeauPilote() {
+  return `<div class="os-pilote">
+    <span class="os-pilote-titre">Mode pilote</span>
+    <p>Le système choisit <strong>une</strong> prochaine action utile et réversible,
+      l'exécute, la vérifie, met le registre à jour et informe brièvement.
+      Il ne renvoie pas de micro-choix.</p>
+    <p class="os-pilote-ordre">Priorité : produit vendable › blocage critique ›
+      distribution › visibilité › optimisation › <em>infrastructure en dernier</em>.</p>
+    <p class="os-pilote-esc">Remontent à Hamza, et rien d'autre : le canon,
+      une dépense, une action irréversible, les données sensibles,
+      un changement de cap.</p>
+  </div>`;
+}
+
 /* =============================================================================
    ACCUEIL — le panorama, et l'étape du jour
    ========================================================================== */
@@ -113,7 +147,8 @@ function rendreAccueil() {
         </div>
       </div>
       ${bloc}
-    </div>`;
+    </div>
+    ${osBandeauPilote()}`;
 
   // Les quatre capacités que le Schéma Directeur §VIII exige du MVP.
   // Chacune renvoie à l'écran qui la démontre : c'est la promesse, et le test.
@@ -184,8 +219,8 @@ function ecoPlateformes() {
       detail: "Constituée le 11/08/2026. Aucune image manquante : le corpus visuel est intégralement récupérable, empreintes SHA-256 à l'appui." },
     { nom: "GitHub", couche: "I", etat: "photo",
       quoi: "Mémoire technique versionnée. Ni secrets, ni données privées, ni médias lourds.",
-      mesure: () => "dépôt mentis-prime-os",
-      detail: "Poussé et à jour. Le dépôt est encore privé — la décision de le rendre public est prise mais non appliquée." },
+      mesure: () => "public depuis le 11/08/2026",
+      detail: "Poussé et à jour. Le dépôt est PUBLIC : le système est inspectable par tous les agents, Vertice compris. Ce qu'il ne contient pas — abonnés, textes payants, archive médias, clés — reste bloqué par le .gitignore. Attention : « main » et la branche de travail n'ont aucun ancêtre commun, aucune fusion standard n'est possible." },
     { nom: "Airtable", couche: "II", etat: "photo", vue: "sources",
       quoi: "Registre opérationnel. Décrit, ne conserve pas.",
       mesure: () => r ? `${r.tables.length} tables reprises sur ${r.tables.length + r.non_repris.length}` : "registre absent",
@@ -224,12 +259,12 @@ function ecoPlateformes() {
       detail: "Candidat de distribution, à comparer avant d'ouvrir quoi que ce soit." },
     { nom: "Zapier", couche: "IV", etat: "jamais",
       quoi: "Bus d'événements. Fait circuler, ne fait pas foi.",
-      mesure: () => "non activé",
-      detail: "Le Schéma Directeur §XIII en fait la couche de circulation prioritaire, mais fixe un ordre d'activation qui n'est pas encore atteint." },
+      mesure: () => "non activé — non bloquant",
+      detail: "Aucun routage autonome prouvé : le handoff de test porte un Passage ID vide et aucun horodatage. NON BLOQUANT — aucun maillon de la boucle ne dépend de Zapier aujourd'hui, donc cette absence de preuve n'empêche aucun chantier de se fermer. Signalé à Vertice : ZAPIER-PREUVE-004." },
     { nom: "n8n", couche: "IV", etat: "jamais",
       quoi: "Workflows complexes, réservés aux cas démontrés.",
-      mesure: () => "workflow prêt, jamais exécuté",
-      detail: "Le MVP0 de routage des handoffs est construit et importable. Sa branche « Vers Claude » n'a aucune destination réelle." },
+      mesure: () => "prêt, jamais exécuté — non bloquant",
+      detail: "Le MVP0 de routage des handoffs est construit et importable. Sa branche « Vers Claude » n'a aucune destination réelle. NON BLOQUANT, au même titre que Zapier." },
     { nom: "Réseaux sociaux", couche: "IV", etat: "jamais",
       quoi: "Surface de diffusion vers l'œuvre. Chantier P4.",
       mesure: () => "aucune connexion",
@@ -367,7 +402,10 @@ function rendreEcosysteme() {
   $("#eco-avert").innerHTML = `<strong>Aucune liaison en direct.</strong>
     Ce qui vient d'Airtable, de Drive ou de Substack est une <em>photo datée</em> —
     une lecture faite à un instant, recopiée dans <code>data/</code>, qui ne bouge plus ensuite.
-    ${reg ? `Dernier export Airtable : <strong>${echapper(reg.export.date)}</strong>.` : ""}
+    ${(() => { const f = osFraicheur(); return f
+        ? `Dernier export Airtable : <strong>${f.date}</strong> — ${f.texte}${
+            f.vieille ? ` <span class="os-vieux">photo probablement dérivée</span>` : ""}.`
+        : ""; })()}
     Modifier Airtable ne modifie pas cet écran tant que l'export n'est pas refait.`;
 
   // ---- Filtres par état ----------------------------------------------------
@@ -570,9 +608,9 @@ function rendreProjets() {
   const liste = tous_.filter(p => !PRJ.filtre ||
     (PRJ.filtre === "bloqué" ? (p.statut === "bloqué" || p.statut === "en attente") : p.statut === PRJ.filtre));
 
-  $("#projets-corps").innerHTML = liste.length
+  $("#projets-corps").innerHTML = osBandeauPilote() + (liste.length
     ? liste.map(projetCarte).join("")
-    : `<p class="os-vide">Aucun chantier dans cette catégorie.</p>`;
+    : `<p class="os-vide">Aucun chantier dans cette catégorie.</p>`);
 
   $$("#projets-corps .prj-plan-tete").forEach(b => b.onclick = () => {
     const id = b.dataset.id;
@@ -679,7 +717,8 @@ function rendreSources() {
       <p class="os-avert"><strong>Aucune synchronisation.</strong> Ce n'est pas une liaison en direct
         mais un export : Airtable a été lu une fois, et recopié. Modifier Airtable ne modifie pas
         cet écran tant que l'export n'est pas refait.</p>
-      <p class="os-note">Dernier export : <strong>${echapper(r.export.date)}</strong>, par ${echapper(r.export.par)}.
+      <p class="os-note">Dernier export : <strong>${(osFraicheur() || {}).date || echapper(r.export.date)}</strong>
+        (${(osFraicheur() || {}).texte || "date inconnue"}), par ${echapper(r.export.par)}.
         Base <code>${echapper(r.base.id)}</code>. ${echapper(r.export.methode)}</p>
     </div>
 
@@ -711,6 +750,30 @@ function rendreSources() {
       Chaque fichier porte son empreinte SHA-256, donc l'archive est vérifiable —
       on peut prouver plus tard qu'une image n'a pas changé.`
       : "Catalogue absent."}</p>
+
+    <h2>Comment les concepts sont rattachés</h2>
+    <p class="sous">Deux natures de lien coexistent sous le même verbe, et les confondre
+      donnerait à une lecture l'autorité d'un chiffre.</p>
+    ${(() => {
+      const t = S.relations.filter(x => x.verbe === "traite_de");
+      const lex = t.filter(x => x.origine === "lexical");
+      const sem = t.filter(x => x.origine === "semantique");
+      const seuil = lex.length ? Math.min(...lex.map(x => x.occurrences || 0)) : 0;
+      return `<div class="src-ecarts">
+        <div class="src-ecart">
+          <p class="src-ecart-t"><strong>${osNombre(lex.length)} rattachements lexicaux</strong></p>
+          <p class="src-ecart-q">Comptés dans le texte réel de l'article, seuil de
+            ${seuil} occurrences minimum. Chaque lien porte son compte : il est donc
+            contestable pièce en main. C'est une <em>mesure</em>.</p>
+        </div>
+        <div class="src-ecart">
+          <p class="src-ecart-t"><strong>${osNombre(sem.length)} rattachements sémantiques</strong></p>
+          <p class="src-ecart-q">Déduits du titre et du propos — les archétypes, pour
+            l'essentiel. Aucun comptage ne les appuie. Ce n'est pas moins vrai, c'est
+            autrement établi : un <em>jugement</em>.</p>
+        </div>
+      </div>`;
+    })()}
 
     <h2>Ce qui reste en suspens</h2>
     <p class="sous">Dérivé des chantiers : un point disparaît d'ici quand son chantier se termine.</p>

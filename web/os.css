@@ -461,3 +461,32 @@ code.mini { font-size: 0.66rem; color: var(--ink-faint); }
 }
 .os-avert code { font-size: 0.76rem; }
 .os-avert em { color: var(--warn); font-style: normal; font-weight: 600; }
+
+/* ---------- Mode pilote --------------------------------------------------- */
+/* Il gouverne la façon dont le système avance : il doit être lisible là où l'on
+   regarde ce qui avance, pas rangé dans un fichier que personne n'ouvre. */
+.os-pilote {
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--ink-soft);
+  background: var(--paper-2);
+  padding: 0.9rem 1.1rem;
+  margin: 0 0 2rem;
+}
+.os-pilote-titre {
+  display: block;
+  font-family: var(--mono); font-size: 0.62rem;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--ink-faint); margin-bottom: 0.35rem;
+}
+.os-pilote p { margin: 0 0 0.35rem; font-size: 0.88rem; line-height: 1.55; }
+.os-pilote p:last-child { margin-bottom: 0; }
+.os-pilote-ordre, .os-pilote-esc {
+  font-family: var(--mono); font-size: 0.7rem !important;
+  color: var(--ink-faint); line-height: 1.7 !important;
+}
+.os-pilote-ordre em { color: var(--ink-soft); font-style: normal; }
+.os-vieux {
+  font-family: var(--mono); font-size: 0.66rem;
+  background: var(--flag-bg); color: var(--flag);
+  padding: 0.1rem 0.35rem; border-radius: 2px;
+}
