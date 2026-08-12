@@ -6,7 +6,7 @@
     "nom": "Mentis Prime — registre opérationnel"
   },
   "export": {
-    "date": "2026-08-11",
+    "date": "2026-08-12",
     "par": "Claude Code, via le connecteur Airtable",
     "methode": "Lecture seule des tables, écriture d'une photo dans data/. Aucune clé d'API n'est stockée dans le dépôt : l'export se refait en le demandant à Claude, pas en lançant un script."
   },
@@ -28,9 +28,9 @@
     {
       "table": "Handoffs IA",
       "id": "tblIeLkEknzotSk1H",
-      "lignes": 5,
+      "lignes": 6,
       "vers": "data/handoff.json",
-      "note": "Première reprise de cette table. Le texte intégral du contre-audit HMP-CLAUDE-001 reste dans Airtable ; le Dashboard n'en garde qu'un résumé."
+      "note": "Reprise en résumé ; le texte intégral reste dans Airtable. Contient le signalement ZAPIER-PREUVE-004 adressé à Vertice : le circuit Zapier n'est pas prouvé."
     },
     {
       "table": "Corpus",
@@ -67,8 +67,8 @@
     },
     {
       "table": "Droits & Expansion canonique",
-      "lignes": 4,
-      "pourquoi": "Gouvernance des droits. Pas encore modélisé côté Dashboard."
+      "lignes": 5,
+      "pourquoi": "Gouvernance des droits et du canon. Porte depuis le 12/08/2026 la NORTH STAR OPÉRATIONNELLE — « L'œuvre avant le logiciel » — transcrite du Schéma Directeur. Pas encore modélisé côté Dashboard."
     },
     {
       "table": "Expériences éditoriales",

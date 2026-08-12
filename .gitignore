@@ -45,9 +45,3 @@ Thumbs.db
 .idea/
 *.swp
 *~
-
-# === Page autonome — régénérée, pas versionnée ===
-# 620 Ko de HTML+données produits par construire_page.py à partir de web/ et
-# data/. La versionner ferait un gros diff binaire à chaque changement de
-# donnée, pour un fichier que la commande reconstruit en une seconde.
-mentis-prime-os.html

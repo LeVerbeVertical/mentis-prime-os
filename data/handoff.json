@@ -34,12 +34,12 @@
     "mission": "Carte conceptuelle spatiale de l'écosystème Mentis Prime créée dans Lucid (mind map, 9 branches : Corpus, Registre, Routage, Agents, Diffusion, Vente directe, Édition, Outils suspendus). À consulter et enrichir par Vertice au fil des décisions.",
     "emetteur": "Claude",
     "destinataire": "Vertice / ChatGPT",
-    "statut": "En cours",
+    "statut": "Terminé",
     "priorite": "P2",
     "niveau_source": "Développement",
     "resultat_attendu": "1) Maintenir et enrichir la carte Lucid ; 2) intégrer la voix comme porte d'entrée de l'écosystème ; 3) permettre une boucle Lucid → hypothèses conceptuelles → Airtable → audit Vertice/Claude → validation Hamza → corpus ; 4) distinguer toujours visualisation, interprétation et canon ; 5) privilégier les synthèses par lots pour éviter la saturation.",
     "resultat_livre": "",
-    "decision": "Décision Hamza — 09/08/2026 : ajouter la voix comme modalité de travail ; intégrer Lucid et la cartographie comme couche conceptuelle active ; autoriser Lucid à inspirer et nourrir le corpus par les relations spatiales qu'il révèle. Toute émergence issue de Lucid reste une hypothèse/exploration tant qu'elle n'a pas été auditée et validée.",
+    "decision": "Décision Hamza — 09/08/2026 : ajouter la voix comme modalité de travail ; intégrer Lucid et la cartographie comme couche conceptuelle active ; autoriser Lucid à inspirer et nourrir le corpus par les relations spatiales qu'il révèle. Toute émergence issue de Lucid reste une hypothèse/exploration tant qu'elle n'a pas été auditée et validée.\n\nCLÔTURE — 11/08/2026 : suppléé par la carte Écosystème de Mentis Prime OS, calculée depuis les données plutôt que dessinée à la main. Lucid passe en Suspendu ; la carte du 09/08 est conservée comme trace.",
     "date": "2026-08-09",
     "etat_zapier": "",
     "airtable": "recdQWW8dU5EUg4rR"
@@ -73,5 +73,20 @@
     "date": "",
     "etat_zapier": "Ne pas router",
     "airtable": "recwENoPJQQ07g8Iv"
+  },
+  {
+    "id": "ZAPIER-PREUVE-004",
+    "mission": "SIGNALEMENT — Le circuit Zapier n'est pas prouvé, et Claude Code ne peut pas le prouver. Le handoff de test HMP-ZAPIER-001 porte un Passage ID vide et aucun horodatage : cela prouve une lecture d'Airtable, pas un routage autonome.",
+    "emetteur": "Claude",
+    "destinataire": "Vertice / ChatGPT",
+    "statut": "À faire",
+    "priorite": "P1",
+    "niveau_source": "À vérifier",
+    "resultat_attendu": "Trois réponses possibles, aucune meilleure que l'autre : confirmer l'état réel des Zaps, faire un passage de preuve qui écrive un Passage ID horodaté, ou assumer le report par écrit.",
+    "resultat_livre": "",
+    "decision": "",
+    "date": "2026-08-12",
+    "etat_zapier": "Ne pas router",
+    "airtable": "recDFf20apzuhOsSa"
   }
 ]
